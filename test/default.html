@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>HTML-Default-Style</title>
+<style>
+html{background: #eee;}
+body{background: pink;height: 200vh;}
+body p{background: #ffffdb;}
+ul{background: #b1f7c7;}
+ol{background: #ffe9e2;}
+dl{background: #d9cff8;}
+h1{background: #cedcb8;}
+h2{background: #cedcb8;}
+h3{background: #cedcb8;}
+h4{background: #cedcb8;}
+h5{background: #cedcb8;}
+h6{background: #cedcb8;}
+form{background: #ffffe7;}
+input{}
+</style>
+</head>
+<body>
+<main>
+<div class="memo">
+<p>htmlは画面いっぱいに広がる。</p>
+<p>bodyは8pxの全方向marginがつく</p>
+<p>pは上下に1emの上下マージンがつく。</p>
+<p>デフォルトだとline-heightは1.5</p>
+<ul>
+  <li>ulは上下に1emの上下マージンがつく</li>
+  <li>ulは左に40pxのマージンがつく</li>
+  <li>liは黒いリストマーク(list-style-type: desc;)がつく</li>
+  <li>liは左に</li>
+</ul>
+<ol>
+  <li>olは上下に1emの上下マージンがつく</li>
+  <li>olは左に40pxのマージンがつく</li>
+  <li>olは黒いリストマーク(list-style-type: desc;)がつく</li>
+  <li>olは左に</li>
+</ol>
+<dl>
+  <dt>dlは上下に1emの上下マージンがつく</dt>
+  <dd>ddは左に40pxのマージンがつく</dd>
+</dl>
+<h1>h1 2em 0.67emの余白(21px相当)が上下に付く</h1>
+<h2>h2 1.5em 0.83emの余白(20px相当)が上下に付く</h2>
+<h3>h3 1.17em 1emの余白(21px相当)が上下に付く</h3>
+<h4>h4 1em 1.33emの余白(21px相当)が上下に付く</h4>
+<h5>h5 2em 0.83emの余白(22px相当)が上下に付く</h5>
+<h6>h6 2em 0.67emの余白(25px相当)が上下に付く</h6>
+<form action="#">
+  <input type="text" placeholder="text">
+  <input type="textarea" placeholder="textarea">
+  <input type="password" placeholder="password">
+  <input type="radio" placeholder="password"><label>ラジオボタン</label>
+  <input type="checkbox" placeholder="password"><label>チェックボックス</label>
+  <br><span>formにfont-size:0; inputでfont-size:16pxにすると余白消せる</span>
+</form>
+<hr>↑hr 上下左右1pxずつの線(重なると2px分) 上下marginが8pxずつ空く。
+<p>注釈文字<sup>※上付き文字 vertical-alignはsuper</sup><sub>※下付き文字 vertical-alignはsub</sub>リセットしないと行高が変わる</p>
+<table border="1">
+  <tr>
+    <th>テーブル見出し</th>
+    <td>テーブルレコード</td>
+    <td>テーブルレコード</td>
+  </tr>
+  <tr>
+    <th>テーブル見出し</th>
+    <td>テーブルレコード</td>
+    <td>テーブルレコード</td>
+  </tr>
+</table>
+<p><code>var xxx = function(){}</code>ああああ</p>
+</div>
+</main>
+</body>
+</html>
