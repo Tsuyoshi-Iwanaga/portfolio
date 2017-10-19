@@ -1,0 +1,322 @@
+﻿@charset "UTF-8";
+/*-------------------------------------------
+Accordion Block
+-------------------------------------------*/
+.accordionBlock01{
+	margin: 5% 0 7%;
+	padding: 0 3%;
+}
+.accordionHeader{
+	background: #999;
+	color: #fff;
+	text-align: center;
+	padding: 8px;
+	cursor: pointer;
+}
+.accordionHeader.open{
+	color: #f00;
+}
+.accordionContent{
+	padding: 8px;
+	border:#999 1px solid;
+}
+/*-------------------------------------------
+Tab block
+-------------------------------------------*/
+.tabBlock01{
+	margin: 0 0 7%;
+}
+.tabHead{
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+.tabHead a{
+	display: block;
+	width: 100%;
+	background: #bbb;
+	border-radius: 5px 5px 0 0;
+	padding: 8px 0;
+}
+.tabPanel{
+	width: 100%;
+	border: 1px solid #999;
+	background: #fff;
+	padding: 3% 0;
+}
+.tabHead a.tabOpen{
+	font-weight: bold;
+	background: #666;
+}
+
+/*-------------------------------------------
+aspect Box
+-------------------------------------------*/
+.aspectBoxBlock01{
+	width: 94%;
+	margin: 0 auto;
+	font-size: 0;
+}
+.aspectBoxBlockInner{
+	position: relative;
+	display: inline-block;
+	width: 50%;
+}
+.aspectBoxBlockInner:before{
+	content: "";
+	display: block;
+	padding-top: 83%;
+}
+.aspectBox{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background:#eee;
+	border: 1px solid #333;
+}
+.aspectBox img{
+	width: 100%;
+	cursor: pointer;
+}
+/*-------------------------------------------
+ajax table
+-------------------------------------------*/
+.ajaxTableBlock{
+	margin: 20px 3%;
+	width: 94%;
+	font-size: 14px;
+}
+.ajaxTable{
+	width: 100%;
+}
+.ajaxTable th{
+	background:#eee;
+	border: 1px solid #333;
+}
+.ajaxTable td{
+	font-size: 1.2rem;
+	border: 1px solid #333;
+}
+/*-------------------------------------------
+carouselBlock
+-------------------------------------------*/
+.carouselBlock{
+	width: 100%;
+	margin: 0 0 3%;
+	overflow: hidden;
+}
+.carouselItem{
+	float: left;
+	overflow: hidden;
+}
+.carouselItem img{
+	height: auto;
+}
+.carouselNav{
+	margin: 0 0 10%;
+}
+/*-------------------------------------------
+slideShowBlock
+-------------------------------------------*/
+.slideShowBlock{
+	padding: 3%;
+	margin-bottom: 70%;
+}
+.slideShowInner{
+	position: relative;
+}
+.slideShowInner img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+}
+/*-------------------------------------------
+imagesSwitchBlock01
+-------------------------------------------*/
+.viewArea01{
+	width: 100%;
+}
+.viewArea01 img{
+	width: 100%;
+	height: auto;
+}
+.navArea01{
+	width: 94%;
+	margin: 0 auto;
+	font-size: 0;
+}
+.navArea01 img{
+	width: 100%;
+	height: auto;
+}
+.navItem{
+	width: 32.5%;
+	display: inline-block;
+	border: 3px solid #fff;
+	margin:0 1% 0 0;
+}
+.navItem:nth-child(3){
+	margin: 0;
+}
+.navItem.current{
+	border: 3px solid orange;
+	opacity: 0.7;
+}
+/*-------------------------------------------
+formArea
+-------------------------------------------*/
+.formBlock01{
+	width: 100%;
+	border-radius: 8px;
+	background: #ddd;
+	margin: 0 0 20px;
+	padding: 3%;
+}
+.formOutline{
+	width: 100%;
+}
+.formItem{
+	border: 1px dotted #666;
+	vertical-align: middle;
+	text-align: center;
+	padding: 5px;
+}
+.formItem input,
+.formItem label,
+.formItem select{
+	vertical-align: middle;
+}
+.formItem input[type="radio"],
+.formItem input[type="checkbox"]{
+	display: none;
+}
+.formItem input[type="checkbox"] + label{
+	background: url("../images/form01_x1.png") 0 0 no-repeat;
+	padding: 0 0 0 27px;
+	display:block;
+	height: 27px;
+	line-height: 27px;
+}
+.formItem input[type="checkbox"]:checked + label{
+	background-position: 0 -27px;
+}
+.formItem input[type="radio"] + label{
+	background: url("../images/form01_x1.png") 0 -54px no-repeat;
+	padding: 0 0 0 27px;
+	display:block;
+	height: 27px;
+	line-height: 27px;
+}
+.formItem input[type="radio"]:checked + label{
+	background-position: 0 -81px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2) {
+	.formItem input[type="radio"] + label,
+	.formItem input[type="checkbox"] + label{
+		background-image: url("../images/form01_x2.png");
+		padding: 0 0 0 54px;
+		line-height: 54px;
+		height: 54px;
+	}
+	.formItem input[type="checkbox"]:checked + label{
+		background-position: 0 -54px;
+	}
+	.formItem input[type="radio"] + label{
+		background-position: 0 -108px;
+	}
+	.formItem input[type="radio"]:checked + label{
+		background-position: 0 -162px;
+	}
+}
+.formItem select{
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance: none;
+	width: 150px;
+	height: 50px;
+	border: 3px solid #ccc;
+	border-radius: 8px;
+	padding: 0 30px 0 10px;
+	background: #fff url("../images/select01.gif") right center no-repeat ;
+	background-size: 25px 54px;
+	outline: none;
+}
+/*-----------------------------------------------
+モーダルメニュー
+----------------------------------------------- */
+.modalOpen{
+	margin: 0 auto 20px;
+	padding: 3% 3%;
+	text-align: center;
+	background: #ffc93c;
+	color: #624c3d;
+	border-radius: 3px;
+	width: 200px;
+}
+.modalContent{
+	width: 270px;
+	text-align: center;
+	margin: 0 auto 0 0;
+	background: #fff;
+	z-index: 2;
+	position: fixed;
+	display: none;
+	top: 0;
+	left: 0;
+}
+#modalOverlay{
+	width: 100%;
+	height: 120%;
+	z-index: 1;
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.75);
+}
+.modalClose{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	font-size: 13px;
+	padding: 5%;
+}
+/*-----------------------------------------------
+スワイプアイテム
+----------------------------------------------- */
+.swipeItemArea{
+	overflow-x: auto;
+	overflow-y: hidden;
+	margin: 0 0 30px;
+	padding: 0 3%;
+}
+.swipeItemSlider{
+	width: 150%;
+	-webkit-overflow-scrolling: touch;
+}
+.swipeItemSlider > * {
+	-webkit-transform: translateZ(0px);
+}
+.swipeItemArea::-webkit-scrollbar {
+	display: none;
+	height: 0 !important;
+}
+.swipeItem{
+	float: left;
+	width: 17%;
+	background: #eee;
+	border-radius: 3px;
+	height: 100px;
+	margin: 0 0 0 3%;
+}
+.swipeItemTxt{
+	color: #333;
+}
+.swipeItem:first-child {
+	margin: 0;
+}

@@ -1,0 +1,223 @@
+@charset "UTF-8";
+/*-------------------------------------------
+wrapArea
+-------------------------------------------*/
+#wrap{
+	padding: 10px;
+}
+#wrapInner{
+	padding: 10px;
+	border: #666 1px dotted;
+	border-radius: 5px;
+	background: #eee;
+}
+h1{
+	margin: 0 0 8px;
+}
+h1 .titleInner{
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+h1 .titleInner:before{
+	display: inline-block;
+	content: "";
+	width: 5px;
+	height: 22px;
+	margin: 0 4px 1px 1px;
+	border-radius: 3px;
+	vertical-align: middle;
+	background: green;
+}
+/*-------------------------------------------
+iconwrap
+-------------------------------------------*/
+.iconWrap{
+	display: inline-block;
+	position: relative;
+	width: 20%;
+	margin: 0 3% 0 0;
+}
+.iconWrap:before{
+	content: "";
+	display: block;
+	padding: 100% 0 0 0;
+}
+.iconWrapInner{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 10%;
+	background: #bbb;
+	padding: 10%;
+}
+.iconWrapInner p{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+/*-------------------------------------------
+iconHambergur
+-------------------------------------------*/
+.iconHambergur,
+.iconHambergur:before,
+.iconHambergur:after{
+	display: inline-block;
+	width: 100%;
+	border-radius: 10%;
+	background: #555;
+}
+.iconHambergur{
+	position: relative;
+	height: 14%;
+	margin: 43% 0 0;
+}
+.iconHambergur:before,
+.iconHambergur:after{
+	content: "";
+	position: absolute;
+	height: 100%;
+}
+.iconHambergur:before{
+	margin: -29% 0 0;
+}
+.iconHambergur:after{
+	margin: 29% 0 0;
+}
+/*-------------------------------------------
+iconCancel
+-------------------------------------------*/
+.iconCancel,
+.iconCancel:before{
+	width: 100%;
+	background: #555;
+	display: inline-block;
+}
+.iconCancel{
+	height: 14%;
+	position: relative;
+	margin: 43% 0 0 0;
+	transform: rotate(45deg);
+}
+.iconCancel:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	transform: rotate(-90deg);
+}
+/*-------------------------------------------
+iconArrow01
+-------------------------------------------*/
+.iconArrow01,
+.iconArrow01:before{
+	width: 50%;
+	background: #555;
+	display: inline-block;
+}
+.iconArrow01{
+	height: 14%;
+	position: relative;
+	margin: 43% 0 0 10%;
+	transform: rotate(45deg);
+}
+.iconArrow01:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin: -38% 0 0 38%;
+	transform: rotate(90deg);
+}
+/*-------------------------------------------
+iconArrow02
+-------------------------------------------*/
+.iconArrow02,
+.iconArrow02:before{
+	width: 50%;
+	background: #555;
+	display: inline-block;
+}
+.iconArrow02{
+	height: 14%;
+	position: relative;
+	margin: 30% 0 0 22%;
+	transform: rotate(135deg);
+}
+.iconArrow02:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin: -38% 0 0 38%;
+	transform: rotate(-90deg);
+}
+/*-------------------------------------------
+iconArrow03
+-------------------------------------------*/
+.iconArrow03,
+.iconArrow03:before{
+	width: 50%;
+	background: #555;
+	display: inline-block;
+}
+.iconArrow03{
+	height: 14%;
+	position: relative;
+	margin: 42% 0 0 38%;
+	transform: rotate(225deg);
+}
+.iconArrow03:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin: -38% 0 0 38%;
+	transform: rotate(-90deg);
+}
+/*-------------------------------------------
+iconArrow04
+-------------------------------------------*/
+.iconArrow04,
+.iconArrow04:before{
+	width: 50%;
+	background: #555;
+	display: inline-block;
+}
+.iconArrow04{
+	height: 14%;
+	position: relative;
+	margin: 56% 0 0 27%;
+	transform: rotate(315deg);
+}
+.iconArrow04:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin: -38% 0 0 38%;
+	transform: rotate(-90deg);
+}
+/*-------------------------------------------
+iconTriangle01
+-------------------------------------------*/
+.iconTriangle01{
+	position: relative;
+}
+.iconTriangle01:before{
+	content: "";
+	display: inline-block;
+	border: 10px solid transparent;
+	border-left-color: #555;
+	margin: 30% 0 0 40%;
+}

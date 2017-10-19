@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/*
+Theme Name: Mytheme01
+Description: This is our original theme.
+Author: Tsuyoshi Iwanaga
+Version:1.0
+*/
+/*========== style settin ==========*/
+html{
+	font-size: 62.5%;
+}
+*, *:before, *:after{
+	box-sizing: border-box;
+}
+body{
+	font-size: 1.4rem;
+	font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+/*========== base layout ==========*/
+.header{
+	width: 100%;
+	height: 54px; /*delete*/
+	background: #bbb; /*delete*/
+}
+.mvArea, .aboutArea, .worksArea, .blogArea, .biographyArea, .contactArea{
+	width: 100%;
+	height: 60px;
+	background: #eee; /*delete*/
+}
+.footer{
+	width: 100%;
+	height: 100px; /*delete*/
+	background: #bbb; /*delete*/
+}
+
+/*========== clearfix ==========*/
+.clearfix:before{
+	content: '';
+	display: block;
+	clear: both;
+}
