@@ -1,0 +1,17 @@
+{
+  "name": "My_Portfolio",
+  "version": "1.0.0",
+  "description": "I'm web developer in Fukuoka",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sass-glob": "^1.0.8"
+  },
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tsuyoshi-Iwanaga/portfolio.git"
+  }
+}
