@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>HTML-Default-Style</title>
+<style>
+html{background: #eee;}
+body{background: pink;height: 200vh;}
+body p{background: #ffffdb;}
+ul{background: #b1f7c7;}
+ol{background: #ffe9e2;}
+dl{background: #d9cff8;}
+h1{background: #cedcb8;}
+h2{background: #cedcb8;}
+h3{background: #cedcb8;}
+h4{background: #cedcb8;}
+h5{background: #cedcb8;}
+h6{background: #cedcb8;}
+form{background: #ffffe7;}
+input{}
+</style>
+</head>
+<body>
+<main>
+<div class="memo">
+
+<p>htmlは画面いっぱいに広がる。</p>
+<p>bodyは8pxの全方向marginがつく</p>
+<p>pは上下に1emの上下マージンがつく。</p>
+<p>デフォルトだとline-heightは1.5</p>
+<ul>
+  <li>ulは上下に1emの上下マージンがつく</li>
+  <li>ulは左に40pxのマージンがつく</li>
+  <li>liは黒いリストマーク(list-style-type: desc;)がつく</li>
+  <li>liは左に</li>
+</ul>
+<ol>
+  <li>olは上下に1emの上下マージンがつく</li>
+  <li>olは左に40pxのマージンがつく</li>
+  <li>olは黒いリストマーク(list-style-type: desc;)がつく</li>
+  <li>olは左に</li>
+</ol>
+<dl>
+  <dt>dlは上下に1emの上下マージンがつく</dt>
+  <dd>ddは左に40pxのマージンがつく</dd>
+</dl>
+<h1>h1 2em 0.67emの余白(21px相当)が上下に付く</h1>
+<h2>h2 1.5em 0.83emの余白(20px相当)が上下に付く</h2>
+<h3>h3 1.17em 1emの余白(21px相当)が上下に付く</h3>
+<h4>h4 1em 1.33emの余白(21px相当)が上下に付く</h4>
+<h5>h5 2em 0.83emの余白(22px相当)が上下に付く</h5>
+<h6>h6 2em 0.67emの余白(25px相当)が上下に付く</h6>
+<hr>↑hr 上下左右1pxずつの線(重なると2px分) 上下marginが8pxずつ空く。
+<p>注釈文字<sup>※上付き文字 vertical-alignはsuper</sup><sub>※下付き文字 vertical-alignはsub</sub>リセットしないと行高が変わる</p>
+<table border="1">
+  <tr>
+    <th>テーブル見出し</th>
+    <td>テーブルレコード</td>
+    <td>テーブルレコード</td>
+  </tr>
+  <tr>
+    <th>テーブル見出し</th>
+    <td>テーブルレコード</td>
+    <td>テーブルレコード</td>
+  </tr>
+</table>
+<p><code>var xxx = function(){}</code>codeはフォントが他のものと少し異なる</p>
+<p>リンクテキストは<a href="#">こんな感じで</a>青文字と下線が付く</p>
+<div style="background-color: #ffffdb">
+<img src="http://golftec.golfdigest.co.jp/images/index_img06.jpg" alt="dummy">
+<img src="http://golftec.golfdigest.co.jp/images/index_img04.jpg" alt="dummy">
+<img src="http://golftec.golfdigest.co.jp/images/index_img08.jpg" alt="dummy">
+</div>
+<p>画像はインライン要素なのでそのまま並べると間が空く。デフォルトではvertical-align: beselineに揃う<br>
+max-widthかwidthで100%を付けないとSPの時などに横がはみ出る。</p>
+<section><div>section自体にはマージンがつかない</div></section>
+<article><div>article自体にはマージンがつかない</div></article>
+<aside><div>aside自体にはマージンがつかない</div></aside>
+<nav><div>nav自体にはマージンがつかない</div></nav>
+<header><div>header自体にはマージンがつかない</div></header>
+<footer><div>footer自体にはマージンがつかない</div></footer>
+<iframe src="http://golftec.golfdigest.co.jp/"></iframe>
+<div>frameborder="0"を設定すると枠線が消える。</div>
+<form action="#">
+  <input type="text" placeholder="text">
+  <input type="textarea" placeholder="textarea">
+  <input type="password" placeholder="password">
+  <input type="radio"><label>ラジオボタン</label>
+  <input type="checkbox"><label>チェックボックス</label>
+  <input type="checkbox"><label>チェックボックス</label><br>
+  <textarea name="dummy" id="" cols="30" rows="3"></textarea>
+  <input type="submit">
+  <input type="reset">
+  <input type="search" placeholder="検索用search">
+  <input type="tel" placeholder="tel">
+  <input type="url" placeholder="url">
+  <input type="email" placeholder="email">
+  <input type="datetime" placeholder="datetime">
+  <input type="datetime-local" placeholder="datetime-local">
+  <input type="date" placeholder="date">
+  <input type="week" placeholder="week">
+  <input type="month" placeholder="month">
+  <input type="time" placeholder="time">
+  <input type="range">
+  <input type="color">
+  <input type="file">
+  <progress></progress>
+  <meter></meter>
+  <br><span>formにfont-size:0; inputでfont-size:16pxにすると余白消せる</span>
+</form>
+
+</div>
+</main>
+</body>
+</html>
