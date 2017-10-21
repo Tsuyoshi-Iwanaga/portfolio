@@ -9,6 +9,7 @@
     "gulp-sass-glob": "^1.0.8"
   },
   "scripts": {
+    "sass": "gulp sass"
   },
   "repository": {
     "type": "git",

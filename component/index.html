@@ -1,19 +1,36 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Componentページ</title>
+<meta charset="UTF-8">
+<title>Portfolio Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="/component/css/style.css" media="all">
 </head>
 <body>
-<header>
-</header>
-<ul>
-  <li><a href="/component/default.html">デフォルトスタイルのページ</a></li>
-  <li><a href="/parts/icon.html">アイコンページ</a></li>
-  <li><a href="/parts/parts.html">パーツページ</a></li>
-  <li>Coming soon...</li>
-</ul>
+  <header class="l-header" role="banner">
+    <div class="l-header__content">
+      <div class="l-header__inner">
+        <p class="l-header__logo">
+          <a href="#"><img src="" alt="" class="l-header__logo__img">TSUYOSHI-IWANAGA PORTFOLIO</a>
+        </p>
+      </div>
+      <button id="js-navBtn" class="l-header__navBtn" aria-label="ナビゲーション" aria-controls="js-nav" aria-expanded="true">
+        <span class="l-header__navBtn__icon">NavOpen</span>
+      </button>
+      <nav id="js-nav" class="l-header__nav" role="navigation">
+        <ul class="l-header__globalNav">
+          <li><a href="#" class="l-header__globalNav__link">ABOUT</a></li>
+          <li><a href="#" class="l-header__globalNav__link">WORK</a></li>
+          <li><a href="#" class="l-header__globalNav__link">PROFILE</a></li>
+          <li><a href="#" class="l-header__globalNav__link">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main role="main">
+  </main>
+  <footer role="contentinfo">
+  </footer>
 </body>
 </html>

@@ -1,0 +1,24 @@
+.taC{ text-align: center;}
+.taL{ text-align: left;}
+.taR{ text-align: right;}
+.vaM{ vertical-align: middle;}
+.vaT{ vertical-align: top;}
+.vaB{ vertical-align: bottom;}
+
+@include PC{
+  .taPcC{ text-align: center;}
+  .taPcL{ text-align: left;}
+  .taPcR{ text-align: right;}
+  .vaPcM{ vertical-align: middle;}
+  .vaPcT{ vertical-align: top;}
+  .vaPcB{ vertical-align: bottom;}
+}
+
+@include SP{
+  .taSpC{ text-align: center;}
+  .taSpL{ text-align: left;}
+  .taSpR{ text-align: right;}
+  .vaSpM{ vertical-align: middle;}
+  .vaSpT{ vertical-align: top;}
+  .vaSpB{ vertical-align: bottom;}
+}
