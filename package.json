@@ -4,12 +4,19 @@
   "description": "I'm web developer in Fukuoka",
   "dependencies": {},
   "devDependencies": {
+    "autoprefixer": "^7.1.5",
+    "css-mqpacker": "^6.0.1",
+    "doiuse": "^4.0.0",
     "gulp": "^3.9.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^7.0.0",
     "gulp-sass": "^3.1.0",
     "gulp-sass-glob": "^1.0.8"
   },
   "scripts": {
-    "sass": "gulp sass"
+    "sass": "gulp sass",
+    "watch": "gulp watch"
   },
   "repository": {
     "type": "git",
