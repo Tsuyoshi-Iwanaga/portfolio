@@ -1,21 +1,21 @@
-.dpBlock{display: block;}
-.dpInline{display: inline;}
-.dpTable{display: table;}
-.dpTableCell{display: table-cell;}
-.dpInlineBlock{display: inline-block;}
+.u-dpBlock{display: block !important;}
+.u-dpInline{display: inline !important;}
+.u-dpTable{display: table !important;}
+.u-dpTableCell{display: table-cell !important;}
+.u-dpInlineBlock{display: inline-block !important;}
 
 @include PC{
-  .dpPcBlock{display: block;}
-  .dpPcInline{display: inline;}
-  .dpPcTable{display: table;}
-  .dpPcTableCell{display: table-cell;}
-  .dpPcInlineBlock{display: inline-block;}
+  .u-dpPcBlock{display: block !important;}
+  .u-dpPcInline{display: inline !important;}
+  .u-dpPcTable{display: table !important;}
+  .u-dpPcTableCell{display: table-cell !important;}
+  .u-dpPcInlineBlock{display: inline-block !important;}
 }
 
 @include SP{
-  .dpSpBlock{display: block;}
-  .dpSpInline{display: inline;}
-  .dpSpTable{display: table;}
-  .dpSpTableCell{display: table-cell;}
-  .dpSpInlineBlock{display: inline-block;}
+  .u-dpSpBlock{display: block !important;}
+  .u-dpSpInline{display: inline !important;}
+  .u-dpSpTable{display: table !important;}
+  .u-dpSpTableCell{display: table-cell !important;}
+  .u-dpSpInlineBlock{display: inline-block !important;}
 }

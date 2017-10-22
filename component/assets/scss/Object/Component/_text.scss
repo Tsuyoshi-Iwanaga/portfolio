@@ -1,0 +1,30 @@
+.c-textBlock01 p{
+  margin-bottom: 1em;
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+.c-fzSmall{
+  @include PC{
+    font-size: 1.4rem;
+  }
+  @include SP{
+    font-size: 1.4rem;
+  }
+}
+.c-fzMiddle{
+  @include PC{
+    font-size: 1.6rem;
+  }
+  @include SP{
+    font-size: 1.6rem;
+  }
+}
+.c-fzLarge{
+  @include PC{
+    font-size: 1.8rem;
+  }
+  @include SP{
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,32 @@
+.u-fwBold{
+  font-weight: bold !important;
+}
+@include PC{
+  .u-pcFwBold{
+    font-weight: bold !important;
+  }
+}
+@include SP{
+  .u-spFwBold{
+    font-weight: bold !important;
+  }
+}
+@for $i from 10 through 40 {
+  .u-fz#{$i} {
+    font-size: #{$i}px !important;
+  }
+}
+@include PC{
+  @for $i from 10 through 40 {
+    .u-pcFz#{$i} {
+      font-size: #{$i}px !important;
+    }
+  }
+}
+@include SP{
+  @for $i from 10 through 40 {
+    .u-spFz#{$i} {
+      font-size: #{$i}px !important;
+    }
+  }
+}

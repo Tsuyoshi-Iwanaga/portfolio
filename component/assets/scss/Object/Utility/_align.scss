@@ -1,24 +1,36 @@
-.taC{ text-align: center;}
-.taL{ text-align: left;}
-.taR{ text-align: right;}
-.vaM{ vertical-align: middle;}
-.vaT{ vertical-align: top;}
-.vaB{ vertical-align: bottom;}
-
 @include PC{
-  .taPcC{ text-align: center;}
-  .taPcL{ text-align: left;}
-  .taPcR{ text-align: right;}
-  .vaPcM{ vertical-align: middle;}
-  .vaPcT{ vertical-align: top;}
-  .vaPcB{ vertical-align: bottom;}
+  .u-spOnly{
+    display: none;
+  }
 }
 
 @include SP{
-  .taSpC{ text-align: center;}
-  .taSpL{ text-align: left;}
-  .taSpR{ text-align: right;}
-  .vaSpM{ vertical-align: middle;}
-  .vaSpT{ vertical-align: top;}
-  .vaSpB{ vertical-align: bottom;}
+  .u-pcOnly{
+    display: none;
+  }
+}
+
+.u-taC{ text-align: center !important;}
+.u-taL{ text-align: left !important;}
+.u-taR{ text-align: right !important;}
+.u-vaM{ vertical-align: middle !important;}
+.u-vaT{ vertical-align: top !important;}
+.u-vaB{ vertical-align: bottom !important;}
+
+@include PC{
+  .u-taPcC{ text-align: center !important;}
+  .u-taPcL{ text-align: left !important;}
+  .u-taPcR{ text-align: right !important;}
+  .u-vaPcM{ vertical-align: middle !important;}
+  .u-vaPcT{ vertical-align: top !important;}
+  .u-vaPcB{ vertical-align: bottom !important;}
+}
+
+@include SP{
+  .u-taSpC{ text-align: center !important;}
+  .u-taSpL{ text-align: left !important;}
+  .u-taSpR{ text-align: right !important;}
+  .u-vaSpM{ vertical-align: middle !important;}
+  .u-vaSpT{ vertical-align: top !important;}
+  .u-vaSpB{ vertical-align: bottom !important;}
 }

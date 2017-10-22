@@ -1,0 +1,12 @@
+.l-container{
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-right: auto;
+  margin-left: auto;
+  @include PC{
+    width: 1280px;
+  }
+  @include SP{
+    width: 100%;
+  }
+}
