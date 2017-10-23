@@ -3,6 +3,7 @@
   min-height: 100vh;
   background: url('/component/images/bg_infoarea01.jpg');
   background-size: cover;
+  background-position: 50% 50%;
   &:before{
     z-index: 0;
     content: "";
