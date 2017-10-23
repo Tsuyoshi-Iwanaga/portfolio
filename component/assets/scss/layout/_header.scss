@@ -1,8 +1,9 @@
 .l-header{
   position: fixed;
+  z-index: 2;
   width: 100%;
   background: rgba(245, 245, 245, .9);
-  padding: 8px 2px 8px 2px;
+  padding: 16px 2px 16px 2px;
   @extend .u-clearfix;
   &__content{
     padding-bottom: 0;
@@ -59,7 +60,7 @@
           font-size: 1.6rem;
         }
         @include SP{
-          font-size: 1.3rem;
+          font-size: 1.2rem;
         }
         &:hover{
           color: #2b96bd;
