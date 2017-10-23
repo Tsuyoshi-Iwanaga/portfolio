@@ -1,4 +1,25 @@
 .l-header{
-  background: #000;
-  border-bottom: 1px solid #ccc;
+  position: fixed;
+  width: 100%;
+  background: rgba(245, 245, 245, .9);
+  padding: 8px 16px 4px 16px;
+  @extend .u-clearfix;
+  &__logo{
+    float: left;
+    width: 30px;
+    height: auto;
+  }
+  &__globalNav{
+    float: right;
+    display: table;
+    &> li{
+      display: table-cell;
+      padding-left: 10px;
+      & > a{
+        text-decoration: none;
+        font-size: 1.3rem;
+        color: #666;
+      }
+    }
+  }
 }

@@ -1,0 +1,52 @@
+.c-textBlock01 p{
+  margin-bottom: 1em;
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+.c-fzSmall{
+  @include PC{
+    font-size: 1.3rem;
+  }
+  @include SP{
+    font-size: 1.3rem;
+  }
+}
+.c-fzMiddle{
+  @include PC{
+    font-size: 1.6rem;
+  }
+  @include SP{
+    font-size: 1.6rem;
+  }
+}
+.c-fzLarge{
+  @include PC{
+    font-size: 1.9rem;
+  }
+  @include SP{
+    font-size: 1.9rem;
+  }
+}
+.c-fRaleway{
+  font-family: 'Raleway', sans-serif;
+}
+.c-fadeInDown {
+  -webkit-animation-fill-mode:both;
+  -ms-animation-fill-mode:both;
+  animation-fill-mode:both;
+  -webkit-animation-duration:1.5s;
+  -ms-animation-duration:1.5s;
+  animation-duration:1.5s;
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  visibility: visible !important;
+ }
+ @-webkit-keyframes fadeInDown {
+  0% { opacity: 0; -webkit-transform: translateY(-10px); }
+  100% { opacity: 1; -webkit-transform: translateY(0); }
+ }
+ @keyframes fadeInDown {
+  0% { opacity: 0; -webkit-transform: translateY(-10px); -ms-transform: translateY(-10px); transform: translateY(-10px); }
+  100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+ }

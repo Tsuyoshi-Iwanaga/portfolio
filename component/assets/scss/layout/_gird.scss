@@ -1,12 +1,13 @@
 .l-container{
-  padding-right: 16px;
-  padding-left: 16px;
   margin-right: auto;
   margin-left: auto;
+  padding-bottom: 60px;
   @include PC{
-    width: 1280px;
+    width: $PAGE_MAX_WIDTH;
   }
   @include SP{
+    padding-right: 16px;
+    padding-left: 16px;
     width: 100%;
   }
 }
