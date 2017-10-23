@@ -2,23 +2,68 @@
   position: fixed;
   width: 100%;
   background: rgba(245, 245, 245, .9);
-  padding: 8px 16px 4px 16px;
+  padding: 8px 2px 8px 2px;
   @extend .u-clearfix;
+  &__content{
+    padding-bottom: 0;
+    @include PC{
+      max-width: $PAGE_MAX_WIDTH;
+      margin: 0 auto;
+    }
+    @include SP{
+      padding-left: 4px;
+      padding-right: 4px;
+    }
+  }
   &__logo{
     float: left;
-    width: 30px;
     height: auto;
+    @include PC{
+      width: 30px;
+    }
+    @include SP{
+      width: 8%;
+      max-width: 30px;
+    }
+  }
+  &__desc{
+    float: left;
+    margin-left: 32px;
+    font-size: 1.4rem;
+    padding-top: 4px;
   }
   &__globalNav{
-    float: right;
     display: table;
+    float: right;
+    @include PC{
+      padding-top: 2px;
+    }
     &> li{
       display: table-cell;
-      padding-left: 10px;
+      &:last-child{
+        padding-right: 0;
+      }
+      @include PC{
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+      @include SP{
+        padding-left: 4px;
+        padding-right: 4px;
+      }
       & > a{
         text-decoration: none;
-        font-size: 1.3rem;
         color: #666;
+        font-weight: bold;
+        @include PC{
+          font-size: 1.6rem;
+        }
+        @include SP{
+          font-size: 1.3rem;
+        }
+        &:hover{
+          color: #2b96bd;
+        }
       }
     }
   }

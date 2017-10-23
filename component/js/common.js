@@ -13,10 +13,8 @@
 })(function($) {
 
   var kvFadeIn = function() {
-    const $kvCatch = $('.p-introArea__catch');
-    const $kvText = $('.p-introArea__text');
-    $kvCatch.hide().fadeIn().addClass('c-fadeInDown');
-    $kvText.hide().fadeIn().addClass('c-fadeInDown');
+    const $FadeIn01 = $('.js-FadeIn01');
+    $FadeIn01.hide().fadeIn().addClass('c-fadeInDown');
   }();
 
   var smoothScroll = function() {
@@ -27,7 +25,6 @@
   const $header = $('#js-header');
   const $window = $(window);
   const position = $window.scrollTop();
-//  $header.hide();
   $window.scroll(function(){
     console.log(position);
   });
