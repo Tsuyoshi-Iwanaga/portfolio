@@ -1,7 +1,7 @@
 .l-container{
   margin-right: auto;
   margin-left: auto;
-  padding-bottom: 60px;
+  padding: 0 16px 60px;
   @include PC{
     width: $PAGE_MAX_WIDTH;
   }

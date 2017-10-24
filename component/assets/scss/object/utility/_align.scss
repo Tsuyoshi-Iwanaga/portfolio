@@ -1,15 +1,3 @@
-@include PC{
-  .u-spOnly{
-    display: none;
-  }
-}
-
-@include SP{
-  .u-pcOnly{
-    display: none;
-  }
-}
-
 .u-taC{ text-align: center !important;}
 .u-taL{ text-align: left !important;}
 .u-taR{ text-align: right !important;}
