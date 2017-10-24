@@ -1,4 +1,4 @@
 node_modules/
 wp_*/
 wp_*
-component/css/style.css
+template/css/style.css
