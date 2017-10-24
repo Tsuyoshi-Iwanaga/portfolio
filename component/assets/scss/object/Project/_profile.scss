@@ -1,0 +1,38 @@
+.p-prolile{
+  &--history{
+    margin-bottom: 24px;
+    &__title{
+      display: inline-block;
+      padding: 4px 8px;
+      background: #ddd;
+      margin-bottom: 8px;
+    }
+    &__item{
+      font-size: 1.6rem;
+      display: table;
+    }
+    &__year{
+      display: table-cell;
+      width: 6em;
+    }
+    &__content{
+      display: table-cell;
+    }
+  }
+  &--skill{
+    margin-bottom: 24px;
+    &__title{
+      display: inline-block;
+      padding: 4px 8px;
+      background: #ddd;
+      margin-bottom: 8px;
+    }
+    &__item{
+      font-size: 1.4rem;
+      & span{
+        display: inline-block;
+        min-width: 7em;
+      }
+    }
+  }
+}
