@@ -1,17 +1,67 @@
+@font-face{
+  font-family: "Original Yu Gothic";
+  src: local("Yu Gothic");
+  font-weight: 300;
+}
+
+@font-face{
+  font-family: "Original Yu Gothic";
+  src: local("Yu Gothic");
+  font-weight: 500;
+}
+
+@font-face{
+  font-family: "Original Yu Gothic";
+  src: local("Yu Gothic");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: local("Helvetica Neue Regular");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: local("Helvetica Neue Regular");
+  font-weight: 200;
+}
+
+@media all and (-ms-high-contrast: none)  {
+  html {
+    font-family: Verdana, Meiryo, sans-serif;
+  }
+}
+
+@media all and (-ms-high-contrast: active) {
+  html {
+    font-family: Verdana, Meiryo, sans-serif;
+  }
+}
+
 html {
   font-family: $FONT_FAMILY;
   font-size: 62.5%;
 }
 body {
-  color: #333;
-  font-size: 1.6rem;
-  line-height: 1.5;
+  color: $DEFAULT_TEXT_COLOR;
+  font-size: $DEFAULT_FONT_SIZE;
+  line-height: $DEFAULT_LINE_HEIGHT;
   word-wrap: break-word;
 }
 *,*:before,*:after{
   box-sizing: border-box;
 }
-a{
-  color: $linkColor;
+a {
+  color: $DEFAULT_LINK_COLOR;
+  text-decoration: none;
+  transition: 0.5s;
+  & img{
+    transition: 0.5s;
+    &:hover{
+      opacity: .8;
+    }
+  }
 }
 

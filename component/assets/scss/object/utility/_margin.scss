@@ -1,0 +1,9 @@
+.u-m0Auto{ margin-left: auto; margin-right: auto;}
+
+@include PC{
+  .u-m0PcAuto{ margin-left: auto; margin-right: auto;}
+}
+
+@include SP{
+  .u-m0SpAuto{ margin-left: auto; margin-right: auto;}
+}

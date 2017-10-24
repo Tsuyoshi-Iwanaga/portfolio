@@ -1,0 +1,36 @@
+.c-col2Block{
+  font-size: 0;
+  width: 100%;
+  margin-bottom: -24px;
+  &__col{
+    vertical-align: top;
+    font-size: 1.6rem;
+    margin-bottom: 24px;
+    @include PC{
+      display: inline-block;
+      width: 48%;
+      margin-right: 4%;
+      &:nth-of-type(2n){
+        margin-right: 0;
+      }
+    }
+  }
+}
+.c-col3Block{
+  font-size: 0;
+  width: 100%;
+  margin-bottom: -24px;
+  &__col{
+    vertical-align: top;
+    font-size: 1.6rem;
+    margin-bottom: 24px;
+    @include PC{
+      display: inline-block;
+      width: 30%;
+      margin-right: 5%;
+      &:nth-of-type(3n){
+        margin-right: 0;
+      }
+    }
+  }
+}

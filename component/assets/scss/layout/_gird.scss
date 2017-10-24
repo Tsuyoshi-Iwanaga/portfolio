@@ -11,3 +11,7 @@
     width: 100%;
   }
 }
+.l-container--pb0{
+  @extend .l-container;
+  padding-bottom: 0;
+}
