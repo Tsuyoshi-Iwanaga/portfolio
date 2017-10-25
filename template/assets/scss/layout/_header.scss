@@ -18,9 +18,9 @@
   }
   &__logo{
     float: left;
-    height: auto;
     @include PC{
       width: 30px;
+      height: 30px;
     }
     @include SP{
       width: 8%;

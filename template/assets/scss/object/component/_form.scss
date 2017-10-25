@@ -1,0 +1,65 @@
+/*
+#overview
+フォーム
+*/
+
+/*#styleguide
+2カラム
+```
+<form class="c-form01">
+  <dl class="c-form01__list">
+    <dt class="c-form01__title">お名前</dt>
+    <dd class="c-form01__input"><input type="text" class="u-w100"></dd>
+  </dl>
+  <dl class="c-form01__list">
+    <dt class="c-form01__title">メールアドレス</dt>
+    <dd class="c-form01__input"><input type="email" class="u-w100"></dd>
+  </dl>
+    <dl class="c-form01__list">
+    <dt class="c-form01__title">電話番号</dt>
+    <dd class="c-form01__input"><input type="tel"></dd>
+  </dl>
+  <dl class="c-form01__list">
+    <dt class="c-form01__title">お問合わせ内容</dt>
+    <dd class="c-form01__input"><textarea class="u-w100"></textarea></dd>
+  </dl>
+</form>
+```
+*/
+.c-form01{
+  &__list{
+    margin-bottom: 24px;
+    font-size: 0;
+  }
+  &__title{
+    font-size: 1.6rem;
+    min-width: 25%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 8px;
+  }
+  &__input{
+    font-size: 1.4rem;
+    display: inline-block;
+    @include PC{
+      width: 75%;
+    }
+    @include SP{
+      width: 100%;
+    }
+    & > input,
+    & > textarea,
+    & > select,
+    {
+      width: 100%;
+      -webkit-appearance: none;
+      vertical-align: middle;
+      border: 2px solid #cfcfcf;
+      padding: 4px;
+    }
+    & > textarea{
+      min-height: 6em;
+    }
+  }
+}
+

@@ -7,3 +7,46 @@
 @include SP{
   .u-m0SpAuto{ margin-left: auto; margin-right: auto;}
 }
+
+@for $i from 0 through 10{
+  .u-mt#{$i * 5} {
+    margin-top: #{$i * 5}px !important;
+  }
+  .u-mb#{$i * 5} {
+    margin-bottom: #{$i * 5}px !important;
+  }
+  .u-ml#{$i * 5} {
+    margin-left: #{$i * 5}px !important;
+  }
+  .u-mr#{$i * 5} {
+    margin-right: #{$i * 5}px !important;
+  }
+  @include PC{
+    .u-mtPc#{$i * 5} {
+      margin-top: #{$i * 5}px !important;
+    }
+    .u-mbPc#{$i * 5} {
+      margin-bottom: #{$i * 5}px !important;
+    }
+    .u-mlPc#{$i * 5} {
+      margin-left: #{$i * 5}px !important;
+    }
+    .u-mrPc#{$i * 5} {
+      margin-right: #{$i * 5}px !important;
+    }
+  }
+  @include SP{
+    .u-mtSp#{$i * 5} {
+      margin-top: #{$i * 5}px !important;
+    }
+    .u-mbSp#{$i * 5} {
+      margin-bottom: #{$i * 5}px !important;
+    }
+    .u-mlSp#{$i * 5} {
+      margin-left: #{$i * 5}px !important;
+    }
+    .u-mrSp#{$i * 5} {
+      margin-right: #{$i * 5}px !important;
+    }
+  }
+}
