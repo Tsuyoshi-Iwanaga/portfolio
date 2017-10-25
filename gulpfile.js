@@ -8,6 +8,7 @@ var postcss  = require('gulp-postcss');
 var doiuse =  require('doiuse')
 var autoprefixer  = require('autoprefixer');
 var mqpacker = require('css-mqpacker');
+var frontnote = require("gulp-frontnote");
 
 gulp.task('sass', function(){
   return gulp.src(config.assets + '/**/*.scss')
@@ -15,6 +16,9 @@ gulp.task('sass', function(){
     errorHandler: notify.onError("Error: <%= error.message %>")
   }))
   .pipe(sassGlob())
+  .pipe(frontnote({
+    css: '../template/css/style.css'
+  }))
   .pipe(sass({ outputStyle: 'expanded' }))
   .pipe(postcss([
     //doiuse({browsers: config.targetBrowsers}),

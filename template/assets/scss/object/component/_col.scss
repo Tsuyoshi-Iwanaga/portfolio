@@ -1,3 +1,21 @@
+/*
+#overview
+カラム操作
+*/
+
+/*#styleguide
+2カラム
+```
+<div class="c-col2Block">
+  <div class="c-col2Block__col">
+    <p class="u-bgGray u-taC">中身のコンテンツが入ります。</p>
+  </div>
+  <div class="c-col2Block__col">
+    <p class="u-bgGray u-taC">中身のコンテンツが入ります。</p>
+  </div>
+</div>
+```
+*/
 .c-col2Block{
   font-size: 0;
   width: 100%;
@@ -16,6 +34,23 @@
     }
   }
 }
+
+/*#styleguide
+3カラム
+```
+<div class="c-col3Block">
+  <div class="c-col3Block__col">
+    <p class="u-bgGray u-taC">中身のコンテンツが入ります。</p>
+  </div>
+  <div class="c-col3Block__col">
+    <p class="u-bgGray u-taC">中身のコンテンツが入ります。</p>
+  </div>
+  <div class="c-col3Block__col">
+    <p class="u-bgGray u-taC">中身のコンテンツが入ります。</p>
+  </div>
+</div>
+```
+*/
 .c-col3Block{
   font-size: 0;
   width: 100%;
@@ -34,6 +69,26 @@
     }
   }
 }
+
+/*#styleguide
+4カラム
+```
+<div class="c-col4Block">
+  <div class="c-col4Block__col">
+    <p class="u-bgGray u-taC">中身のコンテンツが入ります。</p>
+  </div>
+  <div class="c-col4Block__col">
+    <p class="u-bgGray u-taC">中身のコンテンツが入ります。</p>
+  </div>
+  <div class="c-col4Block__col">
+    <p class="u-bgGray u-taC">中身のコンテンツが入ります。</p>
+  </div>
+  <div class="c-col4Block__col">
+    <p class="u-bgGray u-taC">中身のコンテンツが入ります。</p>
+  </div>
+</div>
+```
+*/
 .c-col4Block{
   font-size: 0;
   width: 100%;

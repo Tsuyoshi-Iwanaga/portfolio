@@ -12,13 +12,24 @@
   }
 })(function($) {
 
-  var kvFadeIn = function() {
+  const kvFadeIn = function() {
     const $FadeIn01 = $('.js-FadeIn01');
     $FadeIn01.hide().fadeIn().addClass('c-fadeInDown');
   }();
 
-  var smoothScroll = function() {
+  const smoothScroll = function() {
     $('a[href*="#"]').click(function(ev) {
+    });
+  }();
+
+  const inputTextAreaAdjust = function() {
+
+    const textArea = $('.js-textarea');
+
+    textArea.on("input", function(ev) {
+      if(ev.target.scrollHeight > ev.target.offsetHeight){
+        $(ev.target).height(ev.target.scrollHeight);
+      }
     });
   }();
 
