@@ -4,6 +4,9 @@
   background: url('/template/images/bg_infoarea01.jpg');
   background-size: cover;
   background-position: 50% 50%;
+  @include PC{
+    min-width: $PAGE_MAX_WIDTH;
+  }
   &:before{
     z-index: 0;
     content: "";

@@ -1,10 +1,16 @@
 .l-footer{
   background: #333;
   color: #fff;
-  min-height: 100px;
-  display: flex;
-}
-.l-footer__copy{
-  text-align: center;
-  font-size: 1.3rem;
+  @include PC{
+    min-width: $PAGE_MAX_WIDTH;
+  }
+  &__inner{
+    display: flex;
+    min-height: 100px;
+    align-items: center;
+    justify-content: center;
+  }
+  &__copy{
+    font-size: 1.3rem;
+  }
 }

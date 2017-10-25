@@ -1,3 +1,8 @@
+.l-contantWrap{
+  @include PC{
+    min-width: $PAGE_MAX_WIDTH;
+  }
+}
 .l-container{
   margin-right: auto;
   margin-left: auto;
