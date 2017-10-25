@@ -1,9 +1,42 @@
+/*
+#overview
+テキスト装飾
+*/
+
+/*#styleguide
+デフォルトテキスト
+```
+<p>デフォルトでは16px</p>
+<p>余白は空かない。</p>
+```
+*/
+
+/*#styleguide
+下の余白を空ける。
+```
+<div class="c-textBlock01">
+  <p>下の余白が1em空く。</p>
+  <p>下の余白が1em空く。</p>
+  <p>一番最後は空かない。</p>
+</div>
+```
+*/
 .c-textBlock01 p{
   margin-bottom: 1em;
   &:last-child{
     margin-bottom: 0;
   }
 }
+/*#styleguide
+フォントサイズ
+```
+<div class="c-textBlock01">
+  <p class="c-fzSmall">小さいテキスト 13px</p>
+  <p class="c-fzMiddle">普通テキスト 16px ※スタイルリセット用</p>
+  <p class="c-fzLarge">大きいテキスト 19px</p>
+</div>
+```
+*/
 .c-fzSmall{
   @include PC{
     font-size: 1.3rem;
@@ -28,6 +61,12 @@
     font-size: 1.9rem;
   }
 }
+/*#styleguide
+Webフォント
+```
+<p><span class="c-fRaleway">Raleway ※スタイルガイド上では反映しません。</span></p>
+```
+*/
 .c-fRaleway{
   font-family: 'Raleway', sans-serif;
 }
@@ -42,6 +81,12 @@
   animation-name: fadeInDown;
   visibility: visible !important;
  }
+ /*#styleguide
+ふわっと出てくるテキスト
+```
+<p class="js-FadeIn01 c-fadeInDown">上からふわっと出てくる文字</p>
+```
+*/
  @-webkit-keyframes fadeInDown {
   0% { opacity: 0; -webkit-transform: translateY(-10px); }
   100% { opacity: 1; -webkit-transform: translateY(0); }

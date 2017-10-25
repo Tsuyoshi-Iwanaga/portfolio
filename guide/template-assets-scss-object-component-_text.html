@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>StyleGuide - FrontNote</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="../template/css/style.css" />
+</head>
+<body>
+<header class="fn-header">
+    <div class="fn-mobile-visible fn-drawer-trigger"><a class="fn-icon fn-bars fn-icon-link"></a></div>
+    <h1 class="fn-title"><a href="./index.html">StyleGuide</a></h1>
+</header>
+<div class="fn-container">
+    <nav class="fn-sidebar">
+        <a href="./index.html" class="fn-menu">Overview</a>
+        
+        
+        
+        <a href="template-assets-scss-object-component-_col.html" class="fn-menu">
+            
+                カラム操作
+            
+        </a>
+        
+        
+        <a href="template-assets-scss-object-component-_text.html" class="fn-menu fn-is-active">
+            
+                テキスト装飾
+            
+        </a>
+        
+    </nav>
+    
+        <section class="fn-content">
+            <h2 class="fn-heading2">
+                
+                テキスト装飾
+                
+                <small class="fn-sub-heading">template\assets\scss\object\component\_text.scss</small>
+            </h2>
+            
+            <p class="fn-comment"></p>
+            
+
+            
+
+            
+            
+            <article class="fn-article">
+                <h3 class="fn-heading3">デフォルトテキスト</h3>
+                
+                <ul class="fn-attribute">
+                    
+                </ul>
+                
+                <p class="fn-comment"></p>
+                
+                <div class="fn-preview">
+                    
+<p>デフォルトでは16px</p>
+<p>余白は空かない。</p>
+
+                </div>
+                <pre class="fn-pre"><i class="fn-icon fn-hand-o-down"> 選択</i><code class="fn-code" data-language="html">
+&lt;p&gt;デフォルトでは16px&lt;/p&gt;
+&lt;p&gt;余白は空かない。&lt;/p&gt;
+</code></pre>
+                
+            </article>
+            
+            <article class="fn-article">
+                <h3 class="fn-heading3">下の余白を空ける。</h3>
+                
+                <ul class="fn-attribute">
+                    
+                </ul>
+                
+                <p class="fn-comment"></p>
+                
+                <div class="fn-preview">
+                    
+<div class="c-textBlock01">
+  <p>下の余白が1em空く。</p>
+  <p>下の余白が1em空く。</p>
+  <p>一番最後は空かない。</p>
+</div>
+
+                </div>
+                <pre class="fn-pre"><i class="fn-icon fn-hand-o-down"> 選択</i><code class="fn-code" data-language="html">
+&lt;div class=&#34;c-textBlock01&#34;&gt;
+  &lt;p&gt;下の余白が1em空く。&lt;/p&gt;
+  &lt;p&gt;下の余白が1em空く。&lt;/p&gt;
+  &lt;p&gt;一番最後は空かない。&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+                
+            </article>
+            
+            <article class="fn-article">
+                <h3 class="fn-heading3">フォントサイズ</h3>
+                
+                <ul class="fn-attribute">
+                    
+                </ul>
+                
+                <p class="fn-comment"></p>
+                
+                <div class="fn-preview">
+                    
+<div class="c-textBlock01">
+  <p class="c-fzSmall">小さいテキスト 13px</p>
+  <p class="c-fzMiddle">普通テキスト 16px ※スタイルリセット用</p>
+  <p class="c-fzLarge">大きいテキスト 19px</p>
+</div>
+
+                </div>
+                <pre class="fn-pre"><i class="fn-icon fn-hand-o-down"> 選択</i><code class="fn-code" data-language="html">
+&lt;div class=&#34;c-textBlock01&#34;&gt;
+  &lt;p class=&#34;c-fzSmall&#34;&gt;小さいテキスト 13px&lt;/p&gt;
+  &lt;p class=&#34;c-fzMiddle&#34;&gt;普通テキスト 16px ※スタイルリセット用&lt;/p&gt;
+  &lt;p class=&#34;c-fzLarge&#34;&gt;大きいテキスト 19px&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+                
+            </article>
+            
+            <article class="fn-article">
+                <h3 class="fn-heading3">Webフォント</h3>
+                
+                <ul class="fn-attribute">
+                    
+                </ul>
+                
+                <p class="fn-comment"></p>
+                
+                <div class="fn-preview">
+                    
+<p><span class="c-fRaleway">Raleway ※スタイルガイド上では反映しません。</span></p>
+
+                </div>
+                <pre class="fn-pre"><i class="fn-icon fn-hand-o-down"> 選択</i><code class="fn-code" data-language="html">
+&lt;p&gt;&lt;span class=&#34;c-fRaleway&#34;&gt;Raleway ※スタイルガイド上では反映しません。&lt;/span&gt;&lt;/p&gt;
+</code></pre>
+                
+            </article>
+            
+            <article class="fn-article">
+                <h3 class="fn-heading3">ふわっと出てくるテキスト</h3>
+                
+                <ul class="fn-attribute">
+                    
+                </ul>
+                
+                <p class="fn-comment"></p>
+                
+                <div class="fn-preview">
+                    
+<p class="js-FadeIn01 c-fadeInDown">上からふわっと出てくる文字</p>
+
+                </div>
+                <pre class="fn-pre"><i class="fn-icon fn-hand-o-down"> 選択</i><code class="fn-code" data-language="html">
+&lt;p class=&#34;js-FadeIn01 c-fadeInDown&#34;&gt;上からふわっと出てくる文字&lt;/p&gt;
+</code></pre>
+                
+            </article>
+            
+            
+            <div class="fn-pagetop">
+                <a href="" class="fn-icon fn-chevron-up"></a>
+            </div>
+        </section>
+    
+</div>
+<script src="assets/lib/jquery.js"></script>
+<script src="assets/lib/jquery.mousewheel.js"></script>
+<script src="assets/lib/highlight.pack.js"></script>
+<script src="assets/js/ripple-effect.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

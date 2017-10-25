@@ -8,6 +8,7 @@
     "css-mqpacker": "^6.0.1",
     "doiuse": "^4.0.0",
     "gulp": "^3.9.1",
+    "gulp-frontnote": "^2.0.1",
     "gulp-notify": "^3.0.0",
     "gulp-plumber": "^1.1.0",
     "gulp-postcss": "^7.0.0",
