@@ -12,16 +12,25 @@
   }
 })(function($) {
 
-  const kvFadeIn = function() {
+  /* ------------------------------
+  fadeIn
+  ------------------------------ */
+  const fadeIn = function() {
     const $FadeIn01 = $('.js-FadeIn01');
     $FadeIn01.hide().fadeIn().addClass('c-fadeInDown');
   }();
 
+  /* ------------------------------
+  smoothScroll
+  ------------------------------ */
   const smoothScroll = function() {
     $('a[href*="#"]').click(function(ev) {
     });
   }();
 
+  /* ------------------------------
+  inputTextAreaAdjust
+  ------------------------------ */
   const inputTextAreaAdjust = function() {
 
     const textArea = $('.js-textarea');
@@ -33,10 +42,18 @@
     });
   }();
 
-  const $header = $('#js-header');
-  const $window = $(window);
-  const position = $window.scrollTop();
-  $window.scroll(function(){
-    console.log(position);
-  });
+  /* ------------------------------
+  returnTop
+  ------------------------------ */
+  const returnTop = function() {
+
+    const $header = $('#js-header');
+    const $window = $(window);
+    const position = $window.scrollTop();
+
+    $window.scroll(function(){
+      console.log(position);
+    });
+  }();
+
 });

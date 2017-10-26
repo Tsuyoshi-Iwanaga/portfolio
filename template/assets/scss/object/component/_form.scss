@@ -4,25 +4,98 @@
 */
 
 /*#styleguide
-2カラム
 ```
 <form class="c-form01">
   <dl class="c-form01__list">
     <dt class="c-form01__title">お名前</dt>
-    <dd class="c-form01__input"><input type="text" class="u-w100"></dd>
+    <dd class="c-form01__input"><input type="text"></dd>
   </dl>
   <dl class="c-form01__list">
     <dt class="c-form01__title">メールアドレス</dt>
-    <dd class="c-form01__input"><input type="email" class="u-w100"></dd>
+    <dd class="c-form01__input"><input type="email"></dd>
   </dl>
-    <dl class="c-form01__list">
+  <dl class="c-form01__list">
     <dt class="c-form01__title">電話番号</dt>
     <dd class="c-form01__input"><input type="tel"></dd>
   </dl>
   <dl class="c-form01__list">
-    <dt class="c-form01__title">お問合わせ内容</dt>
-    <dd class="c-form01__input"><textarea class="u-w100"></textarea></dd>
+    <dt class="c-form01__title">サイトURL</dt>
+    <dd class="c-form01__input"><input type="url"></dd>
   </dl>
+  <dl class="c-form01__list">
+    <dt class="c-form01__title">お問合わせ内容</dt>
+    <dd class="c-form01__input"><textarea></textarea></dd>
+  </dl>
+  <dl class="c-form01__list">
+    <dt class="c-form01__title">住所</dt>
+    <dd class="c-form01__input">
+      <select name="pref_name">
+        <option value="" selected>都道府県</option>
+        <option value="hokkaido">北海道</option>
+        <option value="aomori">青森県</option>
+        <option value="iwate">岩手県</option>
+        <option value="miyagi">宮城県</option>
+        <option value="akita">秋田県</option>
+        <option value="yamagata">山形県</option>
+        <option value="fukushima">福島県</option>
+        <option value="ibaraki">茨城県</option>
+        <option value="tochigi">栃木県</option>
+        <option value="gunma">群馬県</option>
+        <option value="saitama">埼玉県</option>
+        <option value="chiba">千葉県</option>
+        <option value="tokyo">東京都</option>
+        <option value="kanagawa">神奈川県</option>
+        <option value="nigata">新潟県</option>
+        <option value="toyama">富山県</option>
+        <option value="ishikawa">石川県</option>
+        <option value="fukuki">福井県</option>
+        <option value="yamanashi">山梨県</option>
+        <option value="nagano">長野県</option>
+        <option value="gifu">岐阜県</option>
+        <option value="sizuoka">静岡県</option>
+        <option value="aichi">愛知県</option>
+        <option value="mie">三重県</option>
+        <option value="shiga">滋賀県</option>
+        <option value="kyoto">京都府</option>
+        <option value="osaka">大阪府</option>
+        <option value="hyougo">兵庫県</option>
+        <option value="nara">奈良県</option>
+        <option value="wakayama">和歌山県</option>
+        <option value="tottori">鳥取県</option>
+        <option value="shimane">島根県</option>
+        <option value="okayama">岡山県</option>
+        <option value="hiroshima">広島県</option>
+        <option value="yamaguchi">山口県</option>
+        <option value="tokushima">徳島県</option>
+        <option value="kagawa">香川県</option>
+        <option value="ehime">愛媛県</option>
+        <option value="kouchi">高知県</option>
+        <option value="fukuoka">福岡県</option>
+        <option value="saga">佐賀県</option>
+        <option value="nagasaki">長崎県</option>
+        <option value="kumamoto">熊本県</option>
+        <option value="oita">大分県</option>
+        <option value="miyazaki">宮崎県</option>
+        <option value="kagoshima">鹿児島県</option>
+        <option value="okinawa">沖縄県</option>
+      </select>
+    </dd>
+  </dl>
+  <dl class="c-form01__list">
+    <dt class="c-form01__title">性別</dt>
+    <dd class="c-form01__input">
+      <label><input type="radio" name="sex" value="male" checked><span>男性</span></label>
+      <label><input type="radio" name="sex" value="female"><span>女性</span></label>
+    </dd>
+  </dl>
+  <dl class="c-form01__list">
+    <dt class="c-form01__title">好きな果物</dt>
+    <dd class="c-form01__input">
+      <label><input type="checkbox" name="fluits" value="apple" checked><span>リンゴ</span></label>
+      <label><input type="checkbox" name="fluits" value="banana"><span>バナナ<span></label>
+    </dd>
+  </dl>
+  <p class="u-taC"><button type="submit" name="#" class="c-btn" value="#">送信</button></p>
 </form>
 ```
 */
@@ -36,11 +109,10 @@
     min-width: 25%;
     display: inline-block;
     vertical-align: middle;
-    margin-bottom: 8px;
   }
   &__input{
-    font-size: 1.4rem;
     display: inline-block;
+    font-size: 1.6rem;
     @include PC{
       width: 75%;
     }
@@ -52,7 +124,8 @@
     & > select,
     {
       width: 100%;
-      -webkit-appearance: none;
+      line-height: 1.5;
+      appearance: none;
       vertical-align: middle;
       border: 2px solid #cfcfcf;
       padding: 4px;
