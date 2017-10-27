@@ -1,0 +1,81 @@
+/*
+#overview
+リスト
+*/
+
+/*#styleguide
+シンプルリスト
+```
+<ul class="c-listBlock01">
+  <li class="c-listBlock01__item">リストアイテム1</li>
+  <li class="c-listBlock01__item">リストアイテム1</li>
+  <li class="c-listBlock01__item">リストアイテム1</li>
+</ul>
+```
+*/
+.c-listBlock01{
+  @include last-mb0;
+  &__item{
+    list-style: none;
+    text-indent: -1em;
+    margin-bottom: 8px;
+    &:before{
+      content: "・";
+    }
+  }
+}
+
+/*#styleguide
+注釈リスト
+```
+<ul class="c-listBlock02">
+  <li class="c-listBlock02__item">リストアイテム1</li>
+  <li class="c-listBlock02__item">リストアイテム1</li>
+  <li class="c-listBlock02__item">リストアイテム1</li>
+</ul>
+```
+*/
+
+.c-listBlock02{
+  @include last-mb0;
+  &__item{
+    list-style: none;
+    text-indent: -1em;
+    margin-bottom: 8px;
+    &:before{
+      content: "※";
+    }
+  }
+}
+
+/*#styleguide
+注釈リスト
+```
+<ol class="c-listBlock03">
+  <li class="c-listBlock03__item">リストアイテム1</li>
+  <li class="c-listBlock03__item">リストアイテム1</li>
+  <li class="c-listBlock03__item">リストアイテム1</li>
+  <li class="c-listBlock03__item">リストアイテム1</li>
+  <li class="c-listBlock03__item">リストアイテム1</li>
+  <li class="c-listBlock03__item">リストアイテム1</li>
+  <li class="c-listBlock03__item">リストアイテム1</li>
+  <li class="c-listBlock03__item">リストアイテム1</li>
+  <li class="c-listBlock03__item">リストアイテム1</li>
+  <li class="c-listBlock03__item">リストアイテム1</li>
+</ol>
+```
+*/
+
+.c-listBlock03{
+  @include last-mb0;
+  &__item{
+    list-style: none;
+    text-indent: -1em;
+    margin-bottom: 8px;
+    counter-increment: num;
+    &:before{
+      content: counter(num)". ";
+      min-width: 1em;
+    }
+  }
+}

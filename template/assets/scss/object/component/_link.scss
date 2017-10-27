@@ -1,0 +1,49 @@
+/*
+#overview
+リンク
+*/
+
+/*#styleguide
+シンプルリンク
+```
+<a href="#" class="c-link01">シンプルリンク</a><a href="#" class="c-link01">シンプルリンク</a><a href="#" class="c-link01">シンプルリンク</a>
+```
+*/
+.c-link01{
+  display: inline-block;
+  &:after{
+    content: ">";
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 4px;
+    padding-right: 8px;
+  }
+}
+
+/*#styleguide
+テキストリンク
+```
+<p>ダミーダミーダミー<a href="#" class="c-link01--text">テキストリンク</a>ダミーダミーダミー</p>
+```
+*/
+.c-link01--text{
+  text-decoration: underline;
+}
+
+/*#styleguide
+リンクリスト
+```
+<ul class="c-link01--list">
+  <li><a href="#" class="c-link01">シンプルリンク</a></li>
+  <li><a href="#" class="c-link01">シンプルリンク</a></li>
+  <li><a href="#" class="c-link01">シンプルリンク</a></li>
+</ul>
+```
+*/
+.c-link01--list{
+  @include last-mb0;
+  list-style: none;
+  & > li{
+    margin-bottom : 8px;
+  }
+}

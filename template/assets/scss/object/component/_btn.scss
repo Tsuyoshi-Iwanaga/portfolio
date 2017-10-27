@@ -1,8 +1,25 @@
+/*
+#overview
+ボタン
+*/
+
+/*#styleguide
+```
+<a href="#" class="c-btn">ボタン</a>
+<a href="#" class="c-btn --red">ボタン</a>
+```
+*/
 .c-btn{
   background: $DEFAULT_BUTTON_01_COLOR;
+  display: inline-block;
+  text-align: center;
   min-width: 10em;
   padding: 16px;
   color: #fff;
   font-weight: bold;
   border-style: none;
+  &.--red{
+    background: #bf0000;
+    color: #fff;
+  }
 }

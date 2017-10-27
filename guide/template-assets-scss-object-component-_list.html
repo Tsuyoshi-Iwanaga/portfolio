@@ -46,14 +46,14 @@
         </a>
         
         
-        <a href="template-assets-scss-object-component-_list.html" class="fn-menu">
+        <a href="template-assets-scss-object-component-_list.html" class="fn-menu fn-is-active">
             
                 リスト
             
         </a>
         
         
-        <a href="template-assets-scss-object-component-_text.html" class="fn-menu fn-is-active">
+        <a href="template-assets-scss-object-component-_text.html" class="fn-menu">
             
                 テキスト
             
@@ -64,9 +64,9 @@
         <section class="fn-content">
             <h2 class="fn-heading2">
                 
-                テキスト
+                リスト
                 
-                <small class="fn-sub-heading">template\assets\scss\object\component\_text.scss</small>
+                <small class="fn-sub-heading">template\assets\scss\object\component\_list.scss</small>
             </h2>
             
             <p class="fn-comment"></p>
@@ -77,7 +77,7 @@
             
             
             <article class="fn-article">
-                <h3 class="fn-heading3">デフォルトテキスト</h3>
+                <h3 class="fn-heading3">シンプルリスト</h3>
                 
                 <ul class="fn-attribute">
                     
@@ -87,19 +87,25 @@
                 
                 <div class="fn-preview">
                     
-<p>デフォルトでは16px</p>
-<p>余白は空かない。</p>
+<ul class="c-listBlock01">
+  <li class="c-listBlock01__item">リストアイテム1</li>
+  <li class="c-listBlock01__item">リストアイテム1</li>
+  <li class="c-listBlock01__item">リストアイテム1</li>
+</ul>
 
                 </div>
                 <pre class="fn-pre"><i class="fn-icon fn-hand-o-down"> 選択</i><code class="fn-code" data-language="html">
-&lt;p&gt;デフォルトでは16px&lt;/p&gt;
-&lt;p&gt;余白は空かない。&lt;/p&gt;
+&lt;ul class=&#34;c-listBlock01&#34;&gt;
+  &lt;li class=&#34;c-listBlock01__item&#34;&gt;リストアイテム1&lt;/li&gt;
+  &lt;li class=&#34;c-listBlock01__item&#34;&gt;リストアイテム1&lt;/li&gt;
+  &lt;li class=&#34;c-listBlock01__item&#34;&gt;リストアイテム1&lt;/li&gt;
+&lt;/ul&gt;
 </code></pre>
                 
             </article>
             
             <article class="fn-article">
-                <h3 class="fn-heading3">p同士で下の余白を空ける場合</h3>
+                <h3 class="fn-heading3">注釈リスト</h3>
                 
                 <ul class="fn-attribute">
                     
@@ -109,25 +115,25 @@
                 
                 <div class="fn-preview">
                     
-<div class="c-textBlock01">
-  <p>下の余白が1em空く。</p>
-  <p>下の余白が1em空く。</p>
-  <p>一番最後は空かない。</p>
-</div>
+<ul class="c-listBlock02">
+  <li class="c-listBlock02__item">リストアイテム1</li>
+  <li class="c-listBlock02__item">リストアイテム1</li>
+  <li class="c-listBlock02__item">リストアイテム1</li>
+</ul>
 
                 </div>
                 <pre class="fn-pre"><i class="fn-icon fn-hand-o-down"> 選択</i><code class="fn-code" data-language="html">
-&lt;div class=&#34;c-textBlock01&#34;&gt;
-  &lt;p&gt;下の余白が1em空く。&lt;/p&gt;
-  &lt;p&gt;下の余白が1em空く。&lt;/p&gt;
-  &lt;p&gt;一番最後は空かない。&lt;/p&gt;
-&lt;/div&gt;
+&lt;ul class=&#34;c-listBlock02&#34;&gt;
+  &lt;li class=&#34;c-listBlock02__item&#34;&gt;リストアイテム1&lt;/li&gt;
+  &lt;li class=&#34;c-listBlock02__item&#34;&gt;リストアイテム1&lt;/li&gt;
+  &lt;li class=&#34;c-listBlock02__item&#34;&gt;リストアイテム1&lt;/li&gt;
+&lt;/ul&gt;
 </code></pre>
                 
             </article>
             
             <article class="fn-article">
-                <h3 class="fn-heading3">フォントサイズ</h3>
+                <h3 class="fn-heading3">注釈リスト</h3>
                 
                 <ul class="fn-attribute">
                     
@@ -137,59 +143,33 @@
                 
                 <div class="fn-preview">
                     
-<div class="c-textBlock01">
-  <p class="c-fzSmall">小さいテキスト 13px</p>
-  <p class="c-fzMiddle">普通テキスト 16px ※スタイルリセット用</p>
-  <p class="c-fzLarge">大きいテキスト 19px</p>
-</div>
+<ol class="c-listBlock03">
+  <li class="c-listBlock03__item">リストアイテム1</li>
+  <li class="c-listBlock03__item">リストアイテム1</li>
+  <li class="c-listBlock03__item">リストアイテム1</li>
+  <li class="c-listBlock03__item">リストアイテム1</li>
+  <li class="c-listBlock03__item">リストアイテム1</li>
+  <li class="c-listBlock03__item">リストアイテム1</li>
+  <li class="c-listBlock03__item">リストアイテム1</li>
+  <li class="c-listBlock03__item">リストアイテム1</li>
+  <li class="c-listBlock03__item">リストアイテム1</li>
+  <li class="c-listBlock03__item">リストアイテム1</li>
+</ol>
 
                 </div>
                 <pre class="fn-pre"><i class="fn-icon fn-hand-o-down"> 選択</i><code class="fn-code" data-language="html">
-&lt;div class=&#34;c-textBlock01&#34;&gt;
-  &lt;p class=&#34;c-fzSmall&#34;&gt;小さいテキスト 13px&lt;/p&gt;
-  &lt;p class=&#34;c-fzMiddle&#34;&gt;普通テキスト 16px ※スタイルリセット用&lt;/p&gt;
-  &lt;p class=&#34;c-fzLarge&#34;&gt;大きいテキスト 19px&lt;/p&gt;
-&lt;/div&gt;
-</code></pre>
-                
-            </article>
-            
-            <article class="fn-article">
-                <h3 class="fn-heading3">Webフォント</h3>
-                
-                <ul class="fn-attribute">
-                    
-                </ul>
-                
-                <p class="fn-comment"></p>
-                
-                <div class="fn-preview">
-                    
-<p><span class="c-fRaleway">Raleway ※スタイルガイド上では反映しません。</span></p>
-
-                </div>
-                <pre class="fn-pre"><i class="fn-icon fn-hand-o-down"> 選択</i><code class="fn-code" data-language="html">
-&lt;p&gt;&lt;span class=&#34;c-fRaleway&#34;&gt;Raleway ※スタイルガイド上では反映しません。&lt;/span&gt;&lt;/p&gt;
-</code></pre>
-                
-            </article>
-            
-            <article class="fn-article">
-                <h3 class="fn-heading3">ふわっと出てくるテキスト</h3>
-                
-                <ul class="fn-attribute">
-                    
-                </ul>
-                
-                <p class="fn-comment"></p>
-                
-                <div class="fn-preview">
-                    
-<p class="js-FadeIn01 c-fadeInDown">上からふわっと出てくる文字</p>
-
-                </div>
-                <pre class="fn-pre"><i class="fn-icon fn-hand-o-down"> 選択</i><code class="fn-code" data-language="html">
-&lt;p class=&#34;js-FadeIn01 c-fadeInDown&#34;&gt;上からふわっと出てくる文字&lt;/p&gt;
+&lt;ol class=&#34;c-listBlock03&#34;&gt;
+  &lt;li class=&#34;c-listBlock03__item&#34;&gt;リストアイテム1&lt;/li&gt;
+  &lt;li class=&#34;c-listBlock03__item&#34;&gt;リストアイテム1&lt;/li&gt;
+  &lt;li class=&#34;c-listBlock03__item&#34;&gt;リストアイテム1&lt;/li&gt;
+  &lt;li class=&#34;c-listBlock03__item&#34;&gt;リストアイテム1&lt;/li&gt;
+  &lt;li class=&#34;c-listBlock03__item&#34;&gt;リストアイテム1&lt;/li&gt;
+  &lt;li class=&#34;c-listBlock03__item&#34;&gt;リストアイテム1&lt;/li&gt;
+  &lt;li class=&#34;c-listBlock03__item&#34;&gt;リストアイテム1&lt;/li&gt;
+  &lt;li class=&#34;c-listBlock03__item&#34;&gt;リストアイテム1&lt;/li&gt;
+  &lt;li class=&#34;c-listBlock03__item&#34;&gt;リストアイテム1&lt;/li&gt;
+  &lt;li class=&#34;c-listBlock03__item&#34;&gt;リストアイテム1&lt;/li&gt;
+&lt;/ol&gt;
 </code></pre>
                 
             </article>
