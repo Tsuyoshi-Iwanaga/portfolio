@@ -24,8 +24,32 @@
   smoothScroll
   ------------------------------ */
   const smoothScroll = function() {
-    $('a[href*="#"]').click(function(ev) {
+
+    $('a[href^="#"]').click(function(ev) {
+      const speed = 600;
+      const href = ev.target.getAttribute('href');
+      const target = $(href === "#" || href === "" ? 'html' : href);
+      const position = target.offset().top;
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
     });
+  }();
+
+    /* ------------------------------
+  inputTextAreaAdjust
+  ------------------------------ */
+  const trimText = function(){
+
+    const trimTarget = $('.js-trimText');
+    trimTarget.each(function(){
+      var trimText = $(this).text();
+      var trimCount = 30;
+      if(trimText.length > trimCount){
+        var leaveText = trimText.substr(0,trimCount);
+        $(this).text(leaveText + '...');
+      }
+    });
+
   }();
 
   /* ------------------------------
@@ -39,20 +63,6 @@
       if(ev.target.scrollHeight > ev.target.offsetHeight){
         $(ev.target).height(ev.target.scrollHeight);
       }
-    });
-  }();
-
-  /* ------------------------------
-  returnTop
-  ------------------------------ */
-  const returnTop = function() {
-
-    const $header = $('#js-header');
-    const $window = $(window);
-    const position = $window.scrollTop();
-
-    $window.scroll(function(){
-      console.log(position);
     });
   }();
 
