@@ -28,8 +28,24 @@ gulp.task('sass', function(){
   .pipe(gulp.dest(config.build));
 });
 
+gulp.task('sassTheme', function(){
+  return gulp.src(config.assetsTheme + '/**/*.scss')
+  .pipe(plumber({
+    errorHandler: notify.onError("Error: <%= error.message %>")
+  }))
+  .pipe(sassGlob())
+  .pipe(sass({ outputStyle: 'expanded' }))
+  .pipe(postcss([
+    //doiuse({browsers: config.targetBrowsers}),
+    autoprefixer({browsers: config.targetBrowsers}),
+    mqpacker()
+  ]))
+  .pipe(gulp.dest(config.buildTheme));
+});
+
 gulp.task('watch', function(){
   gulp.watch(config.assets + '/**/*.scss', ['sass']);
+  gulp.watch(config.assetsTheme + '/**/*.scss', ['sassTheme']);
 });
 
 gulp.task('default', ['watch']);
