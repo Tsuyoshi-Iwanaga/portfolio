@@ -157,21 +157,7 @@
           <h2 id="contact" class="p-sectionTitle"><span class="c-fRaleway">CONTACT</span></h2>
           <div class="c-textBlock01 u-m0Auto u-pcW50">
             <p class="u-taC u-mb30">お問合わせは下記フォームから<br class="u-spOnly">お願いいたします。</p>
-            <form class="c-form01">
-              <dl class="c-form01__list">
-                <dt class="c-form01__title u-pcW20">お名前</dt>
-                <dd class="c-form01__input"><input type="text" required></dd>
-              </dl>
-              <dl class="c-form01__list">
-                <dt class="c-form01__title">メールアドレス</dt>
-                <dd class="c-form01__input"><input type="email" required></dd>
-              </dl>
-              <dl class="c-form01__list">
-                <dt class="c-form01__title">お問合わせ内容</dt>
-                <dd class="c-form01__input"><textarea class="js-textarea" required></textarea></dd>
-              </dl>
-              <p class="u-taC"><button type='submit' name='#' class="c-btn" value='#'>送信</button></p>
-            </form>
+            <?php echo do_shortcode( '[contact-form-7 id="4" title="Contact form 1" html_class="c-form01"]' ); ?>
           </div>
         </div>
       </section>

@@ -119,9 +119,9 @@
     @include SP{
       width: 100%;
     }
-    & > input,
-    & > textarea,
-    & > select,
+    & input,
+    & textarea,
+    & select,
     {
       width: 100%;
       line-height: 1.5;
@@ -130,7 +130,7 @@
       border: 2px solid #cfcfcf;
       padding: 4px;
     }
-    & > textarea{
+    & textarea{
       min-height: 6em;
     }
   }

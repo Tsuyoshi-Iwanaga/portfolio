@@ -783,9 +783,9 @@ a img:hover {
   font-size: 1.6rem;
 }
 
-.c-form01__input > input,
-.c-form01__input > textarea,
-.c-form01__input > select {
+.c-form01__input input,
+.c-form01__input textarea,
+.c-form01__input select {
   width: 100%;
   line-height: 1.5;
   -webkit-appearance: none;
@@ -796,7 +796,7 @@ a img:hover {
   padding: 4px;
 }
 
-.c-form01__input > textarea {
+.c-form01__input textarea {
   min-height: 6em;
 }
 
