@@ -773,14 +773,13 @@ a img:hover {
 
 .c-form01__title {
   font-size: 1.6rem;
-  min-width: 25%;
   display: inline-block;
-  vertical-align: middle;
 }
 
 .c-form01__input {
   display: inline-block;
   font-size: 1.6rem;
+  width: 100%;
 }
 
 .c-form01__input input,
@@ -1753,9 +1752,6 @@ Webフォント
   .c-col4Block__col:nth-of-type(4n) {
     margin-right: 0;
   }
-  .c-form01__input {
-    width: 75%;
-  }
   .c-fzSmall {
     font-size: 1.3rem;
   }
@@ -2259,9 +2255,6 @@ Webフォント
   }
   .p-sectionTitle {
     font-size: 2.8rem;
-  }
-  .c-form01__input {
-    width: 100%;
   }
   .c-fzSmall {
     font-size: 1.3rem;

@@ -106,19 +106,12 @@
   }
   &__title{
     font-size: 1.6rem;
-    min-width: 25%;
     display: inline-block;
-    vertical-align: middle;
   }
   &__input{
     display: inline-block;
     font-size: 1.6rem;
-    @include PC{
-      width: 75%;
-    }
-    @include SP{
-      width: 100%;
-    }
+    width: 100%;
     & input,
     & textarea,
     & select,
