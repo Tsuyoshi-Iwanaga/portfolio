@@ -2,53 +2,51 @@
 ----------------------------------*/
 function main() {
   const userId = getUserId();
-  getUserInfo(userId);
+  getUserInfo(userId)
+  .then((userInfo) => createView(userInfo))
+  .then((view) => displayView(view))
+  .catch((error) => {
+    console.error(`エラーが発生しました。(${error})`);
+  });
 }
 
-
+/* Ajaxでのユーザ情報取得
+----------------------------------*/
 function getUserInfo(userId) {
+  return new Promise((resolve, reject) => {
+    const request = new XMLHttpRequest();
+    request.open('GET', `https://api.github.com/users/${userId}`);
+    request.addEventListener('load', (ev) => {
+      if (ev.target.status !== 200) {
+        reject(new Error(`${event.target.status}: ${event.target.statusText}`));
+      }
 
-/* 通信の準備
-----------------------------------*/
-const request = new XMLHttpRequest();//XHRのインスタンスを作成
-request.open('GET', `https://api.github.com/users/${userId}`);//URLをオープンする
+      const userInfo = JSON.parse(ev.target.responseText);
+      resolve(userInfo);
+    });
 
+  request.addEventListener('error', () => {
+    reject(new Error("network error!"));
+  });
 
-/* データ受信
-----------------------------------*/
-request.addEventListener('load', (event) => {
-  if (event.target.status !== 200) {
-    console.log(`${event.target.status}: ${event.target.statusText}`);
-    return;
-  }
-  // console.log(event.target.status);//200
-  // console.log(event.target.responseText);//常に文字列としてレスポンスを読み取る
-  // console.log(event.target.response);//ブラウザのMINEタイプ自動解析に任せる
-  const userInfo = JSON.parse(event.target.responseText);//文字列で受け取りJSONにパース
+  request.send();
 
-  const view = createView(userInfo);
-  displayView(view);
-
-});
-
-/* エラーハンドリング
-----------------------------------*/
-request.addEventListener('error', () => {
-  console.log("Network Error!!");
-});
-
-/* リクエスト送信
-----------------------------------*/
-request.send();
-
+  });
 }
 
-/* View成形関数
+/* 入力されたユーザIDの取得
+----------------------------------*/
+function getUserId() {
+  const value = document.getElementById("userId").value;
+  return encodeURIComponent(value);
+}
+
+/* ビューの生成
 ----------------------------------*/
 function createView(userInfo) {
-  return view = escapeHTML`
-  <h4>${userInfo.name} (@${userInfo.login})</h4>
-  <img src="${userInfo.avatar_url}" alt="${userInfo.login}" height="100">
+  return escapeHTML`
+  <h2>${userInfo.name} (@${userInfo.login})</h2>
+  <img src="${userInfo.avatar_url}" alt="${userInfo.login}">
   <dl>
     <dt>Location</dt>
     <dd>${userInfo.location}</dd>
@@ -58,47 +56,40 @@ function createView(userInfo) {
   `;
 }
 
-/* 入力フォームの文字列をIDにする。
-----------------------------------*/
-function getUserId() {
-  const value = document.getElementById("userId").value;
-  return encodeURIComponent(value);
-}
-
-/* View表示関数
+/* ビューの表示
 ----------------------------------*/
 function displayView(view) {
   const result = document.getElementById('result');
-  result.insertAdjacentHTML("afterbegin", view);
+  result.insertAdjacentHTML('afterbegin', view);
 }
 
-/* HTMLをエスケープ処理する関数
+/* 特殊文字列のエスケープ
 ----------------------------------*/
 function escapeSpecialChars(str) {
   return str
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#039");
+  .replace(/&/g, "&amp;")
+  .replace(/</g, "&lt;")
+  .replace(/>/g, "&gt;")
+  .replace(/'/g, "&#039;")
+  .replace(/"/g, "&quot;")
 }
 
-/* テンプレートリテラルにタグ付けするためのタグ関数
+/* テンプレートに適用するためのタグ関数
 ----------------------------------*/
 function escapeHTML(strings, ...values) {
   return strings.reduce((result, string, i) => {
     const value = values[i - 1];
-    if(typeof value === "string") {
+
+    if (typeof value === "string") {
       return result + escapeSpecialChars(value) + string;
     } else {
       return result + String(value) + string;
     }
+
   });
 }
 
-/* clickイベントbind
+/* イベントbind
 ----------------------------------*/
-const button = document.getElementById('js-getGithubInfo');
-button.addEventListener('click', function() {
-  main();
-}, false);
+const btn = document.getElementById('getUserInfoBtn');
+btn.addEventListener('click', main, false);
