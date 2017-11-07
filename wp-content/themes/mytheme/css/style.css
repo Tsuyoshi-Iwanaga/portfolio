@@ -559,7 +559,7 @@ a img:hover {
 /*#styleguide
 ```
 <a href="#" class="c-btn">ボタン</a>
-<a href="#" class="c-btn --red">ボタン</a>
+<a href="#" class="c-btn -red">ボタン</a>
 ```
 */
 .c-btn {
@@ -573,7 +573,7 @@ a img:hover {
   border-style: none;
 }
 
-.c-btn.--red {
+.c-btn.-red {
   background: #bf0000;
   color: #fff;
 }
