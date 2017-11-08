@@ -42,9 +42,9 @@
             <div class="c-col3Block__col">
               <div class="c-textBlock01">
                 <a href="#" target="_blank">
-                  <p class="p-balloonTitle">ダミーダミー</p>
+                  <p class="p-balloonTitle">ブラウザキャプチャツール</p>
                   <p class="u-taC"><img src="<?php bloginfo('template_url'); ?>/images/work_img03.jpg" alt=""></p>
-                  <p class="u-fWhite c-fzSmall">ダミーダミーダミーダミーダミーダミー</p>
+                  <p class="u-fWhite c-fzSmall">エクセルやエディタで作成したURLリストを基に<br>画面キャプチャを取得するツール</p>
                 </a>
               </div>
             </div>
