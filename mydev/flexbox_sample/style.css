@@ -1,0 +1,29 @@
+.main{
+  max-width: 980px;
+  padding: 24px;
+  margin: 0 auto;
+}
+h1{
+  font-size: 32px;
+}
+h2{
+  margin-bottom: 5px;
+  border-bottom: 2px solid saddlebrown;
+}
+.container{
+  padding: 24px;
+  background: #F2F2F2;
+}
+[class^="item"]{
+  padding: 24px;
+  max-width: 100px;
+}
+.item:nth-of-type(3n){
+  background: pink;
+}
+.item:nth-of-type(3n+1){
+  background: aquamarine;
+}
+.item:nth-of-type(3n+2){
+  background: skyblue;
+}

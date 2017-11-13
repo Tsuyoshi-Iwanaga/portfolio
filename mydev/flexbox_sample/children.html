@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="style.css" media="all">
+<title>flexbox_sample</title>
+</head>
+<body>
+  <section class="main">
+    <h1>flexbox サンプル(子要素指定)</h1>
+    <section class="sectionBlock">
+      <h2>子にorder(順序の指定)</h2>
+      <div class="container" style="display: flex;">
+        <div class="item" style="order: 2;">Item01<br>order2</div>
+        <div class="item" style="order: 3;">Item02<br>order3</div>
+        <div class="item" style="order: 1;">Item03<br>order1</div>
+      </div>
+    </section>
+    <section class="sectionBlock">
+      <h2>子にflex-grow(伸びる比率)</h2>
+      <p>親要素に余ったスペースがあれば指定の比率まで伸びる。</p>
+      <div class="container" style="display: flex;">
+        <div class="item" style="flex-grow: 2;">Item01<br>flex-grow2</div>
+        <div class="item" style="flex-grow: 3;">Item02<br>flex-grow3</div>
+        <div class="item" style="flex-grow: 1;">Item03<br>flex-grow1</div>
+      </div>
+    </section>
+    <section class="sectionBlock">
+      <h2>子にflex-shrink(縮む比率)</h2>
+      <p>子要素が入り切れない場合、指定の比率まで縮む。</p>
+      <div class="container" style="display: flex;">
+        <div class="item" style="flex-shrink: 2;">Item01<br>flex-shrink2</div>
+        <div class="item" style="flex-shrink: 5;">Item02<br>flex-shrink3</div>
+        <div class="item" style="flex-shrink: 1;">Item03<br>flex-shrink1</div>
+      </div>
+    </section>
+    <section class="sectionBlock">
+      <h2>子にflex-basis(基準となる幅を指定)</h2>
+      <div class="container" style="display: flex;">
+        <div class="item" style="flex-basis: auto;">Item01</div>
+        <div class="item" style="flex-basis: 200px;">Item02</div>
+        <div class="item" style="flex-basis: 100%;">Item03</div>
+      </div>
+    </section>
+    <section class="sectionBlock">
+      <h2>子にflex(flex-grow、flex-shrink、flex-basisを一括指定。)</h2>
+      <div class="container" style="display: flex;">
+        <div class="item" style="flex: 0 1 30%;">Item01<br>flex: 0 1 30%;</div>
+        <div class="item" style="flex: 0 1 30%;">Item02<br>flex: 0 1 50%;</div>
+        <div class="item" style="flex: 0 1 30%;">Item03<br>flex: 0 1 20%;</div>
+      </div>
+    </section>
+    <section class="sectionBlock">
+      <h2>align-self(子要素の垂直方向の揃え)</h2>
+      <h3>auto（初期値）親要素のalign-itemsを継承</h3>
+      <div class="container" style="display: flex;">
+        <div class="item" style="height: 200px;">Item01<br>flex: 0 1 30%;</div>
+        <div class="item" style="align-self: auto;">Item02<br>flex: 0 1 50%;</div>
+        <div class="item" style="height: 200px;">Item03<br>flex: 0 1 20%;</div>
+      </div>
+      <h3>stretch 親要素の高さ、もしくは一番多い子要素の高さに広げて配置</h3>
+      <div class="container" style="display: flex;">
+        <div class="item" style="height: 200px;">Item01<br>flex: 0 1 30%;</div>
+        <div class="item" style="align-self: stretch;">Item02<br>flex: 0 1 50%;</div>
+        <div class="item" style="height: 200px;">Item03<br>flex: 0 1 20%;</div>
+      </div>
+      <h3>flex-start 上揃え</h3>
+      <div class="container" style="display: flex;">
+        <div class="item" style="height: 200px;">Item01<br>flex: 0 1 30%;</div>
+        <div class="item" style="align-self: flex-start;">Item02<br>flex: 0 1 50%;</div>
+        <div class="item" style="height: 200px;">Item03<br>flex: 0 1 20%;</div>
+      </div>
+      <h3>flex-end 下揃え</h3>
+      <div class="container" style="display: flex;">
+        <div class="item" style="height: 200px;">Item01<br>flex: 0 1 30%;</div>
+        <div class="item" style="align-self: flex-end;">Item02<br>flex: 0 1 50%;</div>
+        <div class="item" style="height: 200px;">Item03<br>flex: 0 1 20%;</div>
+      </div>
+      <h3>center 中央揃え</h3>
+      <div class="container" style="display: flex;">
+        <div class="item" style="height: 200px;">Item01<br>flex: 0 1 30%;</div>
+        <div class="item" style="align-self: center;">Item02<br>flex: 0 1 50%;</div>
+        <div class="item" style="height: 200px;">Item03<br>flex: 0 1 20%;</div>
+      </div>
+      <h3>baseline ベースライン揃え</h3>
+      <div class="container" style="display: flex;">
+        <div class="item" style="height: 200px; font-size: 25px;">Item01<br>flex: 0 1 30%;</div>
+        <div class="item" style="align-self: baseline; font-size: 12px;">Item02<br>flex: 0 1 50%;</div>
+        <div class="item" style="height: 200px; font-size: 18px;">Item03<br>flex: 0 1 20%;</div>
+      </div>
+    </section>
+    <p><a href="./index.html">&lt;&lt; 親要素に設定するプロパティへ</a></p>
+  </section>
+</body>
+</html>
