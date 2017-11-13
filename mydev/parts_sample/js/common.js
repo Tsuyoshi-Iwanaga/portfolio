@@ -114,7 +114,7 @@ Ajax Table
 -------------------------------------------*/
 $(function(){
 	var tbody = $('#tbody');
-	$.getJSON('common/js/data.json', function(people){
+	$.getJSON('js/data.json', function(people){
 		$.each(people, function(i, person){
 			var text_no = person.no;
 			var text_name = person.name;
