@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 1rem;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 960px;
+  background-color: white;
+  color: black;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+a {
+  color: #0066CC;
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+  color: #3399CC;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+h1 {
+  margin: 2.5rem 0 1.25rem;
+  font-size: 1.75rem;
+}
+
+h2 {
+  margin: 2.5rem 0 1.25rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h3 {
+  margin: 2.5rem 0 1.25rem;
+  font-size: 1.375rem;
+}
+
+h4 {
+  margin: 1.875rem 0 0.9375rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+h5 {
+  margin: 1.875rem 0 0.9375rem;
+  font-size: 1.125rem;
+}
+
+h6 {
+  margin: 1.875rem 0 0.9375rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.clearfix:after {
+  clear: both;
+  display: table;
+  content: " ";
+}
+
+.clearfix:before {
+  display: table;
+  content: " ";
+}
+
+.text-first {
+  color: #2288bb;
+}
+
+.text-second {
+  color: #333333;
+}
+
+.text-third {
+  color: #339966;
+}
+
+.text-important {
+  color: #dd0022;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 400;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.5rem;
+  line-height: 1;
+  border-radius: 0.25rem;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+.btn span.btn:hover,
+.btn span.btn:focus {
+  cursor: default;
+}
+
+.btn:focus,
+.btn.focus,
+.btn:active:focus,
+.btn:active.focus,
+.btn.active:focus,
+.btn.active.focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.btn:hover,
+.btn.hover,
+.btn:focus,
+.btn.focus,
+.btn:active,
+.btn.active {
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-first {
+  color: white;
+  background-color: #4488CC;
+  border-color: #4488CC;
+}
+
+.btn-second {
+  color: white;
+  background-color: #f69944;
+  border-color: #f69944;
+}
+
+.btn-third {
+  color: white;
+  background-color: #55B677;
+  border-color: #55B677;
+}
+
+.btn-important {
+  color: white;
+  background-color: #dd4455;
+  border-color: #dd4455;
+}
+
+.btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  border-radius: 0.25rem;
+}
+
+.btn-lg {
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+}
+
+.btn-xl {
+  padding: 1rem 2rem;
+  font-size: 1.1875rem;
+  border-radius: 0.5rem;
+}
+
+.nav-vertical nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav-vertical nav ul li {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  line-height: 1.25;
+  letter-spacing: normal;
+  list-style-type: none;
+}
+
+.nav-vertical nav ul li a {
+  display: block;
+  padding: .5rem 0;
+  color: #333333;
+  text-decoration: none;
+}
+
+.nav-vertical nav ul li a:hover,
+.nav-vertical nav ul li a.active {
+  background-color: #eeeeee;
+  color: #333333;
+  text-decoration: none;
+}
+
+.nav-vertical nav ul li ul {
+  padding-left: 1rem;
+}
+
+.nav-horizontal nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav-horizontal nav ul li {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-horizontal nav > ul {
+  letter-spacing: -.3rem;
+}
+
+.nav-horizontal nav > ul > li {
+  position: relative;
+  display: inline-block;
+  border-left: 1px solid #cccccc;
+  line-height: 1.25;
+  letter-spacing: normal;
+}
+
+.nav-horizontal nav > ul > li:last-child {
+  border-right: 1px solid #cccccc;
+}
+
+.nav-horizontal nav > ul > li a {
+  display: inline-block;
+  padding: .5rem 1rem;
+  color: #333333;
+  text-decoration: none;
+}
+
+.nav-horizontal nav > ul > li a:hover,
+.nav-horizontal nav > ul > li a.active {
+  background-color: #eeeeee;
+  color: #333333;
+  text-decoration: none;
+}
+
+.nav-horizontal nav > ul > li > ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 100%;
+  max-width: 120%;
+}
+
+.nav-horizontal nav > ul > li > ul > li {
+  display: block;
+  border-style: solid;
+  border-width: 0 1px 1px;
+  border-color: transparent #333333 #333333;
+}
+
+.nav-horizontal nav > ul > li > ul > li:first-child {
+  border-top: 1px solid #333333;
+}
+
+.nav-horizontal nav > ul > li > ul > li > a {
+  display: block;
+  width: 100%;
+  padding: .25rem 0;
+  text-align: center;
+}
+
+.nav-horizontal nav > ul > li:hover > ul {
+  display: block;
+}
+
+.label {
+  display: inline-block;
+  margin-right: .5em;
+  padding: .25em .5rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-size: 0.875rem;
+  line-height: 1;
+  color: #666666;
+  border: 1px solid #666666;
+}
+
+.badge {
+  display: inline-block;
+  min-width: 2em;
+  margin-left: .5em;
+  padding: .25em;
+  font-size: 0.875rem;
+  line-height: 1;
+  color: #fff;
+  background-color: #999999;
+  text-align: center;
+}
+
+.m-a-0 {
+  margin: 0 !important;
+}
+
+.m-t-0 {
+  margin-top: 0 !important;
+}
+
+.m-r-0 {
+  margin-right: 0 !important;
+}
+
+.m-b-0 {
+  margin-bottom: 0 !important;
+}
+
+.m-l-0 {
+  margin-left: 0 !important;
+}
+
+.m-x-0 {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.m-y-0 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.m-a {
+  margin: 0.625rem !important;
+}
+
+.m-t {
+  margin-top: 0.625rem !important;
+}
+
+.m-r {
+  margin-right: 0.625rem !important;
+}
+
+.m-b {
+  margin-bottom: 0.625rem !important;
+}
+
+.m-l {
+  margin-left: 0.625rem !important;
+}
+
+.m-x {
+  margin-right: 0.625rem !important;
+  margin-left: 0.625rem !important;
+}
+
+.m-y {
+  margin-top: 0.625rem !important;
+  margin-bottom: 0.625rem !important;
+}
+
+.m-x-auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+.m-a-md {
+  margin: 0.9375rem !important;
+}
+
+.m-t-md {
+  margin-top: 0.9375rem !important;
+}
+
+.m-r-md {
+  margin-right: 0.9375rem !important;
+}
+
+.m-b-md {
+  margin-bottom: 0.9375rem !important;
+}
+
+.m-l-md {
+  margin-left: 0.9375rem !important;
+}
+
+.m-x-md {
+  margin-right: 0.9375rem !important;
+  margin-left: 0.9375rem !important;
+}
+
+.m-y-md {
+  margin-top: 0.9375rem !important;
+  margin-bottom: 0.9375rem !important;
+}
+
+.m-a-lg {
+  margin: 1.875rem !important;
+}
+
+.m-t-lg {
+  margin-top: 1.875rem !important;
+}
+
+.m-r-lg {
+  margin-right: 1.875rem !important;
+}
+
+.m-b-lg {
+  margin-bottom: 1.875rem !important;
+}
+
+.m-l-lg {
+  margin-left: 1.875rem !important;
+}
+
+.m-x-lg {
+  margin-right: 1.875rem !important;
+  margin-left: 1.875rem !important;
+}
+
+.m-y-lg {
+  margin-top: 1.875rem !important;
+  margin-bottom: 1.875rem !important;
+}
+
+.p-a-0 {
+  padding: 0 !important;
+}
+
+.p-t-0 {
+  padding-top: 0 !important;
+}
+
+.p-r-0 {
+  padding-right: 0 !important;
+}
+
+.p-b-0 {
+  padding-bottom: 0 !important;
+}
+
+.p-l-0 {
+  padding-left: 0 !important;
+}
+
+.p-x-0 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.p-y-0 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.p-a {
+  padding: 0.625rem !important;
+}
+
+.p-t {
+  padding-top: 0.625rem !important;
+}
+
+.p-r {
+  padding-right: 0.625rem !important;
+}
+
+.p-b {
+  padding-bottom: 0.625rem !important;
+}
+
+.p-l {
+  padding-left: 0.625rem !important;
+}
+
+.p-x {
+  padding-right: 0.625rem !important;
+  padding-left: 0.625rem !important;
+}
+
+.p-y {
+  padding-top: 0.625rem !important;
+  padding-bottom: 0.625rem !important;
+}
+
+.p-a-md {
+  padding: 0.9375rem !important;
+}
+
+.p-t-md {
+  padding-top: 0.9375rem !important;
+}
+
+.p-r-md {
+  padding-right: 0.9375rem !important;
+}
+
+.p-b-md {
+  padding-bottom: 0.9375rem !important;
+}
+
+.p-l-md {
+  padding-left: 0.9375rem !important;
+}
+
+.p-x-md {
+  padding-right: 0.9375rem !important;
+  padding-left: 0.9375rem !important;
+}
+
+.p-y-md {
+  padding-top: 0.9375rem !important;
+  padding-bottom: 0.9375rem !important;
+}
+
+.p-a-lg {
+  padding: 1.875rem !important;
+}
+
+.p-t-lg {
+  padding-top: 1.875rem !important;
+}
+
+.p-r-lg {
+  padding-right: 1.875rem !important;
+}
+
+.p-b-lg {
+  padding-bottom: 1.875rem !important;
+}
+
+.p-l-lg {
+  padding-left: 1.875rem !important;
+}
+
+.p-x-lg {
+  padding-right: 1.875rem !important;
+  padding-left: 1.875rem !important;
+}
+
+.p-y-lg {
+  padding-top: 1.875rem !important;
+  padding-bottom: 1.875rem !important;
+}
+.js-sample-01 {
+  background-color: #eef;
+  padding: 1rem;
+  margin: 2rem 0;
+}
+
+.js-sample-02 {
+  background-color: #fee;
+  padding: 1rem;
+  margin: 2rem 0;
+}
+
+.js-sample-03 {
+  background-color: #eef6e0;
+  padding: 1rem;
+  margin: 2rem 0;
+}
+</style>
+</head>
+<body>
+  <h1>jQueryライブラリのひな形</h1>
+
+  <p>下のボタンをクリックすると何かが起きます<br>
+  背景色が同じグループは同じ動作をします</p>
+
+  <div class="js-sample-01">
+    <p><a href="#" class="move btn btn-lg btn-first">右にずれる</a></p>
+    <p><a href="#" class="wide btn btn-lg btn-first">幅が伸びる</a></p>
+    <p><a href="#" class="expand btn btn-lg btn-first">隠れているテキストを出す</a></p>
+    <p class="expand-target">春はあけぼの。やうやう白くなりゆく山ぎは、すこしあかりて、紫だちたる 雲のほそくたなびきたる。</p>
+  </div>
+
+  <div class="js-sample-02">
+    <p><a href="#" class="sample-move btn btn-lg btn-second">右にずれる</a></p>
+    <p><a href="#" class="sample-wide btn btn-lg btn-second">幅が伸びる</a></p>
+    <p><a href="#" class="sample-expand btn btn-lg btn-second">隠れているテキストを出す</a></p>
+    <p class="sample-expand-target">夏は夜。月のころはさらなり。やみもなほ、蛍の多く飛びちがひたる。</p>
+  </div>
+
+  <div class="js-sample-01">
+    <p><a href="#" class="move btn btn-lg btn-first">右にずれる</a></p>
+    <p><a href="#" class="wide btn btn-lg btn-first">幅が伸びる</a></p>
+    <p><a href="#" class="expand btn btn-lg btn-first">隠れているテキストを出す</a></p>
+    <p class="expand-target">秋は夕暮れ。夕日のさして山の端いと近うなりたるに、烏の寝どころへ行くとて、三つ四つ、二つ三つなど、飛びいそぐさへあはれなり。</p>
+  </div>
+
+  <div class="js-sample-03">
+    <p><a href="#" class="sample-move btn btn-lg btn-third">右にずれる</a></p>
+    <p><a href="#" class="sample-wide btn btn-lg btn-third">幅が伸びる</a></p>
+    <p><a href="#" class="sample-expand btn btn-lg btn-third">隠れているテキストを出す</a></p>
+    <p class="sample-expand-target">冬はつとめて。雪の降りたるはいふべきにもあらず、霜のいと白きも、また さらでもいと寒きに、火など急ぎおこして、炭もて渡るもいとつきづきし。</p>
+  </div>
+<script src="../../template/js/jquery-3.2.1.min.js"></script>
+<script src="plugin_sample.js"></script>
+</body>
+</html>
