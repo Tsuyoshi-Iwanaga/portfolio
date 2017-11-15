@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="./style.css" media="all">
+<title><%= title %></title>
+</head>
+<body>
+<h1><%= title %></h1>
+<p><%= content %></p>
+<p class="chatmsg"><%= chatmsg %></p>
+<form action="/" method="post">
+  <p><input type="text" name="msg"> <input type="submit" value="送信"></p>
+</form>
+<table>
+  <% for(var key in person) { %>
+    <%- include('data_item', {key: key, val: person[key]}) %>
+  <% } %>
+</table>
+</body>
+</html>
