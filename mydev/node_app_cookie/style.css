@@ -1,0 +1,9 @@
+body {
+  max-width: 980px;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 64px;
+  color: #d9fbff;
+  margin: 0;
+}
