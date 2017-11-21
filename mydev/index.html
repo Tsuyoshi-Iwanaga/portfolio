@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>My development Index</title>
+<style>
+  html,body,h1,h2,h3,h4,h5,h6{margin: 0; color: #555; font-size: 14px;}
+  h1 {margin-bottom: 16px; font-size: 18px;}h2 {margin-top: 8px;margin-bottom: 8px;font-size: 16px;}
+  h1 span {display: inlile-block;font-size: 14px; margin-left: 24px;}
+  .wrap {max-width: 1240px;margin :0 auto;background:#fff;}
+  table {margin-bottom: 24px; width: 100%;}
+  table, th, td {border-collapse: collapse;border: 1px solid #999;}
+  tr:nth-of-type(1) {background: #666; color: #fff; text-align: center;}
+  tr.already {background: #fff0ff;}
+  th, td {padding: 4px;}
+  th {background: #ddd; color: #fff;}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>My development Index<span><a href="#section01">スキルリスト</a></span><span><a href="#section02">メモ</a></span></h1>
+    <h2 id="section01">スキルリスト</h2>
+    <table>
+      <tr><td>No.</td><td>カテゴリ</td><td>詳細</td><td>概要/コメント</td><td>URL</td><td>ステータス</td></tr>
+      <tr>
+        <td>001</td>
+        <td>javascript</td>
+        <td>AjaxでGitHubAPIを使う</td>
+        <td>API活用、ajax通信、テンプレートリテラル、タグ関数、エスケープ処理、Premise</td>
+        <td><a href="/mydev/ajax_sample" target="_blank">ajax_sample</a></td>
+        <td>完了</td>
+      </tr>
+      <tr>
+        <td>002</td>
+        <td>CSS</td>
+        <td>flex-boxまとめ</td>
+        <td>・コンテナに指定： flex-box, flex-direction, flex-wrap, flex-flow, justify-content, align-items, align-content<br>
+          ・子要素に指定： order, flex-grow, flex-shrink, flex-basis, align-self</td>
+        <td><a href="/mydev/flexbox_sample" target="_blank">flexbox_sample</a></td>
+        <td>完了</td>
+      </tr>
+      <tr>
+        <td>003</td>
+        <td>node.js</td>
+        <td>node.jsの基本</td>
+        <td>・基本のNode.js組み込みモジュール： http,fs,ejs,url,<br>
+          ・外部ファイル同期読み込み： fs.readFileSync('path', 'utf8');<br>
+          ・EJSレンダリング： ejs.render('./index.ejs', function(){ hoge: 'hoge'});<br>
+          ・リクエストURLのパース： url.parse(req.url, true);<br>
+          ・ルーティング設定： swith(url_parts.pathname)</td>
+        <td>node_app_basic<br>※コンソールから実行</td>
+        <td>完了</td>
+      </tr>
+      <tr>
+        <td>004</td>
+        <td>node.js</td>
+        <td>node.jsでクエリを扱う</td>
+        <td>・リクエストURLのパース： url.parse(req.url, true);<br>
+          ・URLのクエリの取得： var query = url_parts.query;</td>
+        <td>node_query_form<br>※コンソールから実行</td>
+        <td>完了</td>
+      </tr>
+      <tr>
+        <td>005</td>
+        <td>node.js</td>
+        <td>node.jsでクッキーを扱う</td>
+        <td>cookie<br>・送信データ有無の判定(post)： if(req.method === 'POST'){}<br>
+          ・postデータの受信： req.on('data', (data) => {post_body += data;});<br>
+          ・postデータの受信後の処理： req.on('end', () => {chatmsg = qs.parse(post_body); ... });<br>
+          ・cookieエンコード/デコード： escape(xxx)/unescape(xxx)<br>
+          ・cookieリクエストヘッダへの書き込み： res.setHeader('Set-Cookie', [key + '=' + cookie]);<br>
+          ・文字列の判定(xxxで始まる)： startsWith('xxx')</td>
+        <td>node_app_cookie<br>※コンソールから実行</td>
+        <td>完了</td>
+      </tr>
+      <tr>
+        <td>006</td>
+        <td>node.js</td>
+        <td>node.jsの簡単掲示板</td>
+        <td>・ローカルストレージへのデータ保存： localStorage.setItem('id', id);<br>
+          ・ローカルストレージへのデータ取得： localStorage.getItem('id');<br>
+          ・ファイルへの書き込み： fs.writeFile(fname, data_str, (err) => {if(err) {throw err;}</td>
+        <td>node_app_simpleapp<br>※コンソールから実行</td>
+        <td>完了</td>
+      </tr>
+      <tr>
+        <td>007</td>
+        <td>CSS</td>
+        <td>CSSパーツ集</td>
+        <td>アコーディオン、タブ、ホバー切り替え、Ajaxテーブル、カルーセル<br>
+          画像切り替え、画像フェードイン/アウト、フォーム装飾、モーダル<br>
+          CSSアイコン</td>
+        <td><a href="/mydev/parts_sample/parts.html" target="_blank">parts.html</a><br><a href="/mydev/parts_sample/icon.html" target="_blank">icon.html</a></td>
+        <td>完了</td>
+      </tr>
+      <tr>
+        <td>008</td>
+        <td>javascript</td>
+        <td>jQuery</td>
+        <td>jQueryプラグインのひな形<br>
+          ・グローバルにプラグインと衝突する変数がないかチェック： var Sample = window.Sample || {};<br>
+          ・jQuery拡張コード： $.fn.Sample = function() {～};<br>
+          ・初期化処理/コンストラクタ： Sample = (function() { function Sample(element, options) {//初期化} }());</td>
+        <td><a href="/mydev/plugin_sample/sample.html" target="_blank">sample.html</a></td>
+        <td>完了</td>
+      </tr>
+      <tr class="already">
+        <td>0xx</td>
+        <td>XXX</td>
+        <td>XXX</td>
+        <td>XXX<br>
+          ・XXX<br>
+          ・XXX<br>
+          ・XXX</td>
+        <td><a href="#" target="_blank">XXX</a></td>
+        <td>未完了</td>
+      </tr>
+
+
+    </table>
+    <h2 id="section02">メモ</h2>
+    <table>
+      <tr><td>No.</td><td>カテゴリ</td><td>詳細</td><td>概要/コメント</td><td>URL</td><td>ステータス</td></tr>
+      <tr class="already">
+        <td>001</td>
+        <td>CSS</td>
+        <td>transition</td>
+        <td>transition-property<br>
+          transition-duration<br>
+          transition-timing-function<br>
+          transition-delay<br>
+          transition<br>
+        </td>
+        <td><a href="/" target="_blank">-</a></td>
+        <td>未完了</td>
+      </tr>
+      <tr class="already">
+        <td>002</td>
+        <td>CSS</td>
+        <td>animation</td>
+        <td>@keyframe xxx {～}<br>
+          animation-name<br>
+          animation-duration<br>
+          animation-timing-function<br>
+          animation-iteration-count<br>
+          animation-direction<br>
+          animation-play-state<br>
+          animation-delay<br>
+          animation-fill-mode<br>
+          animation<br>
+        </td>
+        <td><a href="/" target="_blank">-</a></td>
+        <td>未完了</td>
+      </tr>
+      <tr class="already">
+        <td>003</td>
+        <td>CSS</td>
+        <td>animation</td>
+        <td>transform<br>
+          transform-origin<br>
+          transform-style<br>
+          animation-timing-function<br>
+          perspective<br>
+          perspective-origin<br>
+          backface-visibility<br>
+        </td>
+        <td><a href="/" target="_blank">-</a></td>
+        <td>未完了</td>
+      </tr>
+      <tr class="already">
+        <td>004</td>
+        <td>SVG</td>
+        <td>SVG animation</td>
+        <td>SVGアニメーション<br>
+          ・どっとインストール<br>
+          ・書籍<br>
+          ・サンプルいくつかやってみる<br>
+        </td>
+        <td><a href="/" target="_blank">-</a></td>
+        <td>未完了</td>
+      </tr>
+      <tr class="already">
+        <td>005</td>
+        <td>CSS</td>
+        <td>CSSフレームワーク</td>
+        <td>BootStrap<br>
+          使いまわせるスタイルガイドの生成<br>
+        </td>
+        <td><a href="/" target="_blank">-</a></td>
+        <td>未完了</td>
+      </tr>
+      <tr class="already">
+        <td>006</td>
+        <td>PHP</td>
+        <td>PHP基本文法</td>
+        <td>・どっとインストール復習(PHP/MySQL)<br>
+          ・簡単な入門書<br>
+          ・網羅的な書籍<br>
+          ・CakePHPかLarabelの書籍<br>
+        </td>
+        <td><a href="/" target="_blank">-</a></td>
+        <td>未完了</td>
+      </tr>
+      <tr>
+        <td>007</td>
+        <td>javascript</td>
+        <td>Node.js</td>
+        <td>・超入門の基本サンプルをやる<br>
+          ・どっとインストールでNode.jsの復習<br>
+          ・どっとインストールでMongoDBの復習<br>
+          ・くじら飛行机さんの本で実践的なアプリを作ってみる<br>
+        </td>
+        <td><a href="/" target="_blank">-</a></td>
+        <td>未完了</td>
+      </tr>
+      <tr class="already">
+        <td>008</td>
+        <td>javascript</td>
+        <td>テスト自動化</td>
+        <td>・PhantomJSやnightmereなどのヘッドレスブラウザ<br>
+        </td>
+        <td><a href="/" target="_blank">-</a></td>
+        <td>未完了</td>
+      </tr>
+      <tr class="already">
+        <td>009</td>
+        <td>HTML</td>
+        <td>フォーム</td>
+        <td>HTML5の要素を勉強する。<br>
+          JSでのバリデーション<br>
+        </td>
+        <td><a href="/" target="_blank">-</a></td>
+        <td>未完了</td>
+      </tr>
+      <tr class="already">
+        <td>010</td>
+        <td>CSS</td>
+        <td>パララックス</td>
+        <td>スクロールでの視差効果<br>
+        </td>
+        <td><a href="/" target="_blank">-</a></td>
+        <td>未完了</td>
+      </tr>
+      <tr class="already">
+        <td>011</td>
+        <td>javascript</td>
+        <td>GoogleMapsAPI</td>
+        <td>GoogleMapをjavascriptで利用する。<br>
+        </td>
+        <td><a href="/" target="_blank">-</a></td>
+        <td>未完了</td>
+      </tr>
+      <tr class="already">
+        <td>012</td>
+        <td>javascript</td>
+        <td>TypeScript</td>
+        <td>効率的に書くためのTypeScript習得<br>
+        </td>
+        <td><a href="/" target="_blank">-</a></td>
+        <td>未完了</td>
+      </tr>
+      <tr>
+        <td>013-1</td>
+        <td>javascript</td>
+        <td>Globalオブジェクト</td>
+        <td>XXXXXXXXX<br>
+        </td>
+        <td><a href="/" target="_blank">-</a></td>
+        <td>未完了</td>
+      </tr>
+      <tr>
+        <td>013-2</td>
+        <td>javascript</td>
+        <td>Dateオブジェクト</td>
+        <td>XXXXXXXXX<br>
+        </td>
+        <td><a href="/" target="_blank">-</a></td>
+        <td>未完了</td>
+      </tr>
+      <tr>
+        <td>013-2</td>
+        <td>javascript</td>
+        <td>Objectオブジェクト</td>
+        <td>XXXXXXXXX<br>
+        </td>
+        <td><a href="/" target="_blank">-</a></td>
+        <td>未完了</td>
+      </tr>
+      <tr>
+        <td>013-3</td>
+        <td>javascript</td>
+        <td>Stringオブジェクト</td>
+        <td>XXXXXXXXX<br>
+        </td>
+        <td><a href="/" target="_blank">-</a></td>
+        <td>未完了</td>
+      </tr>
+      <tr>
+        <td>013-4</td>
+        <td>javascript</td>
+        <td>Arrayオブジェクト</td>
+        <td>XXXXXXXXX<br>
+        </td>
+        <td><a href="/" target="_blank">-</a></td>
+        <td>未完了</td>
+      </tr>
+      <tr>
+        <td>013-5</td>
+        <td>javascript</td>
+        <td>Functionオブジェクト</td>
+        <td>XXXXXXXXX<br>
+        </td>
+        <td><a href="/" target="_blank">-</a></td>
+        <td>未完了</td>
+      </tr>
+      <tr>
+        <td>013-6</td>
+        <td>javascript</td>
+        <td>JSONオブジェクト</td>
+        <td>XXXXXXXXX<br>
+        </td>
+        <td><a href="/" target="_blank">-</a></td>
+        <td>未完了</td>
+      </tr>
+      <tr>
+        <td>013-7</td>
+        <td>javascript</td>
+        <td>regularExpオブジェクト</td>
+        <td>XXXXXXXXX<br>
+        </td>
+        <td><a href="/" target="_blank">-</a></td>
+        <td>未完了</td>
+      </tr>
+      <tr>
+        <td>013-8</td>
+        <td>javascript</td>
+        <td>XMLHttpRequestオブジェクト</td>
+        <td>XXXXXXXXX<br>
+        </td>
+        <td><a href="/" target="_blank">-</a></td>
+        <td>未完了</td>
+      </tr>
+      <tr>
+        <td>013-9</td>
+        <td>javascript</td>
+        <td>Numberオブジェクト</td>
+        <td>XXXXXXXXX<br>
+        </td>
+        <td><a href="/" target="_blank">-</a></td>
+        <td>未完了</td>
+      </tr>
+      <tr>
+        <td>013-10</td>
+        <td>javascript</td>
+        <td>Mathオブジェクト</td>
+        <td>XXXXXXXXX<br>
+        </td>
+        <td><a href="/" target="_blank">-</a></td>
+        <td>未完了</td>
+      </tr>
+      <tr>
+        <td>013-11</td>
+        <td>javascript</td>
+        <td>windowオブジェクト</td>
+        <td>XXXXXXXXX<br>
+        </td>
+        <td><a href="/" target="_blank">-</a></td>
+        <td>未完了</td>
+      </tr>
+      <tr>
+        <td>013-12</td>
+        <td>javascript</td>
+        <td>documentオブジェクト</td>
+        <td>XXXXXXXXX<br>
+        </td>
+        <td><a href="/" target="_blank">-</a></td>
+        <td>未完了</td>
+      </tr>
+      <tr>
+        <td>013-13</td>
+        <td>javascript</td>
+        <td>Locationオブジェクト</td>
+        <td>XXXXXXXXX<br>
+        </td>
+        <td><a href="/" target="_blank">-</a></td>
+        <td>未完了</td>
+      </tr>
+      <tr>
+        <td>013-14</td>
+        <td>javascript</td>
+        <td>Historyオブジェクト</td>
+        <td>XXXXXXXXX<br>
+        </td>
+        <td><a href="/" target="_blank">-</a></td>
+        <td>未完了</td>
+      </tr>
+      <tr>
+        <td>013-15</td>
+        <td>javascript</td>
+        <td>Navigationオブジェクト</td>
+        <td>XXXXXXXXX<br>
+        </td>
+        <td><a href="/" target="_blank">-</a></td>
+        <td>未完了</td>
+      </tr>
+      <tr>
+        <td>013-16</td>
+        <td>javascript</td>
+        <td>Screenオブジェクト</td>
+        <td>XXXXXXXXX<br>
+        </td>
+        <td><a href="/" target="_blank">-</a></td>
+        <td>未完了</td>
+      </tr>
+      <tr>
+        <td>013-17</td>
+        <td>javascript</td>
+        <td>イディオム</td>
+        <td>XXXXXXXXX<br>
+        </td>
+        <td><a href="https://qiita.com/cocottejs/items/cb2623316a0c82b603c4" target="_blank">javascriptイディオム</a><br>
+          <a href="http://nmi.jp/archives/488" target="_blank">JavaScript イディオム集 解説</a></td>
+        <td>未完了</td>
+      </tr>
+      <tr>
+        <td>014</td>
+        <td>javascript</td>
+        <td>canvas</td>
+        <td>XXXXXXXXX<br>
+        </td>
+        <td><a href="/" target="_blank">-</a></td>
+        <td>未完了</td>
+      </tr>
+      <tr>
+        <td>015</td>
+        <td>javascript</td>
+        <td>webGL</td>
+        <td>XXXXXXXXX<br>
+        </td>
+        <td><a href="http://nmi.jp/archives/582" target="_blank">生WebGL入門</a><br></td>
+        <td>未完了</td>
+      </tr>
+      <tr class="already">
+        <td>0XX</td>
+        <td>XXX</td>
+        <td>XXXXXXXXX</td>
+        <td>XXXXXXXXX<br>
+        </td>
+        <td><a href="/" target="_blank">-</a></td>
+        <td>未完了</td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
