@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>jstest</title>
+<script src="../../../wp-content/themes/mytheme/js/jquery-3.2.1.min.js"></script>
+<script>
+;(function($){
+
+  var Sample = Sample || {};
+
+  Sample = (function(element, options){
+    var t = this;
+    t.initials = {
+      hoge: 'hoge',
+      moge: 'moge'
+    };
+    t.settings = $.extend({}, t.initials, options);
+
+    t.init(element);
+  });
+
+  Sample.prototype.init = function(element) {
+    var t = this;
+    $(element).on('click', function(event){
+      t.click(event);
+    });
+  };
+
+  Sample.prototype.click = function(event) {
+    var t = this;
+    console.log(t);
+    if(t.settings.hoge === 'pege') {
+      alert(event.target.textContent);
+    }
+  }
+
+  $.fn.Sample = function() {
+    var $elements = this,
+        options = arguments[0],
+        l = $elements.length,
+        i;
+
+    if(typeof options === 'object'||typeof options === 'undefined') {
+      for(i=0; i<l; i++){
+        $elements[i].Sample = new Sample($elements[i], options);
+      }
+    }else{
+      console.log('error: options is not valid.');
+    }
+    return $elements;
+  };
+
+})(jQuery);
+</script>
+</head>
+
+<body>
+<p class="hoge">こっちはクリックしても何もでない。</p>
+<p class="moge">こっちはクリックしたら警告でる。</p>
+<script>
+$('.hoge').Sample();
+$('.moge').Sample({
+  hoge: 'pege'
+});
+</script>
+</body>
+</html>
