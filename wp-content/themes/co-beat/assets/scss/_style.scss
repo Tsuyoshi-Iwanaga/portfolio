@@ -1,0 +1,109 @@
+/*----------------------
+base style
+------------------------*/
+html {
+  font-size: 62.5%;
+}
+*, *:before, *:after {
+  box-sizing: border-box
+}
+body {
+  font-size: $DEFAULT_FONTSIZE;
+  font-family: $FONT_FAMILY;
+  line-height: 1.5;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: #131313;
+}
+img {
+  vertical-align: top;
+  width: 100%;
+}
+
+/*---- layout -----*/
+.l-contentInner {
+  max-width: $CONTENTS_WIDTH;
+  width: 100%;
+  margin: 0 auto;
+  @include SP {
+    width: 100%;
+  }
+}
+/*----------------------
+header
+------------------------*/
+.l-header {
+  padding: 48px 0 42px;
+  &_inner {
+    position: relative;
+  }
+}
+.p-logo {
+  background: url("../images/logo.svg") top center no-repeat;
+  height: 70px;
+  overflow: hidden;
+  margin: 0;
+  white-space: nowrap;
+  text-indent: 100%;
+}
+.p-nav {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  &_list {
+    display: none;
+  }
+}
+.p-switchButton {
+  padding-left: 44px;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 18px;
+    left: 0;
+    width : 30px;
+    height: 4px;
+    background: #000;
+  }
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 28px;
+    left: 0;
+    width : 30px;
+    height: 4px;
+    background: #000;
+  }
+  &.is-close {
+    &:before {
+      transform: rotate(45deg);
+      top: 22px;
+    }
+    &:after {
+      transform: rotate(135deg);
+      top: 22px;
+    }
+  }
+}
+.p-headerCatch {
+  font-size: 1.2rem;
+  position: absolute;
+  top: 1em;
+  right: 0;
+}
+/*----------------------
+common parts
+------------------------*/
+/*---- sectionTitle -----*/
+.c-sectionTitle {
+  font-size: 5.0rem;
+}
+.c-middleTitle {
+  font-size: 2.0rem;
+}

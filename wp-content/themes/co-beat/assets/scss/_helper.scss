@@ -1,0 +1,13 @@
+/*----------------------
+TOP header
+------------------------*/
+@include PC{
+  .onlySP {
+    display: none;
+  }
+}
+@include SP{
+  .onlyPC {
+    display: none;
+  }
+}

@@ -1,0 +1,54 @@
+/*----------------------
+TOP KV
+------------------------*/
+$KV_HEIGHT_PC: 425px;
+$KV_HEIGHT_SP: 425px;
+.p-kv {
+  background: url("../images/img_kv_01.jpg") top center no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100vw;
+  margin-bottom: 220px;
+  &_catch {
+    font-size: 7.0rem;
+    position: absolute;
+    bottom: -24px;
+    left: 0;
+    margin: 0;
+    font-weight: bold;
+    color: #fff;
+  }
+  &_desc {
+    font-size: 1.8rem;
+    position: absolute;
+    bottom: -100px;
+    word-break: nowrap;
+    left: 0;
+  }
+}
+.l-kv_inner {
+  position: relative;
+  width: 100%;
+  min-height: $KV_HEIGHT_PC;
+}
+/*----------------------
+TOP WORKS
+------------------------*/
+/*----------------------
+TOP SERVICE
+------------------------*/
+/*----------------------
+TOP BLOG
+------------------------*/
+/*----------------------
+TOP COMPANY
+------------------------*/
+/*----------------------
+TOP MAP
+------------------------*/
+/*----------------------
+TOP FORM
+------------------------*/
+/*----------------------
+Helper class
+------------------------*/
