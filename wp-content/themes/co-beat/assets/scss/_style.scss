@@ -17,7 +17,8 @@ ul {
   padding: 0;
 }
 a {
-  text-decoration: #131313;
+  color: #131313;
+  text-decoration: none;
 }
 img {
   vertical-align: top;
@@ -25,6 +26,9 @@ img {
 }
 
 /*---- layout -----*/
+.l-contentSection {
+  margin: 0 0 20px;
+}
 .l-contentInner {
   max-width: $CONTENTS_WIDTH;
   width: 100%;
@@ -37,14 +41,16 @@ img {
 header
 ------------------------*/
 .l-header {
-  padding: 48px 0 42px;
+  padding: 45px 0 41px;
   &_inner {
     position: relative;
   }
 }
 .p-logo {
+  display: block;
   background: url("../images/logo.svg") top center no-repeat;
-  height: 70px;
+  background-position-x: 51.5%;
+  height: 65px;
   overflow: hidden;
   margin: 0;
   white-space: nowrap;
@@ -52,7 +58,7 @@ header
 }
 .p-nav {
   position: absolute;
-  top: 10px;
+  top: 4px;
   left: 0;
   &_list {
     display: none;
@@ -94,7 +100,9 @@ header
 .p-headerCatch {
   font-size: 1.2rem;
   position: absolute;
-  top: 1em;
+  top: -0.3em;
+  letter-spacing: 0.6px;
+  line-height: 1.7;
   right: 0;
 }
 /*----------------------
@@ -103,7 +111,38 @@ common parts
 /*---- sectionTitle -----*/
 .c-sectionTitle {
   font-size: 5.0rem;
+  line-height: 1.0;
+  letter-spacing: 0.18em;
+  margin: 0 0 7px;
 }
 .c-middleTitle {
   font-size: 2.0rem;
+  letter-spacing: 0.06em;
+  margin: 0 0 10px;
+  font-weight: bold;
+}
+.c-moreLink {
+  display: inline-block;
+  line-height: 1.0;
+  font-size: 1.8rem;
+  padding-right: 120px;
+  position: relative;
+  background: url("../images/img_arrow01.png") top left no-repeat;
+  background-position-x: -20px;
+  transition: background-position 0.5s ease-out;
+  &:hover {
+    background-position-x: 60px;
+  }
+  &:before {
+    content: 'MORE';
+    position: absolute;
+    background: #fff;
+    top: 0;
+    left: 0;
+    width: 3.5em;
+    height: 1em;
+    text-align: left;
+    line-height: 1.0;
+    right: 40px;
+  }
 }

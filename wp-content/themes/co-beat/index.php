@@ -33,34 +33,116 @@
 <div class="p-kv">
   <div class="l-contentInner l-kv_inner">
     <p class="p-kv_catch">if it can be imagined,<br>it can be created.</p>
-    <p class="p-kv_desc">デザインと"個"の価値で、<br>誰もがもっと自分らしい生き方を創る世界へ。</p>
+    <p class="p-kv_desc">デザイン×"個"の価値で、誰もがもっと自分らしい生き方を創る世界へ。</p>
   </div>
 </div><!-- /.l-kv -->
-<section class="l-news">
+<section class="l-contentSection -works">
   <div class="l-contentInner">
-    <h2 class="c-sectionTitle">COMPANY</h2>
-    <div class="p-newsArea">
-      <div class="p-contentBlock">
-        <h3 class="c-middleTitle">ヒカリエMOV8階にて<br>出店いたしました</h3>
-        <p>ヒカリエMOV8階にて出店いたしました。テキストテキストテキストテキストテキストテキストテキストテキストテキスト<p>
-      </div>
-    </div>
-    <div class="p-more"><a href="p-more_arrow">MORE</a></div>
+    <h2 class="c-sectionTitle">WORKS</h2>
+    <p class="c-middleTitle">過去の経歴と実績 / 料金</p>
+    <ul class="p-worksList">
+      <li class="p-worksList_item">
+        <a href="#">
+          <h3 class="p-worksList_item_title">ART DIRECTION<br>SPOT CONSULTING</h3>
+          <p class="p-worksList_item_desc">アートディレクション / UIデザイン</p>
+        </a>
+      </li>
+      <li class="p-worksList_item">
+        <a href="#">
+          <h3 class="p-worksList_item_title">WEB CONSULTING<br>UI DESIGN</h3>
+          <p class="p-worksList_item_desc">ウェブコンサルティング / 相談役</p>
+        </a>
+      </li>
+      <li class="p-worksList_item">
+        <a href="#">
+          <h3 class="p-worksList_item_title">WEB DIRECTION /<br>MARKTING</h3>
+          <p class="p-worksList_item_desc">ウェブディレクション / UI設計<br>マーケティング</p>
+        </a>
+      </li>
+      <li class="p-worksList_item">
+        <a href="#">
+          <h3 class="p-worksList_item_title">PRICE</h3>
+          <p class="p-worksList_item_desc">料金につきまして</p>
+        </a>
+      </li>
+    </ul>
+    <p class="c-more"><a href="#" class="c-moreLink">MORE</a></p>
   </div>
-</section><!-- /.l-news -->
-<section class="l-service">
+</section>
+<section class="l-contentSection -service">
   <div class="l-contentInner">
     <h2 class="c-sectionTitle">SERVICE</h2>
-    <div class="p-serviceInfo">
-      <div class="serviceInfo_item"><h3>WEB<br>CONSULTING<span>フリーランスの仕事</span></h3></div>
-      <div class="serviceInfo_item"><h3>WEB<br>ART DIRECTIONS<br>COLLECT<span>メディアの企画・運営</span></h3></div>
-      <div class="serviceInfo_item"><h3>WEB<br>YOURTIMES</h3></div>
-      <div class="serviceInfo_item"><h3>WEB<br>KOTETSUKUN</h3></div>
-    </div>
-    <div class="p-more"><a href="p-more_arrow">MORE</a></div>
+    <p class="c-middleTitle">自社サービスとコンテンツ</p>
+    <ul class="p-serviceList">
+      <li class="p-serviceList_item">
+        <div class="p-serviceList_itemText">
+          <h3 class="p-serviceList_itemText_title">ヒカリエMOV8階 CREARIVE LUONGEにてYOUR TIMESを出店いたしました。</h3>
+          <p class="p-serviceList_itemText_desc">ヒカリエMOV8階にて出店いたしました。テキストストテキストテキストテキストテキストテキストテトテキストテキストテキストヒカリエMOV8階にて出店いたしました。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストヒカリエMOV8階にて出店いたしました。ストテキスキストテキストテキストテキストテキストテキスト・・・</p>
+          <p class="c-more"><a href="#" class="c-moreLink">MORE</a></p>
+        </div>
+        <div class="p-serviceList_itemImg">
+          <img src="<?php bloginfo('template_url'); ?>/images/img_bg_service01.jpg" alt="">
+        </div>
+      </li>
+      <li class="p-serviceList_item">
+        <div class="p-serviceList_itemImg">
+          <img src="<?php bloginfo('template_url'); ?>/images/img_bg_service02.jpg" alt="">
+        </div>
+        <div class="p-serviceList_itemText">
+          <h3 class="p-serviceList_itemText_title">ヒカリエMOV8階 CREARIVE LUONGEにてYOUR TIMESを出店いたしました。</h3>
+          <p class="p-serviceList_itemText_desc">ヒカリエMOV8階にて出店いたしました。テキストストテキストテキストテキストテキストテキストテトテキストテキストテキストヒカリエMOV8階にて出店いたしました。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストヒカリエMOV8階にて出店いたしました。ストテキスキストテキストテキストテキストテキストテキスト・・・</p>
+          <p class="c-more"><a href="#" class="c-moreLink">MORE</a></p>
+        </div>
+      </li>
+    </ul>
   </div>
 </section><!-- /.l-service -->
-<section class="l-company">
+<section class="l-contentSection -blog">
+  <div class="l-contentInner">
+    <h2 class="c-sectionTitle">BLOG</h2>
+    <p class="c-middleTitle">アートディレクションとマーケティングの研究<br>ノート＆日々の雑記帳や考えまとめ。</p>
+    <ul class="p-blogList">
+      <li class="p-blogList_item">
+        <div class="p-blogList_itemImg">
+          <img src="<?php bloginfo('template_url'); ?>/images/img_bg_blog01.jpg" alt="">
+        </div>
+        <div class="p-blogList_itemText">
+          <h3 class="p-blogList_itemText_title">ヒカリエMOV8階 CREARIVE LUONGEにてYOUR TIMESを出店いたしました。</h3>
+          <p class="p-blogList_itemText_desc">ヒカリエMOV8階にて出店いたしました。テキストストテキストテキストテキストテキストテキストテトテキストテキストテキストヒカリエMOV8階にて出店いたしました。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストヒカリエMOV8階にて出店いたしました。ストテキスキストテキストテキストテキストテキストテキスト・・・</p>
+        </div>
+      </li>
+      <li class="p-blogList_item">
+        <div class="p-blogList_itemImg">
+          <img src="<?php bloginfo('template_url'); ?>/images/img_bg_blog01.jpg" alt="">
+        </div>
+        <div class="p-blogList_itemText">
+          <h3 class="p-blogList_itemText_title">ヒカリエMOV8階 CREARIVE LUONGEにてYOUR TIMESを出店いたしました。</h3>
+          <p class="p-blogList_itemText_desc">ヒカリエMOV8階にて出店いたしました。テキストストテキストテキストテキストテキストテキストテトテキストテキストテキストヒカリエMOV8階にて出店いたしました。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストヒカリエMOV8階にて出店いたしました。ストテキスキストテキストテキストテキストテキストテキスト・・・</p>
+        </div>
+      </li>
+      <li class="p-blogList_item">
+        <div class="p-blogList_itemImg">
+          <img src="<?php bloginfo('template_url'); ?>/images/img_bg_blog01.jpg" alt="">
+        </div>
+        <div class="p-blogList_itemText">
+          <h3 class="p-blogList_itemText_title">ヒカリエMOV8階 CREARIVE LUONGEにてYOUR TIMESを出店いたしました。</h3>
+          <p class="p-blogList_itemText_desc">ヒカリエMOV8階にて出店いたしました。テキストストテキストテキストテキストテキストテキストテトテキストテキストテキストヒカリエMOV8階にて出店いたしました。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストヒカリエMOV8階にて出店いたしました。ストテキスキストテキストテキストテキストテキストテキスト・・・</p>
+        </div>
+      </li>
+      <li class="p-blogList_item">
+        <div class="p-blogList_itemImg">
+          <img src="<?php bloginfo('template_url'); ?>/images/img_bg_blog01.jpg" alt="">
+        </div>
+        <div class="p-blogList_itemText">
+          <h3 class="p-blogList_itemText_title">ヒカリエMOV8階 CREARIVE LUONGEにてYOUR TIMESを出店いたしました。</h3>
+          <p class="p-blogList_itemText_desc">ヒカリエMOV8階にて出店いたしました。テキストストテキストテキストテキストテキストテキストテトテキストテキストテキストヒカリエMOV8階にて出店いたしました。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストヒカリエMOV8階にて出店いたしました。ストテキスキストテキストテキストテキストテキストテキスト・・・</p>
+        </div>
+      </li>
+    </ul>
+    <p class="c-more"><a href="#" class="c-moreLink">MORE</a></p>
+  </div>
+</section><!-- /.l-blog -->
+<section class="l-contentSection -company">
   <div class="l-contentInner">
     <h2 class="c-sectionTitle">COMPANY</h2>
     <div class="p-contentBlock">
