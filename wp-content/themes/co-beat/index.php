@@ -103,40 +103,52 @@
     <p class="c-middleTitle">アートディレクションとマーケティングの研究<br>ノート＆日々の雑記帳や考えまとめ。</p>
     <ul class="p-blogList">
       <li class="p-blogList_item">
-        <div class="p-blogList_itemImg">
-          <img src="<?php bloginfo('template_url'); ?>/images/img_bg_blog01.jpg" alt="">
-        </div>
-        <div class="p-blogList_itemText">
-          <h3 class="p-blogList_itemText_title">ヒカリエMOV8階 CREARIVE LUONGEにてYOUR TIMESを出店いたしました。</h3>
-          <p class="p-blogList_itemText_desc">ヒカリエMOV8階にて出店いたしました。テキストストテキストテキストテキストテキストテキストテトテキストテキストテキストヒカリエMOV8階にて出店いたしました。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストヒカリエMOV8階にて出店いたしました。ストテキスキストテキストテキストテキストテキストテキスト・・・</p>
-        </div>
+        <a href="#">
+          <div class="p-blogList_itemImg">
+            <img src="<?php bloginfo('template_url'); ?>/images/img_bg_blog01.jpg" alt="">
+          </div>
+          <div class="p-blogList_itemText">
+            <p class="p-blogList_itemText_date">2018/03/01</p>
+            <h3 class="p-blogList_itemText_title">ヒカリエMOV8階にて出店いたしました</h3>
+            <p class="p-blogList_itemText_desc">ヒカリエMOV8階にて出店いたしました。テキストストテキストテキストテキストテキストテキストテトテキストテキストテキストヒカリエMOV8階にて出店いたしました。テキストテキストテキス・・・</p>
+          </div>
+        </a>
       </li>
       <li class="p-blogList_item">
-        <div class="p-blogList_itemImg">
-          <img src="<?php bloginfo('template_url'); ?>/images/img_bg_blog01.jpg" alt="">
-        </div>
-        <div class="p-blogList_itemText">
-          <h3 class="p-blogList_itemText_title">ヒカリエMOV8階 CREARIVE LUONGEにてYOUR TIMESを出店いたしました。</h3>
-          <p class="p-blogList_itemText_desc">ヒカリエMOV8階にて出店いたしました。テキストストテキストテキストテキストテキストテキストテトテキストテキストテキストヒカリエMOV8階にて出店いたしました。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストヒカリエMOV8階にて出店いたしました。ストテキスキストテキストテキストテキストテキストテキスト・・・</p>
-        </div>
+        <a href="#">
+          <div class="p-blogList_itemImg">
+            <img src="<?php bloginfo('template_url'); ?>/images/img_bg_blog01.jpg" alt="">
+          </div>
+          <div class="p-blogList_itemText">
+            <p class="p-blogList_itemText_date">2018/03/01</p>
+            <h3 class="p-blogList_itemText_title">ヒカリエMOV8階 CREARIVE LUONGEにてYOUR TIMESを出店いたしました。</h3>
+            <p class="p-blogList_itemText_desc">ヒカリエMOV8階にて出店いたしました。テキストストテキストテキストテキストテキストテキストテトテキストテキストテキストヒカリエMOV8階にて出店いたしました。テキストテキストテキス・・・</p>
+          </div>
+        </a>
       </li>
       <li class="p-blogList_item">
-        <div class="p-blogList_itemImg">
-          <img src="<?php bloginfo('template_url'); ?>/images/img_bg_blog01.jpg" alt="">
-        </div>
-        <div class="p-blogList_itemText">
-          <h3 class="p-blogList_itemText_title">ヒカリエMOV8階 CREARIVE LUONGEにてYOUR TIMESを出店いたしました。</h3>
-          <p class="p-blogList_itemText_desc">ヒカリエMOV8階にて出店いたしました。テキストストテキストテキストテキストテキストテキストテトテキストテキストテキストヒカリエMOV8階にて出店いたしました。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストヒカリエMOV8階にて出店いたしました。ストテキスキストテキストテキストテキストテキストテキスト・・・</p>
-        </div>
+        <a href="#">
+          <div class="p-blogList_itemImg">
+            <img src="<?php bloginfo('template_url'); ?>/images/img_bg_blog01.jpg" alt="">
+          </div>
+          <div class="p-blogList_itemText">
+            <p class="p-blogList_itemText_date">2018/03/01</p>
+            <h3 class="p-blogList_itemText_title">ヒカリエMOV8階 CREARIVE LUONGEにてYOUR TIMESを出店いたしました。</h3>
+            <p class="p-blogList_itemText_desc">ヒカリエMOV8階にて出店いたしました。テキストストテキストテキストテキストテキストテキストテトテキストテキストテキストヒカリエMOV8階にて出店いたしました。テキストテキストテキス・・・</p>
+          </div>
+        </a>
       </li>
       <li class="p-blogList_item">
-        <div class="p-blogList_itemImg">
-          <img src="<?php bloginfo('template_url'); ?>/images/img_bg_blog01.jpg" alt="">
-        </div>
-        <div class="p-blogList_itemText">
-          <h3 class="p-blogList_itemText_title">ヒカリエMOV8階 CREARIVE LUONGEにてYOUR TIMESを出店いたしました。</h3>
-          <p class="p-blogList_itemText_desc">ヒカリエMOV8階にて出店いたしました。テキストストテキストテキストテキストテキストテキストテトテキストテキストテキストヒカリエMOV8階にて出店いたしました。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストヒカリエMOV8階にて出店いたしました。ストテキスキストテキストテキストテキストテキストテキスト・・・</p>
-        </div>
+        <a href="#">
+          <div class="p-blogList_itemImg">
+            <img src="<?php bloginfo('template_url'); ?>/images/img_bg_blog01.jpg" alt="">
+          </div>
+          <div class="p-blogList_itemText">
+            <p class="p-blogList_itemText_date">2018/03/01</p>
+            <h3 class="p-blogList_itemText_title">ヒカリエMOV8階 CREARIVE LUONGEにてYOUR TIMESを出店いたしました。</h3>
+            <p class="p-blogList_itemText_desc">ヒカリエMOV8階にて出店いたしました。テキストストテキストテキストテキストテキストテキストテトテキストテキストテキストヒカリエMOV8階にて出店いたしました。テキストテキストテキス・・・</p>
+          </div>
+        </a>
       </li>
     </ul>
     <p class="c-more"><a href="#" class="c-moreLink">MORE</a></p>

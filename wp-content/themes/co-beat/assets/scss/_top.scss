@@ -85,10 +85,6 @@ TOP WORKS
       position: relative;
       top: -64px;
     }
-    // &:nth-of-type(4) {
-    //   position: relative;
-    //   top: -139px;
-    // }
     &_title {
       color: #fff;
       letter-spacing: 0.12em;
@@ -148,13 +144,18 @@ TOP SERVICE
 TOP BLOG
 ------------------------*/
 .-blog {
+  margin-bottom: 145px;
   & .c-sectionTitle {
     margin-bottom: 15px;
+  }
+  & .c-more {
+    text-align: right;
+    margin-top: -15px;
   }
 }
 .p-blogList {
   font-size: 0;
-  margin: 58px 0 20px;
+  margin: 58px 0 0;
   &_item {
     display: inline-block;
     position: relative;
@@ -162,12 +163,32 @@ TOP BLOG
     &:nth-of-type(2n) {
       top: -115px;
     }
+    & a {
+      display: block;
+      width: 100%;
+      transition: all 0.5s ease;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
     &Img {
-      margin-bottom: 30px;
+      margin-bottom: 22px;
     }
     &Text {
       font-size: 1.4rem;
-      padding: 0 40px;
+      padding: 0 38px 54px;
+      &_date {
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: #babfc4;
+      }
+      &_title {
+        font-size: 2.0rem;
+        margin-bottom: 17px;
+      }
+      &_desc {
+        line-height: 2.1;
+      }
     }
   }
 }
