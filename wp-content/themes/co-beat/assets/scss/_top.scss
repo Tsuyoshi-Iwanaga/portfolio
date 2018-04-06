@@ -8,6 +8,7 @@ $KV_HEIGHT_SP: 425px;
   background-size: cover;
   position: relative;
   width: 100%;
+  min-width: $CONTENTS_WIDTH;
   margin-bottom: 209px;
   &_catch {
     font-size: 7.0rem;
@@ -29,7 +30,7 @@ $KV_HEIGHT_SP: 425px;
     content: '';
     width: 2px;
     height: 80px;
-    background: #000;
+    background: url("../images/img_kv_line01.png") top center no-repeat;
     position: absolute;
     left: 50%;
     bottom: -154px;
@@ -38,8 +39,6 @@ $KV_HEIGHT_SP: 425px;
 }
 .l-kv_inner {
   position: relative;
-  margin: 0 auto;
-  width: 100%;
   min-height: $KV_HEIGHT_PC;
 }
 /*----------------------
@@ -55,6 +54,7 @@ TOP WORKS
   font-size: 0;
   &_item {
     display: inline-block;
+    vertical-align: top;
     height: 340px;
     width: 50%;
     transition: all 0.5s ease;
@@ -115,14 +115,19 @@ TOP SERVICE
 .p-serviceList {
   margin-bottom: 71px;
   &_item {
-    display: table;
     margin: 28px 0 52px;
+    font-size: 0;
+    width: 100%;
     &Img {
-      display: table-cell;
-      width: 580px;
+      display: inline-block;
+      font-size: 0;
+      vertical-align: top;
     }
     &Text {
-      display: table-cell;
+      display: inline-block;
+      font-size: 0;
+      vertical-align: top;
+      width: 443px;
       &:nth-of-type(2n) {
         padding-left: 59px;
       }
@@ -135,6 +140,7 @@ TOP SERVICE
       }
       &_desc {
         margin: 0 0 30px;
+        font-size: 1.4rem;
         line-height: 1.85;
       }
     }
@@ -155,13 +161,13 @@ TOP BLOG
 }
 .p-blogList {
   font-size: 0;
-  margin: 58px 0 0;
+  margin: 26px 0 0;
   &_item {
     display: inline-block;
     position: relative;
     width: 50%;
     &:nth-of-type(2n) {
-      top: -115px;
+      top: -84px;
     }
     & a {
       display: block;
@@ -195,12 +201,153 @@ TOP BLOG
 /*----------------------
 TOP COMPANY
 ------------------------*/
+.-company {
+  margin-bottom: 70px;
+  & .p-contentBlock {
+    &:nth-of-type(1) {
+      position: relative;
+      background: url("../images/img_bg_company01.jpg") right top no-repeat;
+      background-position-y: 30px;
+      min-height: 430px;
+      padding-top: 65px;
+      & .c-middleTitle {
+        margin-bottom: 28px;
+      }
+      & .p-contentDesc {
+        margin-bottom: 0px;
+        line-height: 1.7;
+        margin-bottom: 21px;
+      }
+      & .p-contentBlock_textArea {
+        width: 310px;
+      }
+    }
+    &:nth-of-type(2) {
+      position: relative;
+      padding-left: 390px;
+      background: url("../images/img_bg_company02.jpg") left 120px no-repeat, url("../images/img_bg_company03.jpg") right top no-repeat;
+      & .c-middleTitle {
+        padding-top: 153px;
+        margin-bottom: 30px;
+      }
+      & .p-contentDesc {
+        margin-bottom: 0px;
+        line-height: 1.7;
+        &.-rep {
+          margin-bottom: 22px;
+        }
+        &.-profile {
+          margin-bottom: 26px;
+        }
+      }
+      & .p-contentBlock_textArea {
+        width: 265px;
+      }
+    }
+    &:nth-of-type(3) {
+      & .p-contentBlock_textArea {
+        width: 295px;
+        margin-left: auto;
+        margin-top: -196px;
+      }
+    }
+  }
+}
+.p-company_catch {
+  position: absolute;
+  top: 334px;
+  left: 113px;
+  line-height: 1.3;
+  z-index: 2;
+  font-size: 4.0rem;
+  font-weight: bold;
+}
 /*----------------------
 TOP MAP
 ------------------------*/
+.-map {
+  margin: 0;
+  font-size: 0;
+}
 /*----------------------
 TOP FORM
 ------------------------*/
+.-mailForm {
+  background: #e8e8e8;
+  padding: 110px 0 120px;
+  & .c-sectionTitle {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+.mailForm{
+  &_desc {
+    font-size: 1.6rem;
+    line-height: 1.9;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  &_entry {
+    width :73%;
+    margin: 0 auto;
+    & input, textarea {
+      font-size: 1.6rem;
+      line-height: 1.2;
+      padding: 20px;
+      border: none;
+      display: inline-block;
+      width: 100%;
+      margin: 0 auto 20px;
+    }
+    & textarea {
+      min-height: 10em;
+    }
+    & button {
+      position: relative;
+      outline: none;
+      padding: 20px;
+      border: none;
+      margin-top: 10px;
+      width: 100%;
+      background: #000;
+      font-size: 1.8rem;
+      letter-spacing: 0.08em;
+      color: #fff;
+      transition: all 0.5s ease;
+      &:hover {
+        cursor: pointer;
+        opacity: 0.6;
+      }
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        width: 14px;
+        height: 1px;
+        margin-top: -5px;
+        background: #fff;
+        transform: rotate(35deg);
+      }
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        width: 14px;
+        height: 1px;
+        margin-top: 3px;
+        background: #fff;
+        transform: rotate(145deg);
+      }
+    }
+  }
+}
+
 /*----------------------
 Helper class
 ------------------------*/
+

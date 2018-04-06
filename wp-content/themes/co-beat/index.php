@@ -16,15 +16,17 @@
   <div class="l-contentInner l-header_inner">
     <h1 class="p-logo">co-BEAT</h1>
     <nav class="p-nav">
-      <ul class="p-switchButton">
-        <li><span class="js-switchButton">Menu</span></li>
+      <ul class="p-switchButton .js-navSwitch">
+        <li class="p-nav_title"><span class="js-switchButton">Menu</span></li>
       </ul>
       <ul class="p-nav_list">
-        <li class="nav_list_item">NEWS</li>
-        <li class="nav_list_item">SERVICE</li>
-        <li class="nav_list_item">COMPANY</li>
-        <li class="nav_list_item">CONTACT</li>
-        <li class="nav_list_item">BLOG</li>
+        <li class="p-nav_list_item"><a href="index.html#works">WORKS</a></li>
+        <li class="p-nav_list_item"><a href="index.html#service">SERVICE</a></li>
+        <li class="p-nav_list_item"><a href="index.html#pickup">PICKUP</a></li>
+        <li class="p-nav_list_item"><a href="index.html#blog">BLOG</a></li>
+        <li class="p-nav_list_item"><a href="index.html#profile">PROFILE</a></li>
+        <li class="p-nav_list_item"><a href="index.html#company">COMPANY</a></li>
+        <li class="p-nav_list_item"><a href="index.html#contact">CONTACT</a></li>
       </ul>
     </nav>
     <p class="p-headerCatch">CO-BEATは、クリエイティブで<br>世の中の課題を解決する会社です。</p>
@@ -36,7 +38,7 @@
     <p class="p-kv_desc">デザイン×"個"の価値で、誰もがもっと自分らしい生き方を創る世界へ。</p>
   </div>
 </div><!-- /.l-kv -->
-<section class="l-contentSection -works">
+<section class="l-contentSection -works" id="works">
   <div class="l-contentInner">
     <h2 class="c-sectionTitle">WORKS</h2>
     <p class="c-middleTitle">過去の経歴と実績 / 料金</p>
@@ -69,7 +71,7 @@
     <p class="c-more"><a href="#" class="c-moreLink">MORE</a></p>
   </div>
 </section>
-<section class="l-contentSection -service">
+<section class="l-contentSection -service" id="service">
   <div class="l-contentInner">
     <h2 class="c-sectionTitle">SERVICE</h2>
     <p class="c-middleTitle">自社サービスとコンテンツ</p>
@@ -97,7 +99,7 @@
     </ul>
   </div>
 </section><!-- /.l-service -->
-<section class="l-contentSection -blog">
+<section class="l-contentSection -blog" id="blog">
   <div class="l-contentInner">
     <h2 class="c-sectionTitle">BLOG</h2>
     <p class="c-middleTitle">アートディレクションとマーケティングの研究<br>ノート＆日々の雑記帳や考えまとめ。</p>
@@ -154,40 +156,65 @@
     <p class="c-more"><a href="#" class="c-moreLink">MORE</a></p>
   </div>
 </section><!-- /.l-blog -->
-<section class="l-contentSection -company">
+<section class="l-contentSection -company" id="company">
   <div class="l-contentInner">
     <h2 class="c-sectionTitle">COMPANY</h2>
     <div class="p-contentBlock">
-      <h3 class="c-middleTitle">Co-BEATの仕事哲学</h3>
-      <p>デザインと"個"の価値で、<br>誰もがもっと自分らしい生き方を創る世界へ。<br>個性を失った日本人。鳥は卵の中から抜け出ようと戦う。卵は世界だ。<br>生まれようと欲するものは、一つの世界を破壊しなければならない。Why identety? Co-BEATの仕事哲学<p>
-    </div>
-    <p class="p-company_catch">Where there is a will,<br>there is a way.</p>
-    <div class="p-contentBlock">
-      <h3 class="c-middleTitle">代表者について</h3>
-      <p>東後哲郎(とうご てつろう)</p>
-      <p>1987年宮崎県生まれ。中学3年の時に自分のサイト作成をし、月間9万PVを達成。サイト運営を個人で行う。高校卒業後、福岡のデザイン学校を卒業後、Webデザイナーとして活動。5年デザイナーを経験後、イギリス・ロンドン、オーストラリアシドニーにてフリーランスデザイナーとして活動、2年後東京へ上京。東京にてプロダクションでのデザイナー経験後、大手上場企業の新規事業立ち上げのマーケッターに転職。マーケッターを3年経験後、2016年4月からフリーランスとして活動。総合広告代理店にて、プロジェクトリーダーして大手金融メディア立ち上げのWEBコンサル～上流設計までを担当。WEBメディアの戦略設計から上流設計、アートディレクション領域を担当。デザイン×マーケティングを複合させてフリーとして活動。<p>
+      <div class="p-contentBlock_textArea">
+        <h3 class="c-middleTitle">Co-BEATの仕事哲学</h3>
+        <p class="p-contentDesc">デザインと"個"の価値で、誰もがもっと自分らしい生き方を創る世界へ。個性を失った日本人。鳥は卵の中から抜け出ようと戦う。卵は世界だ。生まれようと欲するものは、一つの世界を破壊しなければならない。Why identety? Co-BEATの仕事哲学</p>
+        <p class="c-more"><a href="#" class="c-moreLink">MORE</a></p>
+      </div>
+      <p class="p-company_catch">Where there is a will,<br>there is a way.</p>
     </div>
     <div class="p-contentBlock">
-      <h3 class="c-middleTitle">会社概要</h3>
-      <p>Co-BEAT株式会社</p>
-      <p>&#12306;140-0002<br>東京都 品川区東品川2-2-28<br>レガリス品川天王洲ベイサイドコート1301<p>
-      <p>スタッフ数4名<br>(デザイナー,システムエンジニア,絵本作家)<p>
+      <div class="p-contentBlock_textArea">
+        <h3 class="c-middleTitle">代表者について</h3>
+        <p class="p-contentDesc -rep">東後哲郎(とうご てつろう)</p>
+        <p class="p-contentDesc -profile">1987年宮崎県生まれ。中学3年の時に自分のサイト作成をし、月間9万PVを達成。サイト運営を個人で行う。高校卒業後、福岡のデザイン学校を卒業後、Webデザイナーとして活動。5年デザイナーを経験後、イギリス・ロンドン、オーストラリアシドニーにてフリーランスデザイナーとして活動、2年後東京へ上京。東京にてプロダクションでのデザイナー経験後、大手上場企業の新規事業立ち上げのマーケッターに転職。マーケッターを3年経験後、2016年4月からフリーランスとして活動。総合広告代理店にて、プロジェクトリーダーして大手金融メディア立ち上げのWEBコンサル～上流設計までを担当。WEBメディアの戦略設計から上流設計、アートディレクション領域を担当。デザイン×マーケティングを複合させてフリーとして活動。<p>
+        <p class="c-more"><a href="#" class="c-moreLink">MORE</a></p>
+      </div>
+    </div>
+    <div class="p-contentBlock">
+      <div class="p-contentBlock_textArea">
+        <h3 class="c-middleTitle">会社概要</h3>
+        <p>Co-BEAT株式会社</p>
+        <p>&#12306;140-0002<br>東京都 品川区東品川2-2-28<br>レガリス品川天王洲ベイサイドコート1301<p>
+        <p>スタッフ数4名<br>(デザイナー,システムエンジニア,絵本作家)<p>
+      </div>
     </div>
   </div>
 </section><!-- /.l-company -->
-<section class="l-map">
+<section class="l-contentSection -map" id="map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3243.254620195624!2d139.75043893984386!3d35.621448996965825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188a6b65e0ed31%3A0x674b6375325bff5!2z5aSp546L5rSy44Ki44Kk44Or6aeF!5e0!3m2!1sja!2sjp!4v1522992398421&iwloc=A&output=embed&amp;iwloc=B" width="100%" height="340" frameborder="0" style="border:0" allowfullscreen></iframe>
 </section><!-- /.l-map -->
-<section class="l-mailForm">
+<section class="l-contentSection -mailForm" id="contact">
   <div class="l-contentInner">
     <h2 class="c-sectionTitle">MAIL FORM</h2>
-    <p>お客様からのご相談、企業様からのお問い合わせをお待ちしております。<br>責任を持って折り返しご連絡させていただきます。<br>※個人情報の取り扱いについて本画面にて弊社取得する個人情報は適切にお取り扱いし、<br>第三者に提供または開示することはございません。<br>※ただし、内容によっては返信を控えさせて頂くこともございますのでご了承くださいませ。</p>
+    <p class="mailForm_desc">お客様からのご相談、企業様からのお問い合わせをお待ちしております。<br>責任を持って折り返しご連絡させていただきます。<br>※個人情報の取り扱いについて本画面にて弊社取得する個人情報は適切にお取り扱いし、<br>第三者に提供または開示することはございません。<br>※ただし、内容によっては返信を控えさせて頂くこともございますのでご了承くださいませ。</p>
+    <form action="#" class="mailForm_entry">
+      <input type="text" placeholder="NAME">
+      <input type="text" placeholder="E-MAIL">
+      <textarea placeholder="MESSAGE"></textarea>
+      <button type="submit">送信する</button>
+    </form>
   </div>
 </section><!-- /.l-mailForm -->
 <footer class="l-footer">
+  <div class="l-contentInner">
+    <div class="p-footer_logo"><img src="<?php bloginfo('template_url'); ?>/images/img_footer_logo01.png" alt="CO-BEAT"></div>
+    <p class="p-footer_text">社名は「CO-BEAT」コ・ビート（個=CO ＋ 羽ばたく＝BEAT）。と名付けました。今の日本って学歴や数字で人のものさしを、物事で判断する基準があります。ただそれだけで人の判断はできないと僕は思います。僕は人の判断基準ってペーパーテストの点数がとれるや、漢字がひとより多くかけるではないと思います。自分の好きなコトで生きていく。好きなコトを武器にする。本当に大事なコトにフォーカスをあてて、社会に提案したいと思います。そんな想いを込めてネーミングとロゴに込めました。→ロゴにかける想い、制作過程につきましてはコチラから。</p>
+  </div>
+  <div class="p-footer_copy">
+    <div class="l-contentInner">COPYRIGHT &copy; CO-BEAT INC. ALL RIGHTS RESERVED.</div>
+  </div>
 </footer><!-- /.l-footer -->
-<div class="p-toTopPage"><a href="#" class="js-toTopPage">戻る</a></div>
+<div class="p-toTopPage"><a href="#">&nbsp</a></div>
 </section><!-- /.l-wrap -->
+<div class="c-overRay"></div>
 <script src="<?php bloginfo('template_url'); ?>/js/jquery-3.2.1.js"></script>
-<script src="<?php bloginfo('template_url'); ?>/js/common.js"></script>
+<!-- <script src="<?php bloginfo('template_url'); ?>/js/common.js"></script> -->
+<script>
+</script>
 </body>
 </html>
