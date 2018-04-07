@@ -1,6 +1,7 @@
 $FONT_FAMILY: '-apple-system', 'BlinkMacSystemFont','Hiragino Sans','Hiragino Kaku Gothic ProN',"segoe ui",'游ゴシック Medium','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
 $BREAK_POINT: 700;
 $CONTENTS_WIDTH: 1024px;
+$SP_SIDE_PADDING: 20px;
 $DEFAULT_FONTSIZE: 1.4rem;
 
 @mixin SP() {

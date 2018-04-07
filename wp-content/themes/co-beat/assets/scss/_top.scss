@@ -2,7 +2,7 @@
 TOP KV
 ------------------------*/
 $KV_HEIGHT_PC: 425px;
-$KV_HEIGHT_SP: 425px;
+$KV_HEIGHT_SP: 141px;
 .p-kv {
   background: url("../images/img_kv_01.jpg") top center no-repeat;
   background-size: cover;
@@ -10,6 +10,11 @@ $KV_HEIGHT_SP: 425px;
   width: 100%;
   min-width: $CONTENTS_WIDTH;
   margin-bottom: 209px;
+  @include SP {
+    width: 100%;
+    min-width: auto;
+    margin-bottom: 58px;
+  }
   &_catch {
     font-size: 7.0rem;
     position: absolute;
@@ -18,6 +23,12 @@ $KV_HEIGHT_SP: 425px;
     margin: 0;
     font-weight: bold;
     color: #fff;
+    @include SP {
+      bottom: -3px;
+      font-size: 2.7rem;
+      line-height: 1;
+      padding: 0 20px;
+    }
   }
   &_desc {
     font-size: 1.8rem;
@@ -25,6 +36,12 @@ $KV_HEIGHT_SP: 425px;
     bottom: -66px;
     letter-spacing: 2px;
     left: 0;
+    @include SP {
+      bottom: -28px;
+      padding: 0 20px;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+    }
   }
   &:after {
     content: '';
@@ -35,11 +52,21 @@ $KV_HEIGHT_SP: 425px;
     left: 50%;
     bottom: -154px;
     margin-left: -1px;
+    @include SP {
+      width: 1px;
+      height: 26px;
+      bottom: -52px;
+      margin-left: -2px;
+      background-size: contain;
+    }
   }
 }
 .l-kv_inner {
   position: relative;
   min-height: $KV_HEIGHT_PC;
+  @include SP {
+    min-height: $KV_HEIGHT_SP;
+  }
 }
 /*----------------------
 TOP WORKS
@@ -52,14 +79,21 @@ TOP WORKS
 .p-worksList {
   margin: 51px 0 39px;
   font-size: 0;
+  @include SP {
+    margin: 0;
+  }
   &_item {
     display: inline-block;
     vertical-align: top;
     height: 340px;
     width: 50%;
     transition: all 0.5s ease;
+    @include SP {
+      width: 100%;
+      height: 220px;
+      background-size: cover;
+    }
     &:hover {
-      background-size: calc(120%);
       opacity: 0.8;
     }
     & a {
@@ -68,32 +102,46 @@ TOP WORKS
       width: 100%;
       height: 100%;
       padding: 20px 40px;
+      @include SP {
+        padding: 14px 20px;
+      }
     }
     &:nth-of-type(1) {
-      background: url("../images/img_bg_work01.jpg");
+      background-image: url("../images/img_bg_work01.jpg");
     }
     &:nth-of-type(2) {
-      background: url("../images/img_bg_work02.jpg");
+      background-image: url("../images/img_bg_work02.jpg");
     }
     &:nth-of-type(3) {
-      background: url("../images/img_bg_work03.jpg");
+      background-image: url("../images/img_bg_work03.jpg");
     }
     &:nth-of-type(4) {
-      background: url("../images/img_bg_work04.jpg");
+      background-image: url("../images/img_bg_work04.jpg");
     }
     &:nth-of-type(2n) {
       position: relative;
       top: -64px;
+      @include SP {
+        top: 0;
+      }
     }
     &_title {
       color: #fff;
       letter-spacing: 0.12em;
       font-size: 3.0rem;
+      @include SP {
+        font-size: 2.4rem;
+        line-height: 1.2;
+      }
     }
     &_desc {
       color: #fff;
       letter-spacing: 0.2em;
       font-size: 1.8rem;
+      @include SP {
+        font-size: 1.2rem;
+        letter-spacing: 1.8px;
+      }
     }
   }
 }
@@ -102,46 +150,90 @@ TOP WORKS
 TOP SERVICE
 ------------------------*/
 .-service {
+  @include SP {
+    margin-bottom: 25px;
+  }
   & .c-more {
     text-align: right;
     &:nth-of-type(1) {
       margin-right: 52px;
+      @include SP {
+        margin-right: 0;
+      }
     }
     &:nth-of-type(2) {
       margin-right: 11px;
+      @include SP {
+        margin-right: 0;
+      }
     }
   }
 }
 .p-serviceList {
   margin-bottom: 71px;
+  @include SP {
+    margin: 0;
+  }
   &_item {
     margin: 28px 0 52px;
-    font-size: 0;
     width: 100%;
-    &Img {
-      display: inline-block;
-      font-size: 0;
-      vertical-align: top;
+    overflow: hidden;
+    @include SP {
+      margin: 0 0 14px;
     }
-    &Text {
-      display: inline-block;
-      font-size: 0;
-      vertical-align: top;
-      width: 443px;
-      &:nth-of-type(2n) {
+    &:nth-of-type(1) {
+      & .p-serviceList_itemImg {
+        width: 581px;
+        float: left;
+      }
+      & .p-serviceList_itemText {
+        float: right;
         padding-left: 59px;
       }
-      &:nth-of-type(2n+1) {
+    }
+    &:nth-of-type(2) {
+      & .p-serviceList_itemImg {
+        width: 581px;
+        float: right;
+      }
+      & .p-serviceList_itemText {
+        float: left;
         padding-right: 59px;
+      }
+    }
+    &Img {
+      @include SP {
+        width: 100% !important;
+        float: none !important;
+        margin-bottom: 10px;
+      }
+    }
+    &Text {
+      width: 443px;
+      @include SP {
+        width: 100% !important;
+        padding: 0 !important;
+        float: none !important;
       }
       &_title {
         margin: 0 0 30px;
         font-size: 2.0rem;
+        @include SP {
+          font-size: 1.6rem;
+          line-height: 1.4;
+          letter-spacing: 0.5px;
+          margin-bottom: 0;
+        }
       }
       &_desc {
         margin: 0 0 30px;
         font-size: 1.4rem;
         line-height: 1.85;
+        @include SP {
+          font-size: 1.2rem;
+          line-height: 1.72;
+          margin-bottom: 0;
+        }
       }
     }
   }
@@ -151,8 +243,14 @@ TOP BLOG
 ------------------------*/
 .-blog {
   margin-bottom: 145px;
+  @include SP {
+    margin-bottom: 14px;
+  }
   & .c-sectionTitle {
     margin-bottom: 15px;
+    @include SP {
+      margin-bottom: 5px;
+    }
   }
   & .c-more {
     text-align: right;
@@ -162,12 +260,21 @@ TOP BLOG
 .p-blogList {
   font-size: 0;
   margin: 26px 0 0;
+  @include SP {
+    margin: 0;
+  }
   &_item {
     display: inline-block;
     position: relative;
     width: 50%;
+    @include SP {
+      width: 100%;
+    }
     &:nth-of-type(2n) {
       top: -84px;
+      @include SP {
+        top: 0;
+      }
     }
     & a {
       display: block;
@@ -179,21 +286,41 @@ TOP BLOG
     }
     &Img {
       margin-bottom: 22px;
+      @include SP {
+        margin-bottom: 10px;
+      }
     }
     &Text {
       font-size: 1.4rem;
       padding: 0 38px 54px;
+      @include SP {
+        padding: 0 0 15px;
+      }
       &_date {
         font-size: 1.6rem;
         font-weight: bold;
         color: #babfc4;
+        @include SP {
+          font-size: 0.8rem;
+        }
       }
       &_title {
         font-size: 2.0rem;
         margin-bottom: 17px;
+        @include SP {
+          font-size: 1.5rem;
+          line-height: 1.4;
+          letter-spacing: 0.9px;
+          margin-bottom: 0;
+        }
       }
       &_desc {
         line-height: 2.1;
+        @include SP {
+          font-size: 1.2rem;
+          line-height: 1.72;
+          margin-bottom: 0;
+        }
       }
     }
   }
@@ -203,6 +330,9 @@ TOP COMPANY
 ------------------------*/
 .-company {
   margin-bottom: 70px;
+  @include SP {
+    margin-bottom: 14px;
+  }
   & .p-contentBlock {
     &:nth-of-type(1) {
       position: relative;
@@ -210,38 +340,79 @@ TOP COMPANY
       background-position-y: 30px;
       min-height: 430px;
       padding-top: 65px;
+      @include SP {
+        padding-top: 0;
+        padding-bottom: 214px;
+        min-height: 300px;
+        background-size: contain;
+        background-position: left bottom;
+      }
       & .c-middleTitle {
         margin-bottom: 28px;
+        @include SP {
+          margin-bottom: 6px;
+        }
       }
       & .p-contentDesc {
-        margin-bottom: 0px;
         line-height: 1.7;
         margin-bottom: 21px;
+        @include SP {
+          margin-top: 0;
+          margin-bottom: 0;
+          font-size: 1.2rem;
+          line-height: 1.72;
+          margin-bottom: 0;
+        }
       }
       & .p-contentBlock_textArea {
         width: 310px;
+        @include SP {
+          width: 100%;
+        }
       }
     }
     &:nth-of-type(2) {
       position: relative;
       padding-left: 390px;
       background: url("../images/img_bg_company02.jpg") left 120px no-repeat, url("../images/img_bg_company03.jpg") right top no-repeat;
+      @include SP {
+        background-size: 100vw 50vw, 100vw 50vw;
+        background-position: left 50vw, left top;
+        padding-left: 0;
+      }
       & .c-middleTitle {
         padding-top: 153px;
         margin-bottom: 30px;
+        @include SP {
+          padding-top: (100vw / 0.98);
+          font-size: 1.5rem;
+          margin-bottom: 0;
+        }
       }
       & .p-contentDesc {
         margin-bottom: 0px;
-        line-height: 1.7;
+        line-height: 2.0;
+        @include SP {
+          font-size: 1.0rem;
+        }
         &.-rep {
           margin-bottom: 22px;
+          @include SP {
+            margin: 0;
+          }
         }
         &.-profile {
           margin-bottom: 26px;
+          @include SP {
+            margin: 0;
+          }
         }
       }
       & .p-contentBlock_textArea {
         width: 265px;
+        @include SP {
+          width: 100%;
+        }
       }
     }
     &:nth-of-type(3) {
@@ -249,6 +420,12 @@ TOP COMPANY
         width: 295px;
         margin-left: auto;
         margin-top: -196px;
+        @include SP {
+          padding-top: 20px;
+          font-size: 1.0rem;
+          width: 100%;
+          margin: 0;
+        }
       }
     }
   }
@@ -261,6 +438,14 @@ TOP COMPANY
   z-index: 2;
   font-size: 4.0rem;
   font-weight: bold;
+  @include SP {
+    color: #fff;
+    font-size: 2.3rem;
+    width: 100%;
+    top: 269px;
+    left: 16px;
+    line-height: 1.2;
+  }
 }
 /*----------------------
 TOP MAP
@@ -275,9 +460,15 @@ TOP FORM
 .-mailForm {
   background: #e8e8e8;
   padding: 110px 0 120px;
+  @include SP {
+    padding: 23px 0 30px;
+  }
   & .c-sectionTitle {
     text-align: center;
     margin-bottom: 20px;
+    @include SP {
+      margin-bottom: 0px;
+    }
   }
 }
 .mailForm{
@@ -287,10 +478,19 @@ TOP FORM
     font-weight: bold;
     text-align: center;
     margin-bottom: 25px;
+    @include SP {
+      font-size: 1.2rem;
+      line-height: 1.75;
+      font-weight: normal;
+      margin: 0 0 27px;
+    }
   }
   &_entry {
     width :73%;
     margin: 0 auto;
+    @include SP {
+      width: 100%;
+    }
     & input, textarea {
       font-size: 1.6rem;
       line-height: 1.2;
@@ -299,9 +499,17 @@ TOP FORM
       display: inline-block;
       width: 100%;
       margin: 0 auto 20px;
+      @include SP {
+        font-size: 1.2rem;
+        padding: 8px;
+        margin-bottom: 10px;
+      }
     }
     & textarea {
       min-height: 10em;
+      @include SP {
+        min-height: 7em;
+      }
     }
     & button {
       position: relative;
@@ -315,6 +523,11 @@ TOP FORM
       letter-spacing: 0.08em;
       color: #fff;
       transition: all 0.5s ease;
+      @include SP {
+        margin-top: 0;
+        font-size: 1.2rem;
+        padding: 8px;
+      }
       &:hover {
         cursor: pointer;
         opacity: 0.6;

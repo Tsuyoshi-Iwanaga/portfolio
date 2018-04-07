@@ -29,12 +29,17 @@ img {
 .l-contentSection {
   margin: 0 0 20px;
   min-width: $CONTENTS_WIDTH;
+  @include SP {
+    width: 100%;
+    min-width: auto;
+  }
 }
 .l-contentInner {
   width: $CONTENTS_WIDTH;
   margin: 0 auto;
   @include SP {
     width: 100%;
+    padding: 0 $SP_SIDE_PADDING;
   }
 }
 /*----------------------
@@ -43,6 +48,11 @@ header
 .l-header {
   padding: 45px 0 41px;
   min-width: $CONTENTS_WIDTH;
+  @include SP {
+    width: 100%;
+    min-width: auto;
+    padding: 28px $SP_SIDE_PADDING;
+  }
   &_inner {
     position: relative;
     &.is-close {
@@ -59,14 +69,22 @@ header
   margin: 0;
   white-space: nowrap;
   text-indent: 100%;
+  @include SP {
+    height: 33px;
+  }
 }
 .p-nav {
   position: absolute;
   top: 4px;
   left: 0;
   z-index: 4;
+  @include SP {
+    font-size: 0.7rem;
+  }
   &_title {
-
+    @include SP {
+      margin-top: -1px;
+    }
   }
   &_list {
     margin-top: 50px;
@@ -119,20 +137,6 @@ header
   }
 }
 
-// <nav class="p-nav">
-// <ul class="p-switchButton">
-//   <li class="nav_title"><span class="js-switchButton">Menu</span></li>
-// </ul>
-// <ul class="p-nav_list">
-//   <li class="nav_list_item">NEWS</li>
-//   <li class="nav_list_item">SERVICE</li>
-//   <li class="nav_list_item">COMPANY</li>
-//   <li class="nav_list_item">CONTACT</li>
-//   <li class="nav_list_item">BLOG</li>
-// </ul>
-// </nav>
-
-
 .p-switchButton {
   padding-left: 44px;
   &:hover {
@@ -158,6 +162,22 @@ header
     height: 4px;
     background: #000;
   }
+  @include SP {
+    padding-left: 20px;
+    &:before {
+      top: 7px;
+      left: 0;
+      width : 15px;
+      height: 2px;
+      background: #000;
+    }
+    &:after {
+      top: 13px;
+      left: 0;
+      width : 15px;
+      height: 2px;
+    }
+  }
 }
 .p-headerCatch {
   font-size: 1.2rem;
@@ -166,20 +186,38 @@ header
   letter-spacing: 0.6px;
   line-height: 1.7;
   right: 0;
+  @include SP {
+    letter-spacing: 0.3px;
+    font-size: 0.6rem;
+  }
 }
 /*----------------------
 footer
 ------------------------*/
 .l-footer {
   min-width: $CONTENTS_WIDTH;
+  @include SP {
+    width: 100%;
+    min-width: auto;
+  }
 }
 .p-footer {
   padding: 20px 0 20px;
+  @include SP {
+    margin-bottom: 0px;
+  }
   &_logo {
     text-align: center;
     margin: 80px 0 40px;
+    @include SP {
+      margin: 31px 0 20px;
+    }
     & img {
       max-width: 239px;
+      @include SP {
+        width: 120px;
+        margin-right: 13px;
+      }
     }
   }
   &_text {
@@ -187,6 +225,14 @@ footer
     margin: 0 auto 70px;
     line-height: 2.2;
     width: 73%;
+    @include SP {
+      width: 100%;
+      font-weight: bold;
+      letter-spacing: 0.6px;
+      font-size: 0.9rem;
+      line-height: 2.3;
+      margin-bottom: 29px;
+    }
   }
   &_copy {
     font-size: 1.8rem;
@@ -194,6 +240,13 @@ footer
     color: #fff;
     text-align: center;
     padding: 30px 0 30px;
+    @include SP {
+      font-weight: normal;
+      font-size: 0.9rem;
+      line-height: 2.3;
+      letter-spacing: 1.0px;
+      padding: 12px 0 12px;
+    }
   }
 }
 
@@ -204,6 +257,10 @@ toTopPage
   position: fixed;
   bottom: 140px;
   right: 50px;
+  @include SP {
+    bottom: 30px;
+    right: 18px;
+  }
   z-index: 2;
   & a {
     display: block;
@@ -217,18 +274,6 @@ toTopPage
   }
 }
 
-/*---- footercopy -----*/
-
-// <footer class="l-footer">
-//   <div class="l-contentInner l-header_inner">
-//     <div class="p-footer_logo"><img src="<?php bloginfo('template_url'); ?>/images/img_footer_logo01.png" alt="CO-BEAT"></div>
-//     <p class="p-footer_text">社名は「CO-BEAT」コ・ビート（個=CO ＋ 羽ばたく＝BEAT）。と名付けました。今の日本って学歴や数字で人のものさしを、物事で判断する基準があります。ただそれだけで人の判断はできないと僕は思います。僕は人の判断基準ってペーパーテストの点数がとれるや、漢字がひとより多くかけるではないと思います。自分の好きなコトで生きていく。好きなコトを武器にする。本当に大事なコトにフォーカスをあてて、社会に提案したいと思います。そんな想いを込めてネーミングとロゴに込めました。→ロゴにかける想い、制作過程につきましてはコチラから。</p>
-//   </div>
-//   <div class="p-footer_copy">COPYRIGHT &copy; CO-BEAT INC. ALL RIGHTS RESERVED.</div>
-
-
-
-
 /*----------------------
 common parts
 ------------------------*/
@@ -238,12 +283,20 @@ common parts
   line-height: 1.0;
   letter-spacing: 0.18em;
   margin: 0 0 7px;
+  @include SP {
+    font-size: 2.5rem;
+    margin: 0;
+  }
 }
 .c-middleTitle {
   font-size: 2.0rem;
   letter-spacing: 0.06em;
   margin: 0 0 10px;
   font-weight: bold;
+  @include SP {
+    font-size: 1.0rem;
+    margin: 0 0 6px;
+  }
 }
 .c-more {
   margin: 0;
@@ -257,8 +310,17 @@ common parts
     background: url("../images/img_arrow01.png") top left no-repeat;
     background-position-x: -20px;
     transition: background-position 0.5s ease-out;
+    @include SP {
+      font-size: 1.0rem;
+      padding-right: 63px;
+      background-position-y: -4px;
+      background-position-x: -55px;
+    }
     &:hover {
       background-position-x: 60px;
+      @include SP {
+        background-position-x: -22px;
+      }
     }
     &:before {
       content: 'MORE';

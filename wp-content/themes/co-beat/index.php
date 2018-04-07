@@ -34,7 +34,7 @@
 </header><!-- /.l-header -->
 <div class="p-kv">
   <div class="l-contentInner l-kv_inner">
-    <p class="p-kv_catch">if it can be imagined,<br>it can be created.</p>
+    <p class="p-kv_catch">If It Can Be Imagined,<br>It Can Be Created.</p>
     <p class="p-kv_desc">デザイン×"個"の価値で、誰もがもっと自分らしい生き方を創る世界へ。</p>
   </div>
 </div><!-- /.l-kv -->
@@ -77,13 +77,13 @@
     <p class="c-middleTitle">自社サービスとコンテンツ</p>
     <ul class="p-serviceList">
       <li class="p-serviceList_item">
+        <div class="p-serviceList_itemImg">
+          <img src="<?php bloginfo('template_url'); ?>/images/img_bg_service01.jpg" alt="">
+        </div>
         <div class="p-serviceList_itemText">
           <h3 class="p-serviceList_itemText_title">ヒカリエMOV8階 CREARIVE LUONGEにてYOUR TIMESを出店いたしました。</h3>
           <p class="p-serviceList_itemText_desc">ヒカリエMOV8階にて出店いたしました。テキストストテキストテキストテキストテキストテキストテトテキストテキストテキストヒカリエMOV8階にて出店いたしました。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストヒカリエMOV8階にて出店いたしました。ストテキスキストテキストテキストテキストテキストテキスト・・・</p>
           <p class="c-more"><a href="#" class="c-moreLink">MORE</a></p>
-        </div>
-        <div class="p-serviceList_itemImg">
-          <img src="<?php bloginfo('template_url'); ?>/images/img_bg_service01.jpg" alt="">
         </div>
       </li>
       <li class="p-serviceList_item">
@@ -111,7 +111,7 @@
           </div>
           <div class="p-blogList_itemText">
             <p class="p-blogList_itemText_date">2018/03/01</p>
-            <h3 class="p-blogList_itemText_title">ヒカリエMOV8階にて出店いたしました</h3>
+            <h3 class="p-blogList_itemText_title">ヒカリエMOV8階 CREARIVE LUONGEにてYOUR TIMESを出店いたしました。</h3>
             <p class="p-blogList_itemText_desc">ヒカリエMOV8階にて出店いたしました。テキストストテキストテキストテキストテキストテキストテトテキストテキストテキストヒカリエMOV8階にて出店いたしました。テキストテキストテキス・・・</p>
           </div>
         </a>
@@ -179,7 +179,7 @@
       <div class="p-contentBlock_textArea">
         <h3 class="c-middleTitle">会社概要</h3>
         <p>Co-BEAT株式会社</p>
-        <p>&#12306;140-0002<br>東京都 品川区東品川2-2-28<br>レガリス品川天王洲ベイサイドコート1301<p>
+        <p>&#12306;140-0002<br>東京都 品川区東品川2-2-28<br>レガリス品川天王洲ベイサイドコート1301</p>
         <p>スタッフ数4名<br>(デザイナー,システムエンジニア,絵本作家)<p>
       </div>
     </div>
@@ -191,7 +191,7 @@
 <section class="l-contentSection -mailForm" id="contact">
   <div class="l-contentInner">
     <h2 class="c-sectionTitle">MAIL FORM</h2>
-    <p class="mailForm_desc">お客様からのご相談、企業様からのお問い合わせをお待ちしております。<br>責任を持って折り返しご連絡させていただきます。<br>※個人情報の取り扱いについて本画面にて弊社取得する個人情報は適切にお取り扱いし、<br>第三者に提供または開示することはございません。<br>※ただし、内容によっては返信を控えさせて頂くこともございますのでご了承くださいませ。</p>
+    <p class="mailForm_desc">お客様からのご相談、企業様からのお問い合せをお待ちしております。<br class="onlyPC">責任を持って折り返しご連絡させて頂きます。<br>※個人情報の取り扱いについて本画面にて弊社取得する個人情報は適切にお取り扱いし、<br class="onlyPC">第三者に提供または開示することはございません。<br class="onlyPC">※ただし、内容によっては返信を控えさせて頂くこともございますのでご了承くださいませ。</p>
     <form action="#" class="mailForm_entry">
       <input type="text" placeholder="NAME">
       <input type="text" placeholder="E-MAIL">
