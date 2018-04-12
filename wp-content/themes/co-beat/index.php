@@ -5,18 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>co-BEAT</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900">
 <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/common.css">
 </head>
 <body>
 <div class="l-loader">
 
 </div><!-- /.l-loader -->
-<section class="l-wrap js-wrap">
+<section class="l-wrap" id="js-wrap">
 <header class="l-header">
   <div class="l-contentInner l-header_inner">
     <h1 class="p-logo">co-BEAT</h1>
-    <nav class="p-nav">
-      <ul class="p-switchButton .js-navSwitch">
+    <nav class="p-nav js-navSwitch">
+      <ul class="p-switchButton">
         <li class="p-nav_title"><span class="js-switchButton">Menu</span></li>
       </ul>
       <ul class="p-nav_list">
@@ -213,7 +214,7 @@
 </section><!-- /.l-wrap -->
 <div class="c-overRay"></div>
 <script src="<?php bloginfo('template_url'); ?>/js/jquery-3.2.1.js"></script>
-<!-- <script src="<?php bloginfo('template_url'); ?>/js/common.js"></script> -->
+<script src="<?php bloginfo('template_url'); ?>/js/common.js"></script>
 <script>
 </script>
 </body>

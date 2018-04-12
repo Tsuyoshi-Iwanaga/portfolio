@@ -55,12 +55,11 @@ header
   }
   &_inner {
     position: relative;
-    &.is-close {
-      z-index: 100;
-    }
   }
 }
 .p-logo {
+  position: relative;
+  z-index: 4;
   display: block;
   background: url("../images/logo.svg") top center no-repeat;
   background-position-x: 51.5%;
@@ -75,6 +74,7 @@ header
 }
 .p-nav {
   position: absolute;
+  z-index: 5;
   top: 4px;
   left: 0;
   z-index: 4;
@@ -106,7 +106,7 @@ header
   left: 0;
   z-index: 3;
   width: 100vw;
-  height: 120vw;
+  height: 120vh;
   background: #000;
   opacity: 0.8;
   display: none;
@@ -121,15 +121,21 @@ header
     color: #fff;
   }
   & .p-nav_title {
-    color: #fff;
+    transition: all 0.5s ease;
+    opacity: 0;
+  }
+  & .p-nav_list {
+    display: block;
   }
   & .p-switchButton {
     &:before {
+      transition: all 0.5s ease;
       background: #fff;
       transform: rotate(45deg);
       top: 22px;
     }
     &:after {
+      transition: all 0.5s ease;
       background: #fff;
       transform: rotate(135deg);
       top: 22px;
@@ -151,6 +157,7 @@ header
     width : 30px;
     height: 4px;
     background: #000;
+    transition: all 0.5s ease;
   }
   &:after {
     content: '';
@@ -161,6 +168,7 @@ header
     width : 30px;
     height: 4px;
     background: #000;
+    transition: all 0.5s ease;
   }
   @include SP {
     padding-left: 20px;
@@ -182,6 +190,7 @@ header
 .p-headerCatch {
   font-size: 1.2rem;
   position: absolute;
+  z-index: 4;
   top: -0.3em;
   letter-spacing: 0.6px;
   line-height: 1.7;

@@ -4,7 +4,8 @@ TOP KV
 $KV_HEIGHT_PC: 425px;
 $KV_HEIGHT_SP: 141px;
 .p-kv {
-  background: url("../images/img_kv_01.jpg") top center no-repeat;
+  background: #fff top center no-repeat;
+  background-image: url("../images/img_kv_01.jpg");
   background-size: cover;
   position: relative;
   width: 100%;
@@ -83,6 +84,7 @@ TOP WORKS
     margin: 0;
   }
   &_item {
+    position: relative;
     display: inline-block;
     vertical-align: top;
     height: 340px;
@@ -93,10 +95,8 @@ TOP WORKS
       height: 220px;
       background-size: cover;
     }
-    &:hover {
-      opacity: 0.8;
-    }
     & a {
+      position: relative;
       display: inline-block;
       vertical-align: top;
       width: 100%;
@@ -104,6 +104,23 @@ TOP WORKS
       padding: 20px 40px;
       @include SP {
         padding: 14px 20px;
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+      }
+      &:hover {
+        &:before {
+          opacity: 0.5;
+          background: linear-gradient(90deg, #c1de41, #3993f4);
+        }
       }
     }
     &:nth-of-type(1) {
@@ -344,6 +361,7 @@ TOP COMPANY
         padding-top: 0;
         padding-bottom: 214px;
         min-height: 300px;
+        background: url("../images/img_bg_company01_sp.jpg") right top no-repeat;
         background-size: contain;
         background-position: left bottom;
       }
@@ -376,7 +394,8 @@ TOP COMPANY
       padding-left: 390px;
       background: url("../images/img_bg_company02.jpg") left 120px no-repeat, url("../images/img_bg_company03.jpg") right top no-repeat;
       @include SP {
-        background-size: 100vw 50vw, 100vw 50vw;
+        background: url("../images/img_bg_company02_sp.jpg") left 120px no-repeat, url("../images/img_bg_company03_sp.jpg") right top no-repeat;
+        background-size: 100vw auto, 100vw auto;
         background-position: left 50vw, left top;
         padding-left: 0;
       }
@@ -384,7 +403,7 @@ TOP COMPANY
         padding-top: 153px;
         margin-bottom: 30px;
         @include SP {
-          padding-top: (100vw / 0.98);
+          padding-top: 118vw;
           font-size: 1.5rem;
           margin-bottom: 0;
         }
