@@ -19,13 +19,13 @@ $KV_HEIGHT_SP: 141px;
   &_catch {
     font-size: 7.0rem;
     position: absolute;
-    bottom: -24px;
+    bottom: -28px;
     left: 0;
     margin: 0;
     font-weight: bold;
     color: #fff;
     @include SP {
-      bottom: -3px;
+      bottom: -4px;
       font-size: 2.7rem;
       line-height: 1;
       padding: 0 20px;
