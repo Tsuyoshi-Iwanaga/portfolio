@@ -13,6 +13,7 @@
 <script src="<?php bloginfo('template_url'); ?>/js/jquery-3.2.1.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/js/jquery.nicescroll.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/js/easyAnime.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjdxrdOu0Aop_vcg9vAYg9xtaaxsgWze0"></script>
 <script src="<?php bloginfo('template_url'); ?>/js/common.js"></script>
 <script>
 </script>

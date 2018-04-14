@@ -152,9 +152,7 @@
     </div>
   </div>
 </section><!-- /.l-company -->
-<section class="l-contentSection -map" id="map">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3243.254620195624!2d139.75043893984386!3d35.621448996965825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188a6b65e0ed31%3A0x674b6375325bff5!2z5aSp546L5rSy44Ki44Kk44Or6aeF!5e0!3m2!1sja!2sjp!4v1522992398421&iwloc=A&output=embed&amp;iwloc=B" width="100%" height="340" frameborder="0" style="border:0" allowfullscreen></iframe>
-</section><!-- /.l-map -->
+<section class="l-contentSection -map" id="map"></section><!-- /.l-map -->
 <section class="l-contentSection -mailForm" id="contact">
   <div class="l-contentInner">
     <h2 class="c-sectionTitle">MAIL FORM</h2>

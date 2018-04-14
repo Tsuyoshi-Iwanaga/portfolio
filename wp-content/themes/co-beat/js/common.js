@@ -10,6 +10,7 @@ var construct = function(el){
   _.$wrap = $(el);
   _.$pageTop = _.$wrap.find('.js-toTopPage');
   _.$navBtn = _.$wrap.find('.js-navSwitch');
+  _.$header = _.$wrap.find('.l-header');
   _.$kv = _.$wrap.find('.p-kv');
 
   _.init();
@@ -28,6 +29,7 @@ proto.init = function() {
   _.typeText();
   _.easyAnime();
   _.runNicescroll();
+  _.googleMap();
 
   return _;
 };
@@ -45,6 +47,8 @@ proto.bindEvents = function(){
   });
 
   _.$window.on('scroll', function(ev){
+    var scrollVol = _.$window.scrollTop();
+    _.fixedScroll(scrollVol);
   });
 
   return _;
@@ -128,9 +132,168 @@ proto.easyAnime = function(el) {
 //scroll
 proto.runNicescroll = function() {
   $("body").niceScroll({
-    scrollspeed: 100,
-    mousescrollstep: 60,
+    scrollspeed: 60,
+    mousescrollstep: 50,
   });
+};
+
+//fixedScroll
+proto.fixedScroll = function(scrollVol) {
+  var _ = this;
+
+  if(scrollVol !== 0) {
+    _.$header.addClass('is-fixed');
+  } else {
+    _.$header.removeClass('is-fixed');
+  }
+
+  return _;
+};
+
+//GoogleMap
+proto.googleMap = function() {
+  var map;
+  var styleOptions;
+  function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: {
+        lat: 35.620676,
+        lng: 139.750788
+      },
+      zoom: 17,
+      mapTypeControl: false,
+      zoomControl: false,
+      fullscreenControl: false,
+      rotateControl: false,
+      scaleControl: false,
+      styles: [
+        {
+          "featureType": "administrative",
+          "elementType": "all",
+          "stylers": [
+            {
+              "saturation": "-100"
+            }
+          ]
+        },
+        {
+          "featureType": "administrative.province",
+          "elementType": "all",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "landscape",
+          "elementType": "all",
+          "stylers": [
+            {
+              "saturation": -100
+            },
+            {
+              "lightness": 65
+            },
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "poi",
+          "elementType": "all",
+          "stylers": [
+            {
+              "saturation": -100
+            },
+            {
+              "lightness": "50"
+            },
+            {
+              "visibility": "simplified"
+            }
+          ]
+        },
+        {
+          "featureType": "road",
+          "elementType": "all",
+          "stylers": [
+            {
+              "saturation": "-100"
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway",
+          "elementType": "all",
+          "stylers": [
+            {
+              "visibility": "simplified"
+            }
+          ]
+        },
+        {
+          "featureType": "road.arterial",
+          "elementType": "all",
+          "stylers": [
+            {
+              "lightness": "30"
+            }
+          ]
+        },
+        {
+          "featureType": "road.local",
+          "elementType": "all",
+          "stylers": [
+            {
+              "lightness": "40"
+            }
+          ]
+        },
+        {
+          "featureType": "transit",
+          "elementType": "all",
+          "stylers": [
+            {
+              "saturation": -100
+            },
+            {
+              "visibility": "simplified"
+            }
+          ]
+        },
+        {
+          "featureType": "water",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "hue": "#ffff00"
+            },
+            {
+              "lightness": -25
+            },
+            {
+              "saturation": -97
+            }
+          ]
+        },
+        {
+          "featureType": "water",
+          "elementType": "labels",
+          "stylers": [
+            {
+              "lightness": -25
+            },
+            {
+              "saturation": -100
+            }
+          ]
+        }
+      ]
+    });
+  }
+  initMap();
 };
 
 //ready function

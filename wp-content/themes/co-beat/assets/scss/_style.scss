@@ -47,11 +47,26 @@ header
 ------------------------*/
 .l-header {
   padding: 45px 0 41px;
+  position: relative;
+  z-index: 3;
+  background: #fff;
+  width: 100%;
   min-width: $CONTENTS_WIDTH;
+  transition: opacity,padding 0.5s ease-in;
   @include SP {
     width: 100%;
     min-width: auto;
     padding: 28px $SP_SIDE_PADDING;
+  }
+  &.is-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    opacity: 0.8;
+    @include SP {
+    }
   }
   &_inner {
     position: relative;
@@ -59,7 +74,6 @@ header
 }
 .p-logo {
   position: relative;
-  z-index: 4;
   display: block;
   background: url("../images/logo.svg") top center no-repeat;
   background-position-x: 51.5%;
@@ -74,10 +88,8 @@ header
 }
 .p-nav {
   position: absolute;
-  z-index: 5;
   top: 4px;
   left: 0;
-  z-index: 4;
   @include SP {
     font-size: 0.7rem;
   }
@@ -104,15 +116,18 @@ header
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 3;
+  z-index: 2;
   width: 100vw;
   height: 120vh;
   background: #000;
-  opacity: 0.8;
+  opacity: 0.9;
   display: none;
 }
 
 .is-close {
+  &.l-header {
+    background: transparent;
+  }
   & .p-logo {
     background: url("../images/logo_closed.svg") top center no-repeat;
     background-size: 72px;
@@ -190,7 +205,6 @@ header
 .p-headerCatch {
   font-size: 1.2rem;
   position: absolute;
-  z-index: 4;
   top: -0.3em;
   letter-spacing: 0.6px;
   line-height: 1.7;
@@ -270,7 +284,7 @@ toTopPage
     bottom: 30px;
     right: 18px;
   }
-  z-index: 2;
+  z-index: 1;
   & a {
     display: block;
     width: 44px;
