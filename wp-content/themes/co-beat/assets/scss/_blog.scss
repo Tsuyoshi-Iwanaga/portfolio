@@ -1,9 +1,27 @@
 /*----------------------
-BLOG ARTCICLE
+BLOG category
 ------------------------*/
+.p_blog {
+  &_img {
+    & img {
+      height: auto;
+    }
+  }
+}
 /*----------------------
-TOP NEXT10ARTICLE BUTTON
+BLOG article
 ------------------------*/
+.p_article {
+  &_list {
+    &_item {
+      &_img {
+        & img {
+          height: auto;
+        }
+      }
+    }
+  }
+}
 /*----------------------
 TOP ABOUT US PROFILE
 ------------------------*/
