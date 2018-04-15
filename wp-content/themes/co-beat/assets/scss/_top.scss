@@ -306,6 +306,9 @@ TOP BLOG
       @include SP {
         margin-bottom: 10px;
       }
+      & img {
+        height: auto;
+      }
     }
     &Text {
       font-size: 1.4rem;

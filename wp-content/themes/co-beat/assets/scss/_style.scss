@@ -33,6 +33,18 @@ img {
     width: 100%;
     min-width: auto;
   }
+  &.-middleWidth {
+    min-width: $CONTENTS_MIDDLE_WIDTH;
+    @include SP {
+      min-width: auto;
+    }
+    & .l-contentInner {
+      width: $CONTENTS_MIDDLE_WIDTH;
+      @include SP {
+        width: 100%;
+      }
+    }
+  }
 }
 .l-contentInner {
   width: $CONTENTS_WIDTH;

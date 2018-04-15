@@ -29,6 +29,7 @@ proto.init = function() {
   _.typeText();
   _.easyAnime();
   _.runNicescroll();
+  _.initScroll();
   _.googleMap();
 
   return _;
@@ -121,12 +122,14 @@ proto.typeText = function(el) {
 proto.easyAnime = function(el) {
   $('.js-fadeIn').easyAnime({addClass: 'is-fired'});
   $('.c-moreLink').easyAnime({addClass: 'is-fired'});
+};
 
-  //fast-View
-  $('.-works .c-sectionTitle').addClass('is-fired');
-  $('.-works .c-middleTitle').addClass('is-fired');
-  $('.p-worksList_item:nth-of-type(1)').addClass('is-fired');
-  $('.p-worksList_item:nth-of-type(2)').addClass('is-fired');
+proto.initScroll = function() {
+  var _ = this;
+
+  _.$wrap.trigger("scroll");
+
+  return _;
 };
 
 //scroll

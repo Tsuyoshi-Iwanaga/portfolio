@@ -1,7 +1,30 @@
 /*----------------------
 BLOG category
 ------------------------*/
-.p_blog {
+.p-blog {
+  &_title {
+    font-size: 3.0rem;
+    line-height: 1.47;
+    letter-spacing: 0;
+    @include SP {
+      font-size: 1.5rem;
+    }
+  }
+  &_date {
+    color: #babfc4;
+    font-weight: bold;
+    font-size: 1.4rem;
+    @include SP {
+      font-size: 0.7rem;
+    }
+  }
+  &_content {
+    line-height: 1.67;
+    font-size: 2.4rem;
+    @include SP {
+      font-size: 1.2rem;
+    }
+  }
   &_img {
     & img {
       height: auto;
@@ -11,10 +34,45 @@ BLOG category
 /*----------------------
 BLOG article
 ------------------------*/
-.p_article {
+.p-article {
   &_list {
     &_item {
+      margin-top: 40px;
+      @include SP {
+        margin-top: 20px;
+      }
+      & a {
+        display: block;
+        transition: all 0.5s ease-in;
+        &:hover {
+          opacity: 0.6;
+        }
+      }
+      &_title {
+        font-size: 3.0rem;
+        line-height: 1.47;
+        margin: 10px 0;
+        @include SP {
+          font-size: 1.5rem;
+        }
+      }
+      &_date {
+        color: #babfc4;
+        font-weight: bold;
+        font-size: 1.4rem;
+        @include SP {
+          font-size: 0.7rem;
+        }
+      }
+      &_content {
+        line-height: 1.67;
+        font-size: 2.4rem;
+        @include SP {
+          font-size: 1.2rem;
+        }
+      }
       &_img {
+        margin-bottom: 20px;
         & img {
           height: auto;
         }
@@ -22,9 +80,3 @@ BLOG article
     }
   }
 }
-/*----------------------
-TOP ABOUT US PROFILE
-------------------------*/
-/*----------------------
-TOP LOGO AREA
-------------------------*/

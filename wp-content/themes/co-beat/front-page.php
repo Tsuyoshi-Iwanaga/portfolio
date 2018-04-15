@@ -79,9 +79,7 @@
     ?>
     <li class="p-blogList_item js-fadeIn">
       <a href="<?php the_permalink(); ?>">
-        <div class="p-blogList_itemImg">
-          <img src="<?php the_post_thumbnail('full'); ?>" alt="">
-        </div>
+        <div class="p-blogList_itemImg"><?php the_post_thumbnail('full'); ?></div>
         <div class="p-blogList_itemText">
           <p class="p-blogList_itemText_date"><?php the_time('Y/m/d') ?></p>
           <h3 class="p-blogList_itemText_title"><?php the_title(); ?></h3>

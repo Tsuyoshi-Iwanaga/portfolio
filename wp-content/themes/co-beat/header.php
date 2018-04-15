@@ -22,13 +22,13 @@
         <li class="p-nav_title"><span class="js-switchButton">Menu</span></li>
       </ul>
       <ul class="p-nav_list">
-        <li class="p-nav_list_item"><a href="index.html#works">WORKS</a></li>
-        <li class="p-nav_list_item"><a href="index.html#service">SERVICE</a></li>
-        <li class="p-nav_list_item"><a href="index.html#pickup">PICKUP</a></li>
-        <li class="p-nav_list_item"><a href="index.html#blog">BLOG</a></li>
-        <li class="p-nav_list_item"><a href="index.html#profile">PROFILE</a></li>
-        <li class="p-nav_list_item"><a href="index.html#company">COMPANY</a></li>
-        <li class="p-nav_list_item"><a href="index.html#contact">CONTACT</a></li>
+        <li class="p-nav_list_item"><a href="/#works">WORKS</a></li>
+        <li class="p-nav_list_item"><a href="/#service">SERVICE</a></li>
+        <li class="p-nav_list_item"><a href="/#pickup">PICKUP</a></li>
+        <li class="p-nav_list_item"><a href="/#blog">BLOG</a></li>
+        <li class="p-nav_list_item"><a href="/#profile">PROFILE</a></li>
+        <li class="p-nav_list_item"><a href="/#company">COMPANY</a></li>
+        <li class="p-nav_list_item"><a href="/#contact">CONTACT</a></li>
       </ul>
     </nav>
     <p class="p-headerCatch">CO-BEATは、クリエイティブで<br>世の中の課題を解決する会社です。</p>
