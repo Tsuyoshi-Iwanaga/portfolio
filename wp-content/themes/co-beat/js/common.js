@@ -28,7 +28,7 @@ proto.init = function() {
   _.switchKV();
   _.typeText();
   _.easyAnime();
-  _.runNicescroll();
+  _.esingScroll();
   _.initScroll();
   _.googleMap();
 
@@ -132,13 +132,25 @@ proto.initScroll = function() {
   return _;
 };
 
-//scroll
-proto.runNicescroll = function() {
-  $("body").niceScroll({
-    scrollspeed: 60,
-    mousescrollstep: 50,
+//esing-scroll
+proto.esingScroll = function() {
+  var scrolly = 0;
+  var speed = 400;
+  $('html').mousewheel(function(event, mov) {
+
+    if(mov > 0) {
+      scrolly = $('html,body').scrollTop() - speed;
+    } else if(mov < 0) {
+      scrolly = $('html,body').scrollTop() + speed;
+    }
+
+    $('html,body')
+        .stop()
+        .animate({scrollTop: scrolly}, 'slow', $.easie(0,0,0,1));
+    return false;
+
   });
-};
+}
 
 //fixedScroll
 proto.fixedScroll = function(scrollVol) {

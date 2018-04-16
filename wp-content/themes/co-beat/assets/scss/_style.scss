@@ -26,6 +26,12 @@ img {
 }
 
 /*---- layout -----*/
+.l-wrap {
+  padding-top: 151px;
+  @include SP {
+    padding-top: 89px;
+  }
+}
 .l-contentSection {
   margin: 0 0 20px;
   min-width: $CONTENTS_WIDTH;
@@ -59,7 +65,9 @@ header
 ------------------------*/
 .l-header {
   padding: 45px 0 41px;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 3;
   background: #fff;
   width: 100%;
@@ -71,9 +79,6 @@ header
     padding: 28px $SP_SIDE_PADDING;
   }
   &.is-fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
     padding-top: 8px;
     padding-bottom: 8px;
     opacity: 0.8;
