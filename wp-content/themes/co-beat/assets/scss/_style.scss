@@ -40,14 +40,10 @@ img {
     min-width: auto;
   }
   &.-middleWidth {
-    min-width: $CONTENTS_MIDDLE_WIDTH;
-    @include SP {
-      min-width: auto;
-    }
     & .l-contentInner {
-      width: $CONTENTS_MIDDLE_WIDTH;
+      padding: 0 142px;
       @include SP {
-        width: 100%;
+        padding: 0 20px;
       }
     }
   }
@@ -82,7 +78,8 @@ header
     padding-top: 8px;
     padding-bottom: 8px;
     opacity: 0.8;
-    @include SP {
+    &.is-close {
+      opacity: 1.0;
     }
   }
   &_inner {
@@ -116,14 +113,21 @@ header
     }
   }
   &_list {
-    margin-top: 50px;
-    display: none;//ナビ切り替え用クラス
+    margin-top: 55px;
+    display: none;
+    @include SP {
+      margin-top: 29px;
+    }
     &_item {
       font-weight: bold;
       font-size: 6.0rem;
-      margin: 10px 0;
+      line-height: 1.5;
+      @include SP {
+        font-size: 3.0rem;
+      }
       & a {
         color: #fff;
+        letter-spacing: 2px;
       }
     }
   }
@@ -161,16 +165,30 @@ header
   }
   & .p-switchButton {
     &:before {
+      width: 50px;
+      height: 6px;
       transition: all 0.5s ease;
       background: #fff;
       transform: rotate(45deg);
-      top: 22px;
+      top: 28px;
+      @include SP {
+        width: 24px;
+        height: 3px;
+        top: 7px;
+      }
     }
     &:after {
+      width: 50px;
+      height: 6px;
       transition: all 0.5s ease;
       background: #fff;
       transform: rotate(135deg);
-      top: 22px;
+      top: 28px;
+      @include SP {
+        width: 24px;
+        height: 3px;
+        top: 7px;
+      }
     }
   }
 }

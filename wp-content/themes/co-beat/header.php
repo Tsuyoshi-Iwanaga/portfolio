@@ -24,7 +24,7 @@
       <ul class="p-nav_list">
         <li class="p-nav_list_item"><a href="/#works">WORKS</a></li>
         <li class="p-nav_list_item"><a href="/#service">SERVICE</a></li>
-        <li class="p-nav_list_item"><a href="/#pickup">PICKUP</a></li>
+        <li class="p-nav_list_item"><a href="/#pickup">PICK UP</a></li>
         <li class="p-nav_list_item"><a href="/#blog">BLOG</a></li>
         <li class="p-nav_list_item"><a href="/#profile">PROFILE</a></li>
         <li class="p-nav_list_item"><a href="/#company">COMPANY</a></li>
