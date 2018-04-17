@@ -2,7 +2,7 @@
 TOP KV
 ------------------------*/
 $KV_HEIGHT_PC: 425px;
-$KV_HEIGHT_SP: 141px;
+$KV_HEIGHT_SP: 144px;
 .p-kv {
   background: #fff top center no-repeat;
   background-image: url("../images/img_kv_01.jpg");
@@ -16,18 +16,34 @@ $KV_HEIGHT_SP: 141px;
     min-width: auto;
     margin-bottom: 58px;
   }
+  &_logo {
+    position: absolute;
+    top: 24px;
+    left: 0;
+    width: 100%;
+    max-width:520px;
+    opacity: 0;
+    @include SP {
+      top: 0px;
+      left: 30px;
+      max-width: 170px;
+    }
+  }
   &_catch {
     font-size: 7.0rem;
     position: absolute;
-    bottom: -28px;
+    bottom: -19px;
     left: 0;
     margin: 0;
     font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: 1px;
     color: #fff;
     @include SP {
       bottom: -4px;
-      font-size: 2.7rem;
+      font-size: 2.4rem;
       line-height: 1;
+      letter-spacing: 0.3px;
       padding: 0 20px;
     }
   }

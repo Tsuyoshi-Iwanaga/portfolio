@@ -97,6 +97,10 @@ header
   & #logoSVG {
     width: 83px;
     margin-left: 29px;
+    @include SP {
+      width: 42px;
+      margin-left: 37px;
+    }
   }
 }
 .p-nav {
@@ -334,7 +338,7 @@ common parts
 .c-sectionTitle {
   font-size: 5.0rem;
   line-height: 1.0;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.07em;
   margin: 0 0 7px;
   @include SP {
     font-size: 2.5rem;

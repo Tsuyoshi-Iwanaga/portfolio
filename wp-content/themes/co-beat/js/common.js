@@ -126,6 +126,8 @@ proto.typeText = function(el) {
       len = $typeTarget.text().replace(/(\s)/g, '').length,
       i;
 
+  $('.p-kv_logo').animate({'opacity': '1.0'}, 1000);
+
   $typeTarget.children().addBack().contents().each(function() {
     if(this.nodeType == 3) {
       $(this).replaceWith($(this).text().replace(/(\S)/g, '<span>$1</span>'));
