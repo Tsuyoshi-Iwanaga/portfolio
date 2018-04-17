@@ -16,7 +16,7 @@
 <section class="l-wrap" id="js-wrap">
 <header class="l-header">
   <div class="l-contentInner l-header_inner">
-    <h1 class="p-logo">co-BEAT</h1>
+    <h1 class="p-logo"><object id="logoSVG" data="<?php bloginfo('template_url'); ?>/images/logo.svg" type="image/svg+xml"></object></h1>
     <nav class="p-nav js-navSwitch">
       <ul class="p-switchButton">
         <li class="p-nav_title"><span class="js-switchButton">Menu</span></li>

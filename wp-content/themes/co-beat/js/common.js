@@ -10,6 +10,7 @@ var construct = function(el){
   _.$wrap = $(el);
   _.$pageTop = _.$wrap.find('.js-toTopPage');
   _.$navBtn = _.$wrap.find('.js-navSwitch');
+  _.$logoSVG = _.$wrap.find('.p-logo img');
   _.$header = _.$wrap.find('.l-header');
   _.$kv = _.$wrap.find('.p-kv');
 
@@ -74,15 +75,22 @@ proto.switchNav = function(ev) {
   var _ = this;
   var $overRay = $('.c-overRay');
   var $header = $('.l-header');
+  var $SVG = $(document.getElementById('logoSVG').contentDocument);
   var speed = 0;
   var className = 'is-close';
 
   if($header.hasClass(className)) {
     $header.removeClass(className);
     $overRay.hide(speed);
+    _changeSVG ('#131313');
   } else {
     $header.addClass(className);
     $overRay.show(speed);
+    _changeSVG ('#ffffff');
+  }
+
+  function _changeSVG (colorCode) {
+    $SVG.find('.cls-4').css({'fill': colorCode});
   }
 
   return _;
@@ -107,13 +115,27 @@ proto.switchKV = function() {
     _.$kv.animate({ opacity: 1.0}, 600);
   }
 
-  setInterval(bgSwitch, 8000);
+  setInterval(bgSwitch, 10000);
 
   return _;
 };
 
 proto.typeText = function(el) {
-  var _ = this;
+  var _ = this,
+      $typeTarget = $('.js-type'),
+      len = $typeTarget.text().replace(/(\s)/g, '').length,
+      i;
+
+  $typeTarget.children().addBack().contents().each(function() {
+    if(this.nodeType == 3) {
+      $(this).replaceWith($(this).text().replace(/(\S)/g, '<span>$1</span>'));
+    }
+  });
+
+  $typeTarget.css({'opacity': 1});
+  for(i=0; i<len; i++) {
+    $typeTarget.children('span:eq('+i+')').delay(80*i).animate({'opacity': 1}, 1000);
+  }
 
   return _;
 };

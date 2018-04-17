@@ -27,7 +27,7 @@ img {
 
 /*---- layout -----*/
 .l-wrap {
-  padding-top: 151px;
+  padding-top: 154px;
   @include SP {
     padding-top: 89px;
   }
@@ -60,7 +60,7 @@ img {
 header
 ------------------------*/
 .l-header {
-  padding: 45px 0 41px;
+  padding: 48px 0 32px;
   position: fixed;
   top: 0;
   left: 0;
@@ -89,15 +89,14 @@ header
 .p-logo {
   position: relative;
   display: block;
-  background: url("../images/logo.svg") top center no-repeat;
-  background-position-x: 51.5%;
-  height: 65px;
-  overflow: hidden;
-  margin: 0;
-  white-space: nowrap;
-  text-indent: 100%;
+  width: 110px;
+  margin: 0 auto;
   @include SP {
     height: 33px;
+  }
+  & #logoSVG {
+    width: 83px;
+    margin-left: 29px;
   }
 }
 .p-nav {
@@ -148,10 +147,6 @@ header
 .is-close {
   &.l-header {
     background: transparent;
-  }
-  & .p-logo {
-    background: url("../images/logo_closed.svg") top center no-repeat;
-    background-size: 72px;
   }
   & .p-headerCatch {
     color: #fff;
@@ -405,5 +400,15 @@ fadeIn-animation
   &.is-fired {
     opacity: 1.0;
     transform: translateY(0);
+  }
+}
+
+/*----------------------
+type-animation
+------------------------*/
+.js-type {
+  opacity: 0;
+  & span {
+    opacity: 0;
   }
 }

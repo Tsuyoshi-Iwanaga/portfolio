@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="p-kv">
   <div class="l-contentInner l-kv_inner">
-    <p class="p-kv_catch">If It Can Be Imagined,<br>It Can Be Created.</p>
+    <p class="p-kv_catch js-type">If It Can Be Imagined,<br>It Can Be Created.</p>
     <p class="p-kv_desc">デザイン×"個"の価値で、誰もがもっと自分らしい生き方を創る世界へ。</p>
   </div>
 </div><!-- /.l-kv -->
