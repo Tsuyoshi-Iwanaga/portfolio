@@ -12,6 +12,7 @@ var construct = function(el){
   _.$navBtn = _.$wrap.find('.js-navSwitch');
   _.$logoSVG = _.$wrap.find('.p-logo img');
   _.$header = _.$wrap.find('.l-header');
+  _.$pageLoadingBar = _.$wrap.find('.l-header:after');
   _.$kv = _.$wrap.find('.p-kv');
 
   _.init();
@@ -25,20 +26,41 @@ var proto = construct.prototype;
 proto.init = function() {
   var _ = this;
 
+  _.navLinkSet();
   _.bindEvents();
   _.switchKV();
-  _.typeText();
   _.easyAnime();
   _.esingScroll();
   _.initScroll();
   _.googleMap();
 
+  //onloaded
+  $(window).on('load', function(){
+    _.loaded();
+  });
+
   return _;
 };
 
-//EventBind
+//loaded
+proto.loaded = function() {
+  var _ = this;
+
+  _.typeText();
+  _.pageLoaded();
+
+  return _;
+};
+
+//bindEvents
 proto.bindEvents = function(){
   var _ = this;
+
+  $('a[href*="/"]').on('click',function(ev){
+    var url = $(this).attr('href');
+    ev.preventDefault();
+    _.pageLoading(url);
+  });
 
   $('a[href^="#"]').on('click', function(ev) {
     _.smoothScroll(ev);
@@ -56,6 +78,29 @@ proto.bindEvents = function(){
   return _;
 };
 
+//pageLoading
+proto.pageLoading = function(url) {
+  var _ = this;
+
+  _.$header.addClass('is-loaded');
+  setTimeout(function(){ location.href = url; }, 400);
+
+  setTimeout(function(){
+    _.$header.removeClass('is-loaded');
+  }, 10000);
+
+  return _;
+};
+
+//pageLoaded
+proto.pageLoaded = function(ev) {
+  var _ = this;
+
+  _.$header.removeClass('is-loaded');
+
+  return _;
+}
+
 //smoothScroll
 proto.smoothScroll = function(ev) {
   var _ = this;
@@ -69,6 +114,21 @@ proto.smoothScroll = function(ev) {
 
   return _;
 };
+
+//NavlinkSetting
+proto.navLinkSet = function() {
+  var _ = this;
+
+  if(location.pathname === '/') {
+    _.$navBtn.find('.p-nav_list_item a').each(function(){
+      var linkHref = $(this).attr('href').replace(/\//, '');
+      $(this).attr('href', linkHref);
+    });
+  }
+
+  return _;
+};
+
 
 //switchNav
 proto.switchNav = function(ev) {
@@ -96,7 +156,7 @@ proto.switchNav = function(ev) {
   return _;
 }
 
-//switchMV
+//switchKV
 proto.switchKV = function() {
   var _ = this;
   var kvImgPath = _.$kv.css('background-image');
@@ -115,11 +175,12 @@ proto.switchKV = function() {
     _.$kv.animate({ opacity: 1.0}, 600);
   }
 
-  setInterval(bgSwitch, 10000);
+  setInterval(bgSwitch, 8000);
 
   return _;
 };
 
+//typeText
 proto.typeText = function(el) {
   var _ = this,
       $typeTarget = $('.js-type'),
@@ -148,6 +209,7 @@ proto.easyAnime = function(el) {
   $('.c-moreLink').easyAnime({addClass: 'is-fired'});
 };
 
+//initScroll
 proto.initScroll = function() {
   var _ = this;
 
@@ -156,7 +218,7 @@ proto.initScroll = function() {
   return _;
 };
 
-//esing-scroll
+//esingScroll
 proto.esingScroll = function() {
   var scrolly = 0;
   var speed = 400;
@@ -189,7 +251,7 @@ proto.fixedScroll = function(scrollVol) {
   return _;
 };
 
-//GoogleMap
+//googleMap
 proto.googleMap = function() {
   var map;
   var styleOptions;
@@ -332,16 +394,16 @@ proto.googleMap = function() {
       ]
     });
   }
-  initMap();
+  if(document.getElementById('map')) {
+    initMap();
+  } else {
+    return false;
+  }
 };
 
-//ready function
+//activate
 $(function(){
   new construct('#js-wrap');
-});
-
-//onload function
-$(window).on('load', function(){
 });
 
 return commonJS;
