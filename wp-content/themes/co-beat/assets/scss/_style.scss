@@ -24,6 +24,9 @@ img {
   vertical-align: top;
   width: 100%;
 }
+object {
+  pointer-events: none;
+}
 
 /*---- layout -----*/
 .l-wrap {
@@ -122,6 +125,11 @@ header
   margin: 0 auto;
   @include SP {
     height: 33px;
+  }
+  & a {
+    display: block;
+    width: 100%;
+    height: 100%;
   }
   & #logoSVG {
     width: 83px;
@@ -421,6 +429,25 @@ common parts
       text-align: left;
       line-height: 1.0;
       right: 40px;
+    }
+  }
+}
+/*---- tagCloud -----*/
+.p-tagCloud {
+  & a {
+    display: inline-block;
+    min-width: 125px;
+    text-align: center;
+    font-size: 1.8rem !important;
+    padding:3px 8px;
+    margin-right: 5px;
+    color: #2e76ce;
+    border: 2px solid #2e76ce;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    &:hover {
+      background: #2e76ce;
+      color: #fff;
     }
   }
 }

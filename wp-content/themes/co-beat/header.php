@@ -16,7 +16,7 @@
 <section class="l-wrap" id="js-wrap">
 <header class="l-header">
   <div class="l-contentInner l-header_inner">
-    <h1 class="p-logo"><object id="logoSVG" data="<?php bloginfo('template_url'); ?>/images/logo.svg" type="image/svg+xml"></object></h1>
+    <h1 class="p-logo"><a href="/"><object id="logoSVG" data="<?php bloginfo('template_url'); ?>/images/logo.svg" type="image/svg+xml"></object></a></h1>
     <nav class="p-nav js-navSwitch">
       <ul class="p-switchButton">
         <li class="p-nav_title"><span class="js-switchButton">Menu</span></li>
@@ -25,7 +25,7 @@
         <li class="p-nav_list_item"><a href="/#works">WORKS</a></li>
         <li class="p-nav_list_item"><a href="/#service">SERVICE</a></li>
         <li class="p-nav_list_item"><a href="/#pickup">PICK UP</a></li>
-        <li class="p-nav_list_item"><a href="/#blog">BLOG</a></li>
+        <li class="p-nav_list_item"><a href="/blog/">BLOG</a></li>
         <li class="p-nav_list_item"><a href="/#profile">PROFILE</a></li>
         <li class="p-nav_list_item"><a href="/#company">COMPANY</a></li>
         <li class="p-nav_list_item"><a href="/#contact">CONTACT</a></li>

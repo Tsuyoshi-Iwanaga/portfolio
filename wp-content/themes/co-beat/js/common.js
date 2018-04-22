@@ -121,7 +121,7 @@ proto.navLinkSet = function() {
 
   if(location.pathname === '/') {
     _.$navBtn.find('.p-nav_list_item a').each(function(){
-      var linkHref = $(this).attr('href').replace(/\//, '');
+      var linkHref = $(this).attr('href').replace(/\/#/, '#');
       $(this).attr('href', linkHref);
     });
   }

@@ -361,6 +361,21 @@ TOP BLOG
       }
     }
   }
+  &_category {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.4rem;
+    background: #999;
+    font-weight: bold;
+    padding: 2px 5px;
+    @include SP {
+      font-size: 1.0rem;
+    }
+    & a {
+      color: #fff;
+    }
+  }
 }
 /*----------------------
 TOP COMPANY
