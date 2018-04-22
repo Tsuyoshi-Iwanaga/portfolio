@@ -30,6 +30,9 @@ $cat = $cat[0];
       ?>
 
     </ul>
+    <div class="p-pager">
+      <?php get_template_part('/navigation'); ?>
+    </div>
     <div class="p-tagCloud">
       <?php wp_tag_cloud(); ?>
     </div>
