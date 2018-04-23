@@ -35,25 +35,37 @@ BLOG category
   &_content {
     line-height: 1.67;
     font-size: 2.4rem;
-    //margin-bottom: 60px;
     @include SP {
       font-size: 1.2rem;
-      //margin-top: 30px;
     }
     & h1 {
       font-size: 3.6rem;
       margin-bottom: 60px;
+      @include SP {
+        font-size: 1.6rem;
+        margin-bottom: 1.5em;
+      }
     }
     & h2 {
       font-size: 3.6rem;
       border-bottom: 4px solid #4c4c4c;
       margin-bottom: 60px;
+      @include SP {
+        border-bottom: 2px solid #4c4c4c;
+        font-size: 1.5rem;
+        margin-bottom: 1.2em;
+      }
     }
     & h3 {
       font-size: 3.0rem;
       position: relative;
       padding-left: 30px;
       margin-bottom: 60px;
+      @include SP {
+        font-size: 1.3rem;
+        padding-left: 10px;
+        margin-bottom: 1.0em;
+      }
       &:before{
         content: '';
         display: block;
@@ -63,19 +75,34 @@ BLOG category
         width: 8px;
         height: 1.2em;
         background: #4c4c4c;
+        @include SP {
+          width: 4px;
+        }
       }
     }
     & h4 {
       font-size: 2.8rem;
       margin-bottom: 40px;
+      @include SP {
+        font-size: 1.3rem;
+        margin-bottom: 1.0em;
+      }
     }
     & h5 {
       font-size: 2.4rem;
       margin-bottom: 40px;
+      @include SP {
+        font-size: 1.2rem;
+        margin-bottom: 1.0em;
+      }
     }
     & h6 {
       font-size: 2.4rem;
       margin-bottom: 40px;
+      @include SP {
+        font-size: 1.2rem;
+        margin-bottom: 1.0em;
+      }
     }
     & a {
       color: #2e76ce;
@@ -106,12 +133,16 @@ BLOG category
       margin: 0;
       background: #e5e5e5;
       padding: 40px;
+      @include SP {
+        padding: 1.5rem;
+      }
       & p {
         margin: 0;
       }
     }
   }
   &_img {
+    margin-top: 0px;
     & img {
       height: auto;
     }
@@ -124,7 +155,7 @@ BLOG article
   &_list {
     margin-bottom: 60px;
     @include SP {
-      margin-top: 30px;
+      margin-top: 20px;
     }
     &_item {
       margin-top: 40px;
@@ -160,6 +191,7 @@ BLOG article
         display: inline-block;
         font-weight: bold;
         font-size: 1.4rem;
+        color: #babfc4;
         & a {
           color: #babfc4;
         }

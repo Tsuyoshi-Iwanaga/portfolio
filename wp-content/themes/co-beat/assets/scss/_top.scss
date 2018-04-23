@@ -190,7 +190,7 @@ TOP SERVICE
   & .c-more {
     text-align: right;
     &:nth-of-type(1) {
-      margin-right: 52px;
+      margin-right: 635px;
       @include SP {
         margin-right: 0;
       }
@@ -214,6 +214,13 @@ TOP SERVICE
     overflow: hidden;
     @include SP {
       margin: 0 0 14px;
+    }
+    & a {
+      display: block;
+      transition: all 0.5s ease;
+      &:hover {
+        opacity: 0.6;
+      }
     }
     &:nth-of-type(1) {
       & .p-serviceList_itemImg {
@@ -422,6 +429,13 @@ TOP COMPANY
         @include SP {
           width: 100%;
         }
+        & a {
+          display: block;
+          transition: all 0.5s ease;
+          &:hover {
+            opacity: 0.6;
+          }
+        }
       }
     }
     &:nth-of-type(2) {
@@ -466,6 +480,13 @@ TOP COMPANY
         width: 265px;
         @include SP {
           width: 100%;
+        }
+        & a {
+          display: block;
+          transition: all 0.5s ease;
+          &:hover {
+            opacity: 0.6;
+          }
         }
       }
     }
@@ -518,8 +539,9 @@ TOP FORM
 .-mailForm {
   background: #e8e8e8;
   padding: 110px 0 120px;
+  margin-top: 0;
   @include SP {
-    padding: 23px 0 30px;
+    padding: 73px 0 30px;
   }
   & .c-sectionTitle {
     text-align: center;
@@ -617,8 +639,3 @@ TOP FORM
     }
   }
 }
-
-/*----------------------
-Helper class
-------------------------*/
-

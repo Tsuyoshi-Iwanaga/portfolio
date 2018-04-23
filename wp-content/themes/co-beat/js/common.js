@@ -221,7 +221,7 @@ proto.initScroll = function() {
 //esingScroll
 proto.esingScroll = function() {
   var scrolly = 0;
-  var speed = 400;
+  var speed = 250;
   $('html').mousewheel(function(event, mov) {
 
     if(mov > 0) {

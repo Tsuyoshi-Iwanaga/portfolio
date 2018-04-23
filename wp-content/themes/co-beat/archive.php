@@ -16,9 +16,9 @@ $cat = $cat[0];
             the_post();
       ?>
       <li class="p-article_list_item">
+        <p class="p-article_list_item_date"><?php the_time('Y/m/d'); ?></p>
+        <p class="p-article_list_item_category">カテゴリー名&nbsp;:&nbsp;<?php the_category(' &gt; '); ?></p>
         <a href="<?php the_permalink(); ?>">
-          <p class="p-article_list_item_date"><?php the_time('Y/m/d') ?></p>
-          <p class="p-article_list_item_category">カテゴリー名&nbsp;:&nbsp;<?php the_category(' &gt; '); ?></p>
           <h3 class="p-article_list_item_title"><?php the_title(); ?></h3>
           <p class="p-article_list_item_img"><?php the_post_thumbnail('full'); ?></p>
           <div class="p-article_list_item_content"><?php the_excerpt(); ?></div>
