@@ -71,8 +71,14 @@ proto.bindEvents = function(){
   });
 
   _.$window.on('scroll', function(ev){
-    var scrollVol = _.$window.scrollTop();
-    _.fixedScroll(scrollVol);
+    var timer, interval = 500;
+
+    clearTimeout(timer);
+    timer = setTimeout(function() {
+      var scrollVol = _.$window.scrollTop();
+      _.fixedScroll(scrollVol);
+    }, interval);
+
   });
 
   return _;
