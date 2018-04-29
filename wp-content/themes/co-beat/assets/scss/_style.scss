@@ -152,6 +152,7 @@ header
     left: 20px;
   }
   &_title {
+    font-weight: bold;
     @include SP {
       margin-top: -1px;
     }
@@ -321,8 +322,11 @@ footer
   }
   &_text {
     font-size: 1.8rem;
+    font-weight: bold;
     margin: 0 auto 70px;
+    padding-left: 20px;
     line-height: 2.2;
+    letter-spacing: 0.03em;
     width: 73%;
     @include SP {
       width: 100%;
@@ -330,7 +334,11 @@ footer
       letter-spacing: 0.6px;
       font-size: 0.9rem;
       line-height: 2.3;
+      padding-left: 0;
       margin-bottom: 29px;
+    }
+    & a {
+      text-decoration: underline;
     }
   }
   &_copy {
@@ -354,7 +362,7 @@ toTopPage
 ------------------------*/
 .p-toTopPage {
   position: fixed;
-  bottom: 140px;
+  bottom: 50px;
   right: 50px;
   @include SP {
     bottom: 30px;

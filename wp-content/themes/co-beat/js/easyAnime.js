@@ -55,7 +55,7 @@ EasyAnime.prototype._scroll = function() {
   var _ = this;
 
   $(window).on('scroll', function(){
-    var timer, interval = 500;
+    var timer, interval = 200;
 
     clearTimeout(timer);
     timer = setTimeout(function() {

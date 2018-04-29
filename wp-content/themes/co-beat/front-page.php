@@ -13,13 +13,13 @@
     <ul class="p-worksList">
       <li class="p-worksList_item js-fadeIn">
         <a href="#">
-          <h3 class="p-worksList_item_title">ART DIRECTION<br>SPOT CONSULTING</h3>
+          <h3 class="p-worksList_item_title">ART DIRECTION<br>UI DESIGN</h3>
           <p class="p-worksList_item_desc">アートディレクション / UIデザイン</p>
         </a>
       </li>
       <li class="p-worksList_item js-fadeIn">
         <a href="#">
-          <h3 class="p-worksList_item_title">WEB CONSULTING<br>UI DESIGN</h3>
+          <h3 class="p-worksList_item_title">WEB CONSULTING<br>SPOT CONSULTING</h3>
           <p class="p-worksList_item_desc">ウェブコンサルティング / 相談役</p>
         </a>
       </li>
@@ -30,13 +30,13 @@
         </a>
       </li>
       <li class="p-worksList_item js-fadeIn">
-        <a href="#">
+        <a href="/price/">
           <h3 class="p-worksList_item_title">PRICE</h3>
           <p class="p-worksList_item_desc">料金につきまして</p>
         </a>
       </li>
     </ul>
-    <p class="c-more"><a href="#" class="c-moreLink">MORE</a></p>
+    <p class="c-more"><a href="/works/" class="c-moreLink">MORE</a></p>
   </div>
 </section>
 <section class="l-contentSection -service" id="service">
@@ -64,13 +64,45 @@
           <div class="p-serviceList_itemText">
             <h3 class="p-serviceList_itemText_title">ヒカリエMOV8階 CREARIVE LUONGEにてYOUR TIMESを出店いたしました。</h3>
             <p class="p-serviceList_itemText_desc">ヒカリエMOV8階にて出店いたしました。テキストストテキストテキストテキストテキストテキストテトテキストテキストテキストヒカリエMOV8階にて出店いたしました。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストヒカリエMOV8階にて出店いたしました。ストテキスキストテキストテキストテキストテキストテキスト・・・</p>
+            <p class="c-more"><span class="c-moreLink">MORE</span></p>
           </div>
-          <p class="c-more"><span class="c-moreLink">MORE</span></p>
         </a>
       </li>
     </ul>
   </div>
-</section><!-- /.l-service -->
+</section><!-- /.l-pickup -->
+<section class="l-contentSection -pickup" id="pickup">
+  <div class="l-contentInner">
+    <h2 class="c-sectionTitle js-fadeIn">PICKUP</h2>
+    <p class="c-middleTitle js-fadeIn">自社サービスとコンテンツ</p>
+    <ul class="p-pickupList">
+      <li class="p-pickupList_item js-fadeIn">
+        <a href="#">
+          <div class="p-pickupList_itemImg">
+            <img src="<?php bloginfo('template_url'); ?>/images/img_bg_pickup01.jpg" alt="">
+          </div>
+          <div class="p-pickupList_itemText">
+            <h3 class="p-pickupList_itemText_title">ヒカリエMOV8階 CREARIVE LUONGEにてYOUR TIMESを出店いたしました。</h3>
+            <p class="p-pickupList_itemText_desc">ヒカリエMOV8階にて出店いたしました。テキストストテキストテキストテキストテキストテキストテトテキストテキストテキストヒカリエMOV8階にて出店いたしました。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストヒカリエMOV8階にて出店いたしました。ストテキスキストテキストテキストテキストテキストテキスト・・・</p>
+            <p class="c-more"><span class="c-moreLink">MORE</span></p>
+          </div>
+        </a>
+      </li>
+      <li class="p-pickupList_item js-fadeIn">
+        <a href="#">
+          <div class="p-pickupList_itemImg">
+            <img src="<?php bloginfo('template_url'); ?>/images/img_bg_pickup02.jpg" alt="">
+          </div>
+          <div class="p-pickupList_itemText">
+            <h3 class="p-pickupList_itemText_title">ヒカリエMOV8階 CREARIVE LUONGEにてYOUR TIMESを出店いたしました。</h3>
+            <p class="p-pickupList_itemText_desc">ヒカリエMOV8階にて出店いたしました。テキストストテキストテキストテキストテキストテキストテトテキストテキストテキストヒカリエMOV8階にて出店いたしました。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストヒカリエMOV8階にて出店いたしました。ストテキスキストテキストテキストテキストテキストテキスト・・・</p>
+            <p class="c-more"><span class="c-moreLink">MORE</span></p>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section><!-- /.l-pickup -->
 <section class="l-contentSection -blog" id="blog">
   <div class="l-contentInner">
     <h2 class="c-sectionTitle js-fadeIn">BLOG</h2>
@@ -121,7 +153,7 @@
     <div class="p-contentBlock js-fadeIn">
       <div class="p-contentBlock_textArea">
         <a href="#">
-          <h3 class="c-middleTitle" id="profile">代表者について</h3>
+          <h3 class="c-middleTitle" id="profile">PROFILE</h3>
           <p class="p-contentDesc -rep">東後哲郎(とうご てつろう)</p>
           <p class="p-contentDesc -profile">1987年宮崎県生まれ。中学3年の時に自分のサイト作成をし、月間9万PVを達成。サイト運営を個人で行う。高校卒業後、福岡のデザイン学校を卒業後、Webデザイナーとして活動。5年デザイナーを経験後、イギリス・ロンドン、オーストラリアシドニーにてフリーランスデザイナーとして活動、2年後東京へ上京。東京にてプロダクションでのデザイナー経験後、大手上場企業の新規事業立ち上げのマーケッターに転職。マーケッターを3年経験後、2016年4月からフリーランスとして活動。総合広告代理店にて、プロジェクトリーダーして大手金融メディア立ち上げのWEBコンサル～上流設計までを担当。WEBメディアの戦略設計から上流設計、アートディレクション領域を担当。デザイン×マーケティングを複合させてフリーとして活動。</p>
           <p class="c-more"><span class="c-moreLink">MORE</span></p>
@@ -132,18 +164,11 @@
       <div class="p-contentBlock_textArea">
         <h3 class="c-middleTitle">会社概要</h3>
         <p>Co-BEAT株式会社</p>
-        <p>&#12306;140-0002<br>東京都 品川区東品川2-2-28<br>レガリス品川天王洲ベイサイドコート1301</p>
-        <p>スタッフ数4名<br>(デザイナー,システムエンジニア,絵本作家)<p>
+        <p>&#12306;140-0002<br>東京都 品川区東品川 天王洲<br>※自宅兼、住所の為省略</p>
       </div>
     </div>
   </div>
 </section><!-- /.l-company -->
 <section class="l-contentSection -map" id="map"></section><!-- /.l-map -->
-<section class="l-contentSection -mailForm" id="contact">
-  <div class="l-contentInner">
-    <h2 class="c-sectionTitle">MAIL FORM</h2>
-    <p class="mailForm_desc">お客様からのご相談、企業様からのお問い合せをお待ちしております。<br class="onlyPC">責任を持って折り返しご連絡させて頂きます。<br>※個人情報の取り扱いについて本画面にて弊社取得する個人情報は適切にお取り扱いし、<br class="onlyPC">第三者に提供または開示することはございません。<br class="onlyPC">※ただし、内容によっては返信を控えさせて頂くこともございますのでご了承くださいませ。</p>
-    <?php echo do_shortcode( '[contact-form-7 id="5" title="co-beat_Form" html_class="mailForm_entry"]' ); ?>
-  </div>
-</section><!-- /.l-mailForm -->
+<?php get_template_part('_mailForm'); ?>
 <?php get_footer(); ?>

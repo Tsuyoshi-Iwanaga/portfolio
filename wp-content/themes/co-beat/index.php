@@ -1,1 +1,1 @@
-<?php echo "index";
+<?php echo "お探しのページが見つかりません。";

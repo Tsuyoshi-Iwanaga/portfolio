@@ -30,7 +30,7 @@ proto.init = function() {
   _.bindEvents();
   _.switchKV();
   _.easyAnime();
-  _.esingScroll();
+  _.matchHeight();
   _.initScroll();
   _.googleMap();
 
@@ -71,7 +71,7 @@ proto.bindEvents = function(){
   });
 
   _.$window.on('scroll', function(ev){
-    var timer, interval = 500;
+    var timer, interval = 300;
 
     clearTimeout(timer);
     timer = setTimeout(function() {
@@ -224,25 +224,14 @@ proto.initScroll = function() {
   return _;
 };
 
-//esingScroll
-proto.esingScroll = function() {
-  var scrolly = 0;
-  var speed = 250;
-  $('html').mousewheel(function(event, mov) {
+//matchHeight
+proto.matchHeight = function() {
+  var _ = this;
 
-    if(mov > 0) {
-      scrolly = $('html,body').scrollTop() - speed;
-    } else if(mov < 0) {
-      scrolly = $('html,body').scrollTop() + speed;
-    }
+  $('.js-matchHeight').matchHeight();
 
-    $('html,body')
-        .stop()
-        .animate({scrollTop: scrolly}, 'slow', $.easie(0,0,0,1));
-    return false;
-
-  });
-}
+  return _;
+};
 
 //fixedScroll
 proto.fixedScroll = function(scrollVol) {

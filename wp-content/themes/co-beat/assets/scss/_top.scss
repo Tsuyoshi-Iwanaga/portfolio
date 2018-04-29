@@ -5,9 +5,9 @@ $KV_HEIGHT_PC: 425px;
 $KV_HEIGHT_SP: 144px;
 .p-kv {
   background: #fff top center no-repeat;
-  background-image: url("../images/img_kv_01.jpg");
   background-size: cover;
   position: relative;
+  background-image: url("../images/img_kv_01.jpg");
   width: 100%;
   min-width: $CONTENTS_WIDTH;
   margin-bottom: 209px;
@@ -98,7 +98,7 @@ TOP WORKS
   margin: 51px 0 39px;
   font-size: 0;
   @include SP {
-    margin: 0;
+    margin: 0 0 10px;
   }
   &_item {
     position: relative;
@@ -118,7 +118,7 @@ TOP WORKS
       vertical-align: top;
       width: 100%;
       height: 100%;
-      padding: 20px 40px;
+      padding: 25px 40px 0;
       @include SP {
         padding: 14px 20px;
       }
@@ -161,8 +161,9 @@ TOP WORKS
     }
     &_title {
       color: #fff;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.06em;
       font-size: 3.0rem;
+      line-height: 1.4;
       @include SP {
         font-size: 2.4rem;
         line-height: 1.2;
@@ -170,7 +171,7 @@ TOP WORKS
     }
     &_desc {
       color: #fff;
-      letter-spacing: 0.2em;
+      letter-spacing: 0.16em;
       font-size: 1.8rem;
       @include SP {
         font-size: 1.2rem;
@@ -225,21 +226,21 @@ TOP SERVICE
     &:nth-of-type(1) {
       & .p-serviceList_itemImg {
         width: 581px;
-        float: left;
-      }
-      & .p-serviceList_itemText {
-        float: right;
-        padding-left: 59px;
-      }
-    }
-    &:nth-of-type(2) {
-      & .p-serviceList_itemImg {
-        width: 581px;
         float: right;
       }
       & .p-serviceList_itemText {
         float: left;
         padding-right: 59px;
+      }
+    }
+    &:nth-of-type(2) {
+      & .p-serviceList_itemImg {
+        width: 581px;
+        float: left;
+      }
+      & .p-serviceList_itemText {
+        float: right;
+        padding-left: 59px;
       }
     }
     &Img {
@@ -279,6 +280,107 @@ TOP SERVICE
     }
   }
 }
+
+/*----------------------
+TOP PICKUP
+------------------------*/
+.-pickup {
+  @include SP {
+    margin-bottom: 25px;
+  }
+  & .c-more {
+    text-align: right;
+    &:nth-of-type(1) {
+      margin-right: 635px;
+      @include SP {
+        margin-right: 0;
+      }
+    }
+    &:nth-of-type(2) {
+      margin-right: 11px;
+      @include SP {
+        margin-right: 0;
+      }
+    }
+  }
+}
+.p-pickupList {
+  margin-bottom: 71px;
+  @include SP {
+    margin: 0;
+  }
+  &_item {
+    margin: 28px 0 52px;
+    width: 100%;
+    overflow: hidden;
+    @include SP {
+      margin: 0 0 14px;
+    }
+    & a {
+      display: block;
+      transition: all 0.5s ease;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+    &:nth-of-type(1) {
+      & .p-pickupList_itemImg {
+        width: 581px;
+        float: right;
+      }
+      & .p-pickupList_itemText {
+        float: left;
+        padding-right: 59px;
+      }
+    }
+    &:nth-of-type(2) {
+      & .p-pickupList_itemImg {
+        width: 581px;
+        float: left;
+      }
+      & .p-pickupList_itemText {
+        float: right;
+        padding-left: 59px;
+      }
+    }
+    &Img {
+      @include SP {
+        width: 100% !important;
+        float: none !important;
+        margin-bottom: 10px;
+      }
+    }
+    &Text {
+      width: 443px;
+      @include SP {
+        width: 100% !important;
+        padding: 0 !important;
+        float: none !important;
+      }
+      &_title {
+        margin: 0 0 30px;
+        font-size: 2.0rem;
+        @include SP {
+          font-size: 1.6rem;
+          line-height: 1.4;
+          letter-spacing: 0.5px;
+          margin-bottom: 0;
+        }
+      }
+      &_desc {
+        margin: 0 0 30px;
+        font-size: 1.4rem;
+        line-height: 1.85;
+        @include SP {
+          font-size: 1.2rem;
+          line-height: 1.72;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
 /*----------------------
 TOP BLOG
 ------------------------*/
@@ -302,7 +404,7 @@ TOP BLOG
   font-size: 0;
   margin: 26px 0 0;
   @include SP {
-    margin: 0;
+    margin: 0 0 10px;
   }
   &_item {
     display: inline-block;
@@ -312,7 +414,7 @@ TOP BLOG
       width: 100%;
     }
     &:nth-of-type(2n) {
-      top: -84px;
+      top: -92px;
       @include SP {
         top: 0;
       }
@@ -326,12 +428,17 @@ TOP BLOG
       }
     }
     &Img {
-      margin-bottom: 22px;
+      margin-bottom: 25px;
       @include SP {
         margin-bottom: 10px;
+        height: 40vw;
+        overflow: hidden;
       }
       & img {
         height: auto;
+        @include SP {
+          margin-top: -6vw;
+        }
       }
     }
     &Text {
@@ -388,9 +495,15 @@ TOP BLOG
 TOP COMPANY
 ------------------------*/
 .-company {
-  margin-bottom: 70px;
+  margin-bottom: 110px;
   @include SP {
+    margin-top: -40px;
     margin-bottom: 14px;
+  }
+  & .c-sectionTitle {
+    @include SP {
+      margin-bottom: 5px;
+    }
   }
   & .p-contentBlock {
     &:nth-of-type(1) {
@@ -401,7 +514,7 @@ TOP COMPANY
       padding-top: 65px;
       @include SP {
         padding-top: 0;
-        padding-bottom: 214px;
+        padding-bottom: 57vw;
         min-height: 300px;
         background: url("../images/img_bg_company01_sp.jpg") right top no-repeat;
         background-size: contain;
@@ -418,10 +531,10 @@ TOP COMPANY
         margin-bottom: 21px;
         @include SP {
           margin-top: 0;
-          margin-bottom: 0;
+          margin-bottom: 10px;
           font-size: 1.2rem;
           line-height: 1.72;
-          margin-bottom: 0;
+          min-height: 80px;
         }
       }
       & .p-contentBlock_textArea {
@@ -547,22 +660,27 @@ TOP FORM
     text-align: center;
     margin-bottom: 20px;
     @include SP {
-      margin-bottom: 0px;
+      margin-bottom: 10px;
     }
   }
 }
 .mailForm{
   &_desc {
+    width :73%;
+    margin: 0 auto 25px;
     font-size: 1.6rem;
     line-height: 1.9;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 25px;
     @include SP {
+      width: 100%;
       font-size: 1.2rem;
       line-height: 1.75;
       font-weight: normal;
       margin: 0 0 27px;
+    }
+    & a {
+      text-decoration: underline;
     }
   }
   &_entry {
