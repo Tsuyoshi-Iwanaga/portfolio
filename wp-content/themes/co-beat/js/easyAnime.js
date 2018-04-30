@@ -61,7 +61,7 @@ EasyAnime.prototype._scroll = function() {
     timer = setTimeout(function() {
       var scroll = $(window).scrollTop(),
       winHeight = $(window).height();
-      if(scroll + winHeight / 1.2 > _.settings.targetElement.offset().top) {
+      if(scroll + winHeight / 1.1 > _.settings.targetElement.offset().top) {
         _.settings.targetElement.addClass(_.settings.addClass);
       }
     }, interval);

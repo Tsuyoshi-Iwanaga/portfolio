@@ -158,7 +158,7 @@ header
     }
   }
   &_list {
-    margin-top: 55px;
+    margin-top: 35px;
     display: none;
     @include SP {
       margin-top: 29px;
@@ -166,7 +166,7 @@ header
     &_item {
       font-weight: bold;
       font-size: 6.0rem;
-      line-height: 1.5;
+      line-height: 1.4;
       @include SP {
         font-size: 3.0rem;
       }

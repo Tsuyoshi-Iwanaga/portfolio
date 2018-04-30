@@ -148,15 +148,16 @@ Works Page
     width: 100%;
     height: auto;
     & img {
-      @include SP {
+      height: auto;
+      @include SP{
         height: auto;
       }
     }
   }
   &Profile {
-    padding-bottom: 160px;
+    padding-bottom: 90px;
     @include SP {
-      padding-bottom: 60px;
+      padding-bottom: 45px;
     }
   }
   &ProfileItem {
@@ -172,6 +173,12 @@ Works Page
       @include SP {
         font-size: 1.5rem;
         margin-bottom: 15px;
+      }
+    }
+    &_desc {
+      font-size: 2.4rem;
+      @include SP {
+        font-size: 1.2rem;
       }
     }
     &_wrap {
@@ -255,12 +262,18 @@ Works Page
     &Wrap {
       display: flex;
       margin-bottom: -10px;
+      @include SP {
+        flex-direction: column-reverse;
+        margin-bottom: 0;
+        flex-wrap: wrap;
+      }
     }
     &_skillSetList {
       width: 45%;
       font-size: 2.4rem;
       @include SP {
         font-size: 1.2rem;
+        width: 100%;
       }
     }
     &_setListItem {
@@ -271,6 +284,11 @@ Works Page
       font-weight: bold;
       margin-bottom: 20px;
       background-position: 0 0;
+      @include SP {
+        font-size: 1.4rem;
+        letter-spacing: -1px;
+        margin-bottom: 10px;
+      }
       &:before {
         content: '';
         display: block;
@@ -305,11 +323,27 @@ Works Page
     &_img {
       position: relative;
       width: 55%;
+      @include SP {
+        width: 100%;
+        &:after {
+          content: '';
+          display: block;
+          padding-top: 60%;
+        }
+      }
       & img {
         position: absolute;
         top: 20px;
         left: -20px;
         width: 807px;
+        @include SP {
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          width: 80%;
+        }
       }
     }
     &_detail {
@@ -323,6 +357,10 @@ Works Page
       &_title {
         font-weight: bold;
         width: 10%;
+        @include SP {
+          width: 25%;
+          font-size: 1.4rem;
+        }
       }
       &_desc {
         width: 85%;
@@ -333,33 +371,49 @@ Works Page
           content: '：';
           display: inline-block;
         }
+        & a {
+          text-decoration: underline;
+        }
+        @include SP {
+          width: 60%;
+          font-size: 1.4rem;
+        }
       }
     }
     &_addInfo {
       font-size: 1.6rem;
       margin: 0;
       @include SP {
-        font-size: 0.8rem;
-      }
-    }
-  }
-  &_mailForm {
-    & .-mailForm {
-      @include SP {
-        padding: 30px 0;
-        margin-top: 0;
+        font-size: 1.2rem;
       }
     }
   }
 }
 .-case{
-    padding-top: 30px;
-    padding-bottom: 60px;
-    overflow: hidden;
-    &:nth-of-type(2n+1) {
-      background: #f1f1f1;
+  margin-top: -20px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  overflow: hidden;
+  @include SP {
+    padding: 30px 0 70px;
+  }
+  &:nth-of-type(8) {
+    margin-bottom: 0;
+  }
+  &.-type01 {
+    background: #f1f1f1;
+    & .p-worksCaseWrap {
+      flex-direction: row-reverse;
+      @include SP {
+        flex-direction: column-reverse;
+      }
     }
-    &:nth-of-type(2n) {
-      background: linear-gradient(90deg,#daf6ed, #f5fadc);
+    & .p-worksCase_img img {
+      right: 50px;
+      left: auto;
     }
   }
+  &.-type02 {
+    background: linear-gradient(90deg,#daf6ed, #f5fadc);
+  }
+}
